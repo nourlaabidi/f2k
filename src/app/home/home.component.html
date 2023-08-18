@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="contact-info">
+        <p><span class="red-text">Phone:</span> +216 71 501 080</p>
+        
+      </div>
+      <div class="social-links">
+        <p><span class="red-text">Email:</span> cotech@planet.tn</p>
+        <a href="https://twitter.com/cotech" target="_blank"><img src="assets/images/twitter.jpg" alt="twitter_icon"></a>      
+        <a href="https://facebook.com/cotech" target="_blank"><img src="assets/images/facebook.png" alt="facebook_icon"></a>
+        <a href="https://gmail.com/cotech" target="_blank"><img src="assets/images/gmail.png" alt="gmail_icon"></a>
+      </div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="container-fluid">
+          <img src="assets/images/logo.png">
+          <div class="col2">
+            <div class="links">
+              <a class="nav-link active" href="/home">Home</a>
+              <a class="nav-link" href="/presentation">Presentation</a>
+              <a class="nav-link" href="/services">services</a>
+              <a class="nav-link" href="#">References</a>
+              <a class="nav-link" href="#">Certificates</a>
+              <a class="nav-link" href="#">Contact</a> 
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <div class="clear banner">
+      <div class="box_skitter box_skitter_large">
+        <div class="image-slideshow">
+          <div class="image-slide-container" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex }">
+            <img [src]="image" alt="Slideshow Image">
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <br><br><br><br><br><br><br><br><br>
+               <h4>---SINCE 1995---</h4>
+               <p>WE WILL BE <span class="red-text">HAPPY</span> TO TAKE<br>CARE OF YOUR WORK</p>
+               <br>
+               <button class="contact-button" routerLink="/contact" >Contact Us</button>
+               <button class="presentation-button" routerLink="/presentation">Presentation</button>
+              </div>
+              
+            </div>
+          </div>
+          <button class="prev-button" (click)="prevImage()"><span>&#8249;</span></button>
+          <button class="next-button" (click)="nextImage()"><span>&#8250;</span></button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer> 
+    <div class="footer clear tahoma">
+        <div class="footer_wrap">
+            <div class="float_left bottom_nav">
+                    <ul class="navigation-list">
+                     <li><a href="/home">Home</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Presentation</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/services">Services</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">References</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Activities</a></li>
+                     <li class="divider">|</li>
+                     <li><a href=""> Catalog</a></li>                     
+                     <li><a href="">Equipement</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="" >Certificats</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Clients</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Photos</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Video</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/news">News</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="" >Newsletter</a></li>
+                     <li><a href="">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="float_right ">
+              <div class="copy">
+                Copyright © 2013  www.cotechplanet.net 
+                <span>Powered by <a href="" target="_blank">CRESUS</a></span>
+              </div>
+            </div>
+          
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+

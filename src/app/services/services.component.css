@@ -1,0 +1,157 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000; 
+  
+  }
+.navbar img{
+    height: 70px;
+    margin-left: 70px;
+}
+.container-fluid{
+    display: flex;
+    align-items: flex-start;
+}
+.col2{
+    margin-top: 20px;
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.links{
+    display: flex;
+    gap: 60px;
+    margin-left: 100px;
+
+}
+.links a{
+    text-decoration: none;
+    font-size: 17px;
+    color:black;
+}
+
+  .clear {
+    clear: both;
+   }
+   .banner {
+       padding-top: 21px;
+       height: 500px; 
+       background-color: grey;
+   }
+   .wrap {
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+       overflow: hidden;
+   }
+   .footer {
+    background: grey ;
+    height: 100px;
+    margin-top: 190px;
+    padding-top: 24px;
+}
+.footer {
+    color: white;
+    font-size: 11.4px;
+}
+.tahoma {
+    font-family: "Tahoma",Arial,Helvetica, sans-serif;
+}
+.footer_wrap {
+    margin-left: 16%;
+    margin-right: 16%;
+    overflow: hidden;
+}
+.float_left {
+    float: left;
+}
+.bottom_nav {
+    width: 489px;
+    
+}
+.float_right {
+    float: right;
+    
+    
+}
+.copy {
+    text-align:right;
+}
+.copy a {
+    color: white; 
+    
+}
+.navigation-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+}
+.navigation-list li {
+    margin-right: 10px;
+}
+.divider {
+    margin: 0 5px;
+    color: #999;
+}
+
+.navigation-list a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+}
+
+.navigation-list a:hover {
+    color: white;
+}
+.services-container {
+    
+    margin-top: 80px ; 
+    margin-left:16%;
+    margin-right: 16%;
+
+ }
+ .services-container h6{
+    color: red;
+ }
+  
+  .section-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .services-container h4{
+     color: #999;
+     font-size: 20px;
+     font-weight: 300;
+  }
+  
+  
+  .card-body img{
+    height: 40px;
+    width: 40px;
+  }
+  .card {
+    /* Normal styles for the card */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    /* Styles applied when hovering over the card */
+    border-color: grey; /* Change border color */
+    background-color: gainsboro;
+    transform: scale(1.05); /* Enlarge the card */
+  }
+  
+  
+  
+  
