@@ -169,5 +169,13 @@
   .news-images img {
     max-width: 30%;
   }
+  .a{
+    margin-left: 200px;
+    margin-top: 200px;
+    font-size: 300px;
+  }
+  i{
+    color: blue;
+  }
   
   

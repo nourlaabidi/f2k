@@ -273,11 +273,7 @@
   }
   
   
-  .social-links img{
-    height: 40px;
-    width: 40px;
-   border-radius: 10px; 
-  }
+  
   .top-bar {
     background-color: #333;
     color: white;
@@ -381,6 +377,14 @@
     transform: scale(1.05); 
    
   
+  }
+  .a{
+    margin-left: 200px;
+    margin-top: 204px;
+    font-size: 300px;
+  }
+  i{
+    color: red;
   }
   
   
