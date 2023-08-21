@@ -1,7 +1,52 @@
 
+/*top bar*/
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  margin-left: 42%;
+}
+.top-bar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  
+}
+.red-text {
+  color: red;
+}
+
+
+.contact-info p {
+  margin: 0;
+}
+
+.social-icon {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.a{
+  margin-left: 200px;
+  margin-top: 204px;
+  font-size: 300px;
+}
+i{
+  color: red;
+}
+/*navbar*/
 .navbar{
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: whitesmoke;
@@ -116,7 +161,7 @@
 } 
 .news-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
     
   }

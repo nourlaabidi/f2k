@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +19,15 @@ export class HomeComponent {
 
   nextImage() {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+  }
+  ngOnInit(): void {
+    this.startAutoImageChange(); // Appeler la méthode au démarrage du composant
+  }
+
+  private startAutoImageChange() {
+    setInterval(() => {
+      this.nextImage();
+    }, 5000); // Changer toutes les 5 secondes
   }
   
 }

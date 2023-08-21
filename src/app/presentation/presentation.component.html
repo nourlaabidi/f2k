@@ -7,6 +7,18 @@
 </head>
 <body>
   <header>
+    <div class="top-bar">
+      <div class="contact-info">
+        <p><span class="red-text">Phone:</span> +216 71 501 080</p>
+        
+      </div>
+      <div class="social-links">
+        <p><span class="red-text">Email:</span> cotech@planet.tn</p>
+        <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
+        <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
+      </div>
+    </div>
     <nav class="navbar">
         <div class="container-fluid">
           <img src="assets/images/logo.png">
@@ -23,45 +35,93 @@
         </div>
     </nav>
 </header>
-<div class="presentation-container">
-    <h2 class="section-title">Presentation</h2>
-    <ul>
-    <li><p class="presentation-text">
-      Cotech is a Tunisian/Belgian company specialized in the study, development and realization of industrial automation projects; also we fulfill regulation systems for production chains on PLC basis.
-      We offer practical consultancy based on 30 years of experience in automation of industrial production processes.
-    </p></li>
-    <li><p class="presentation-text">
-      We can give you assistance with weighing, dosing and automation so that you can maintain your competitive position.
-      Cotech and her specialized partners (weighing and automation) offer solutions of top technology and high precision.
-    </p></li>
-    <li><p class="presentation-text">
-      We use the data "weight" (basic information) to control your material stream and process.
-      Automation can give you faster, safer production processes which are more efficient, flexible, reliable, sustainable and cost-effective.
-      Working with Cotech also means you can be sure of the project content, cost, delivery dates and end result.
-    </p></li>
-    <li><p class="presentation-text">
-      The realizations of Cotech are adopted in Africa, Europe, America and the Middle East.
-      We offer new solutions as well as renewal of existing installations.
-    </p></li>
-    </ul>
-</div>
-  <div class="info_container">
-    <div class="info_column">
-      <p><strong>Name:</strong> COTECH</p>
-      <p><strong>Legal status:</strong> S.A.R.L</p>
-      <p><strong>Date of foundation:</strong> August 1995</p>
-      <p><strong>Head office:</strong> 1 Rue 61675 Cité El Hadika 2, 2042 Tunis TUNISIA</p>
+
+  <main>
+    <div class="clear banner">
+      <img src="assets/images/couv.png" alt="Cover Image" class="cover-image">
+      <div class="image-overlay">
+        <div class="overlay-content">
+          <p>
+            <span class="cotech">C</span>otech is a Tunisian/Belgian company specialized in the study, development and realization of industrial automation projects;
+            also we fulfill regulation systems for production chains on PLC basis. We offer practical consultancy based on 30 years of experience
+            in automation of industrial production processes.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="info_column">
-      <p><strong>Number of employees:</strong> 10 Persons</p>
-      <p><strong>Capital:</strong> 100,000 DT</p>
-      <p><strong>Export turnover:</strong> 30%</p>
+  </main>
+  <div class="about">
+  <p><strong>about us</strong></p>
+    <hr class="trait">
+    </div>
+  <div class="icon-section">
+    
+    <div class="icon-container">
+      <img src="assets/images/assistancee.png" alt="efficient" class="icon">
+      <div >
+      <p class="icon-text">Advanced Automation</p>
+      <p class="icon-description">We can give you assistance with weighing, dosing and automation so that you can maintain your competitive position</p>
+      </div>
+      <div *ngIf="showbutton"><button class="seemore-button" (click)="toggleshowbarre1()">Learn More</button></div>
+      <div *ngIf="showbarre1">
+      <p class="icon-description">Cotech and her specialized partners (weighing and automation) offer solutions of top technology and high precision.</p>  
+       
+      <div ><button class="seemore-button" (click)="toggleshowbarre1()">see less</button></div>
+      </div>
+    </div>
+    
+    <div class="icon-container">
+      <img src="assets/images/effichent.jpg" alt="efficient" class="icon">
+      <div >
+      <p class="icon-text">Advanced Automation</p>
+      <p class="icon-description">We use the data 'weight' (basic information) to control your material stream and process.</p>
+      </div>
+      <br>
+      <div *ngIf="showbutton2"><button class="seemore-button" (click)="toggleshowbarre2()">Learn More</button></div>
+      <div *ngIf="showbarre2">
+      <p class="icon-description"> Automation can give you faster, safer production processes which are more efficient, flexible, reliable, sustainable and cost-effective. Working with Cotech also means you can be sure of the project content, cost, delivery dates and end result.</p>  
+       
+      <div ><button class="seemore-button" (click)="toggleshowbarre2()">see less</button></div>
+      </div>
+    </div>
+    
+    <div class="icon-container">
+      <img src="assets/images/global.png" alt="efficient" class="icon">
+      <div >
+      <p class="icon-text">Global impact</p>
+      <p class="icon-description">The realizations of Cotech are adopted in Africa, Europe, America and the Middle East.</p>
+      </div>
+      <div *ngIf="showbutton3"><button class="seemore-button" (click)="toggleshowbarre3()">Learn More</button></div>
+      <div *ngIf="showbarre3">
+      <p class="icon-description"> We offer new solutions as well as renewal of existing installations.</p>  
+       
+      <div ><button class="seemore-button" (click)="toggleshowbarre3()">see less</button></div>
+      </div>
+    </div>
+    
+  </div>
+  <br>
+  <br>
+  <br>
+  <p class="middle"><strong>Company Overview</strong></p>
+  <hr class="trait">
+  <div class="info-container">
+    <div class="info-text">
+      <ul >
+        <li><strong>Name: </strong> COTECH</li>
+        <li><strong>Legal status:</strong> S.A.R.L</li>
+        <li><strong>Date of foundation:</strong> August 1995</li>
+        <li><strong> Head office:</strong> 1 Rue 61675 Cité El Hadika 2, 2042 Tunis TUNISIA</li>
+        <li><strong>Number of employees:</strong> 10 Persons</li>
+        <li><strong>Capital:</strong> 100,000 DT</li>
+        <li><strong>Export turnover:</strong> 30%</li>
+      </ul>
+    </div>
+    <div class="info-image">
+      <img src="assets/images/chart.jpg" alt="Global Image" class="global-image">
     </div>
   </div>
-  <div class="chart">
-  <h6>Organisation chart</h6>
-  <img src="assets/images/chart.jpg">
-  </div>    
+  
   <footer> 
     <div class="footer clear tahoma">
         <div class="footer_wrap">
@@ -88,7 +148,7 @@
                      <li class="divider">|</li>
                      <li><a href="">Video</a></li>
                      <li class="divider">|</li>
-                     <li><a href="">News</a></li>
+                     <li><a href="/news">News</a></li>
                      <li class="divider">|</li>
                      <li><a href="" >Newsletter</a></li>
                      <li><a href="">Contact</a></li>
