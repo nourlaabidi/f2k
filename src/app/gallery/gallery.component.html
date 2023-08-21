@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Gallery</title>
 </head>
 <body>
   <header>
@@ -37,30 +37,15 @@
     </nav>
   </header>
   <main>
-    <div class="clear banner">
-      <div class="box_skitter box_skitter_large">
-        <div class="image-slideshow">
-          <div class="image-slide-container" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex }">
-            <img [src]="image" alt="Slideshow Image">
-            <div class="image-overlay">
-              <div class="overlay-content">
-                <br><br><br><br><br><br><br><br><br>
-               <h4>---SINCE 1995---</h4>
-               <p>CO<span class="red-text">TECH</span> </p>
-               <br>
-               <button class="Gallery-button" routerLink="/gallery">Photos Gallery</button>
-              </div>
-              
-            </div>
-          </div>
-          <button class="prev-button" (click)="prevImage()"><span>&#8249;</span></button>
-          <button class="next-button" (click)="nextImage()"><span>&#8250;</span></button>
-        </div>
-      </div>
-    </div>
+<div class="my-component">
+  <div class="gallery-container">
+    <mat-tab-group>
+      <mat-tab *ngFor="let category of categories" label="{{ category }}">
+        
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
   </main>
-
 </body>
 </html>
-
-

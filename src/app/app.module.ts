@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { NewsComponent } from './news/news.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { PresentationComponent } from './presentation/presentation.component';
     HomeComponent,
     ServicesComponent,
     NewsComponent,
-    PresentationComponent
+    PresentationComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTabsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
