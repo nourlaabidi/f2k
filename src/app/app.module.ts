@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +11,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { MatIconModule } from '@angular/material/icon';
     ServicesComponent,
     NewsComponent,
     PresentationComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     MatTabsModule,
     MatIconModule,
   ],

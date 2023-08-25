@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,6 @@
     <div class="top-bar">
       <div class="contact-info">
         <p><span class="red-text">Phone:</span> +216 71 501 080</p>
-        
       </div>
       <div class="social-links">
         <p><span class="red-text">Email:</span> cotech@planet.tn</p>
@@ -36,16 +36,146 @@
         </div>
     </nav>
   </header>
-  <main>
-<div class="my-component">
-  <div class="gallery-container">
-    <mat-tab-group>
-      <mat-tab *ngFor="let category of categories" label="{{ category }}">
-        
-      </mat-tab>
-    </mat-tab-group>
-  </div>
-</div>
-  </main>
-</body>
-</html>
+  
+    
+    <div class="my-component">
+      <div class="page-header">
+        <h1>Photo Gallery</h1>
+      </div>
+      
+      <div class="bar">
+       <div class="category-button" *ngIf="showbutton1"><a class="cat-button" (click)="toggleshowimages1()">Water treatment</a></div>
+       <div class="category-button" *ngIf="showbutton2"><a class="cat-button" (click)="toggleshowimages2()">Food Industry</a></div> 
+       <div class="category-button" *ngIf="showbutton3"><a class="cat-button" (click)="toggleshowimages3()">Concrete</a></div>
+       <div class="category-button" *ngIf="showbutton4"><a class="cat-button" (click)="toggleshowimages4()">Foundry</a></div>
+       <div class="category-button" *ngIf="showbutton5"><a class="cat-button" (click)="toggleshowimages5()">Chemistry</a></div>
+       <div class="category-button" *ngIf="showbutton6"><a class="cat-button" (click)="toggleshowimages6()">Various</a></div>
+      </div>
+    <div *ngIf="showimage1">
+     <div class="image-container">
+      <br>
+      <div class="image-carousel-container">
+       <div class="image-carousel">
+        <img src="assets/water/a.jpg">
+        <img src="assets/water/b.jpg">
+        <img src="assets/water/c.jpg">
+        <img src="assets/water/d.jpg">
+        <img src="assets/water/e.jpg">
+        <img src="assets/water/f.jpg">
+        <img src="assets/water/g.jpg">
+        <img src="assets/water/h.jpg">
+        <img src="assets/water/i.jpg">
+        <img src="assets/water/j.jpg">
+        <img src="assets/water/k.jpg">
+        <img src="assets/water/l.jpg">
+        <img src="assets/water/m.jpg">
+        <img src="assets/water/n.jpg">
+        <img src="assets/water/o.jpg">
+        <img src="assets/water/p.jpg">
+        <img src="assets/water/q.jpg">
+        <img src="assets/water/r.jpg">
+        <img src="assets/water/s.jpg">
+        <img src="assets/water/t.jpg">
+        <img src="assets/water/u.jpg">
+        <img src="assets/water/v.jpg">
+        <img src="assets/water/w.jpg">
+        <img src="assets/water/x.jpg">
+        <img src="assets/water/y.jpg">
+        <img src="assets/water/z.jpg">
+        <img src="assets/water/aa.jpg">
+        <img src="assets/water/bb.jpg">
+        <img src="assets/water/cc.jpg">
+        <img src="assets/water/dd.jpg">
+        <img src="assets/water/ee.jpg">
+        <img src="assets/water/ff.jpg">
+        <img src="assets/water/gg.jpg">
+        <img src="assets/water/hh.jpg">
+        <img src="assets/water/ii.jpg">
+        <img src="assets/water/jj.jpg">
+        <img src="assets/water/kk.jpg">
+        <img src="assets/water/ll.jpg">
+        <img src="assets/water/mm.jpg">
+        <img src="assets/water/oo.jpg">
+        <img src="assets/water/pp.jpg">
+        <img src="assets/water/qq.jpg">
+        <img src="assets/water/rr.jpg">
+        <img src="assets/water/ss.jpg">
+        </div>
+      </div>
+     </div>
+     </div>
+     <div *ngIf="showimage2">
+       <div class="image-container">
+       <br>
+         <div class="image2">
+           <div class="image-carousel">
+              <img src="assets/industry/tt.jpg" >
+              <img src="assets/industry/uu.jpg">
+              <img src="assets/industry/vv.jpg">
+           </div>
+          </div>
+          </div>
+        </div>
+        <div *ngIf="showimage3"> 
+          <div class="image-container">
+            <br>
+          <div class="image-carousel-container">
+            <div class="image-carousel">
+             <img src="assets/concrete/a.jpg">
+             <img src="assets/concrete/b.jpg">
+             <img src="assets/concrete/c.jpg">
+             <img src="assets/concrete/d.jpg">
+             <img src="assets/concrete/e.jpg">
+             <img src="assets/concrete/f.jpg">
+             <img src="assets/concrete/h.jpg">
+             <img src="assets/concrete/i.jpg">
+             <img src="assets/concrete/j.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div *ngIf="showimage4">
+          <div class="image-container">
+            <br>
+           <div class="image2">
+            <div class="image-carousel"> 
+              <img src="assets/foundry/k.jpg">
+              <img src="assets/foundry/l.jpg">
+              <img src="assets/foundry/m.jpg">
+             </div>
+           </div>
+          </div>
+        </div>
+        <div *ngIf="showimage5"> 
+          <div class="image-container">
+            <br>
+          <div class="image5">
+            <div class="image-carousel">
+          <img src="assets/chemistry/n.jpg">
+          <img src="assets/chemistry/o.jpg">
+          <img src="assets/chemistry/p.jpg">
+          <img src="assets/chemistry/q.jpg">
+          <img src="assets/chemistry/r.jpg">
+        </div>
+        </div>
+        </div>
+        </div>
+        <div *ngIf="showimage6"> 
+          <div class="image-container">
+            <br>
+           <div class="image5">
+            <div class="image-carousel">
+              <img src="assets/various/aa.jpg">
+              <img src="assets/various/bb.jpg">
+              <img src="assets/various/cc.jpg">
+              <img src="assets/various/dd.jpg">
+              <img src="assets/various/ee.jpg">
+            </div>
+           </div>
+          </div>
+        </div>
+    </div> 
+  
+
+
