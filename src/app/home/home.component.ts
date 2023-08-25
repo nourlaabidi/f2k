@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { trigger, state,transition, animate, style } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -6,29 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  images: string[] = ['assets/images/photo2.jpg', 'assets/images/photo.jpg', 'assets/images/photo3.jpg', 'assets/images/photo4.jpg', 'assets/images/photo5.jpg', 'assets/images/photo6.jpg', ]; // Add your image paths
-  currentImageIndex: number = 0;
-
-  get currentImage(): string {
-    return this.images[this.currentImageIndex];
+    /******************************/
+    images: string[] = ['assets/images/photo20.jpg', 'assets/images/photo10.jpg', 'assets/images/photo30.jpg', 'assets/images/photo40.jpg', 'assets/images/photo50.jpg', 'assets/images/photo60.jpg', ]; // Add your image paths
+    currentImageIndex: number = 0;
+  
+    get currentImage(): string {
+      return this.images[this.currentImageIndex];
+    }
+  
+    prevImage() {
+      this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
+      
+    }
+  
+    nextImage() {
+  
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+    }
+    
+  changeImage(index: number) {
+    this.currentImageIndex = index;
   }
-
-  prevImage() {
-    this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
-  }
-
-  nextImage() {
-    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
-  }
-  ngOnInit(): void {
-    this.startAutoImageChange(); // Appeler la méthode au démarrage du composant
-  }
-
-  private startAutoImageChange() {
-    setInterval(() => {
-      this.nextImage();
-    }, 5000); // Changer toutes les 5 secondes
   }
   
-}
-

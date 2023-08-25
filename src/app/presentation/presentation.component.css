@@ -6,7 +6,7 @@
   margin-left: 42%;
 }
 .top-bar {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.548);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,6 @@
   padding: 10px 20px;
   width: 100%;
   height: 60px;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000; 
@@ -34,21 +33,81 @@
   text-decoration: none;
   margin-left: 10px;
 }
-.a{
+.social-links  .a{
   margin-left: 200px;
   margin-top: 204px;
   font-size: 300px;
 }
-i{
+.social-links  i{
   color: red;
+}
+/*********/
+
+.navbar{
+    width: 100%;
+    padding: 10px 0;
+    height: 50px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid white;
+    background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
+  }
+
+  .topbarre img{
+      height: 70px;
+  }
+
+  .name{
+    margin-top: 10px;
+    margin-left: 100px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  .name h1 {
+    font-weight: bold;
+  }
+
+  .icons{
+    margin-left:160px;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;  
+
 }
 
 
+  .container-fluid{
+    justify-content: flex-start;
+      display: flex;
+      align-items:center;
+  }
+  .links{
+    margin-left: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      transition: transform 0.3s;
+  
+  }
+  .links a{
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      color: lightgrey;
+  }
+#presentation{
+
+    color:white;
+    cursor: pointer;
+}
+
 .presentation-container {
-  margin-top: 90px ; 
+  
   margin-left:16%;
   margin-right: 16%;
-    padding: 40px 0;
+  
   }
   
   .presentation-title {
@@ -84,9 +143,6 @@ i{
   .info-image {
     text-align: center; /* Centrer l'image horizontalement */
   }
-  
-  
-  
   .global-image {
     width: 100%; /* L'image prendra toute la largeur disponible */
     height: auto;
@@ -104,57 +160,11 @@ i{
     margin-bottom: 8px;
   }
 
-  
-  .navbar{
-    margin-top: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    padding: 10px 0;
-    z-index: 1000; 
-    height: 90px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid rgba(34,41,47,.125);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  .navbar img{
-      height: 70px;
-      margin-left: 70px;
-  }
-  .container-fluid{
-      display: flex;
-      align-items: flex-start;
-  }
-  .col2{
-      margin-top: 20px;
-  }
-  .logo{
-      margin-left: 20px;
-      margin-top: 20px;
-  }
-  .links{
-      display: flex;
-      gap: 60px;
-      margin-left: 100px;
-      transition: transform 0.3s;
-  
-  }
-  .links a{
-      text-decoration: none;
-      font-size: 17px;
-      color:black;
-  }
-
-  
   .clear {
     clear: both;
    }
    .banner {
-       padding-top: 21px;
+      
        height: 500px; 
        background-color: grey;
    }
@@ -166,7 +176,7 @@ i{
    }
    .footer {
     background: grey ;
-    height: 100px;
+    height: 90px;
     margin-top: 100px;
     padding-top: 24px;
 }
@@ -236,15 +246,15 @@ i{
 
 .banner {
   position: relative;
-  padding-top: 150px;
+ 
   height: 100%; 
   background-color: grey;
 }
 
 .cover-image {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 450px;
+  margin-top: 0px;
 }
 
 .image-overlay {
@@ -253,14 +263,13 @@ i{
   left: 0;
   width: 100%;
   height: 550px;
-  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .overlay-content {
-  margin-top: 200px;
+  margin-top: 40px;
   text-align: center;
   padding: 40px;
   color: white;
@@ -268,7 +277,7 @@ i{
 }
 
 .overlay-content p {
-  margin: 0;
+  margin-top: 0px;
   font-size: 16px; /* Ajustez la taille de police selon vos préférences */
 }
 .cotech {
@@ -325,6 +334,7 @@ i{
 .info-text li{
   color: #333;
 }
+
 .trait {
   width: 140px; /* Largeur du trait */
   height: 2px; /* Hauteur du trait */

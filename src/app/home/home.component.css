@@ -6,7 +6,7 @@
   margin-left: 42%;
 }
 .top-bar {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.548);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,6 @@
   padding: 10px 20px;
   width: 100%;
   height: 60px;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000; 
@@ -34,199 +33,275 @@
   text-decoration: none;
   margin-left: 10px;
 }
-.a{
+.social-links  .a{
   margin-left: 200px;
   margin-top: 204px;
   font-size: 300px;
 }
-i{
+.social-links  i{
   color: red;
 }
-/* Nav bar */
+/*********/
+
 .navbar{
-  margin-top: 60px;
-  position: fixed;
-  top: 0;
-  left: 0;
+    width: 100%;
+    padding: 10px 0;
+    height: 50px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid white;
+    
+  }
+
+  .topbarre img{
+      height: 70px;
+  }
+
+  .name{
+    margin-top: 10px;
+    margin-left: 100px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  .name h1 {
+    font-weight: bold;
+  }
+
+  .icons{
+    margin-left:160px;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;  
+
+}
+
+
+  .container-fluid{
+    justify-content: flex-start;
+      display: flex;
+      align-items:center;
+  }
+  .links{
+    margin-left: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      transition: transform 0.3s;
+  
+  }
+  .links a{
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      color: lightgrey;
+  }
+#home{
+
+    color:white;
+    cursor: pointer;
+}
+
+body{
+    height: 130vh;
+      background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
+    
+}
+
+.page-content{
   width: 100%;
-  color: #fff;
-  padding: 10px 0;
-  z-index: 1000; 
-  height: 90px;
+  display: flex;
+  flex-direction: row;
+}
+.presentation{
+  margin-top: 70px;
+  width: 500px;
+
+  color: wheat;
+}
+
+.presentation h1{
+  font-size:42px;
+  margin-left: 100px;
+}
+.gallery{
+  margin-left: 100px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 120px;
+  color: rgb(170, 22, 22);
+  font-size: 16px;
+  font-weight: 500;
+}
+.gallery:hover{
+  background-color:white;
+}
+
+.image-slideshow{
+  position: relative;
+  background-color: #333;
+  margin-top: 40px;
+  margin-left: 400px;
+  height: 450px;
   display: flex;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid rgba(34,41,47,.125);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-.navbar img{
-    height: 70px;
-    margin-left: 70px;
-}
-.container-fluid{
-    display: flex;
-    align-items: flex-start;
-}
-.col2{
-    margin-top: 20px;
-}
-.logo{
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.links{
-    display: flex;
-    gap: 60px;
-    margin-left: 100px;
-    transition: transform 0.3s;
+  justify-content: center;
 
-}
-.links a{
-    text-decoration: none;
-    font-size: 17px;
-    color:black;
-}
-
-/* body */
-
-.clear {
- clear: both;
-}
-.banner {
-    padding-top: 21px;
-    height: 100%; 
-    background-color: grey;
-}
-.wrap {
-    width: 100%;
-    height: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
-.box_skitter_large {
-    width: 100%;
-    height: 900px;
-}
-.box_skitter {
-    position: relative;
-    width: 100%;
-    height: 900px;
-    background: #000
-}
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 20px; /* Adjust font size */
-}
-
-.prev-button {
-  left: 0;
   
 }
-
-.next-button {
-  right: 0;
-}
-  
 .image-slide-container {
-  position: relative;
   display: none;
-  
-  
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.13);
+  transition: background-color 0.3s ease;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px;
+    transition: transform 5s ease;
 }
-  
+
   .image-slide-container.active {
     display: block;
   }
   
   .image-slide-container img {
-    width: 100%;
-    height: 100%;
+    width: 700px;
+    height: 400px;
     display: block;
+    
   }
-  
-  .image-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .contactus{
+    margin-top: 100px;
+    height: 200px;
+  }
+
+/*buttons*/
+  .prev-button {
+    left:0;
     
   }
   
-  .overlay-content {
-    text-align: center;
-    padding: 20px;
-    color: white;
+  .next-button {
+    right: 0;
   }
-  
-  .overlay-content p {
-    margin: 0;
-    font-size: 70px;
-    font-weight: 500;
-  }
-  
-  
- 
-  .Gallery-button {
-    background-color:gray;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+.prev-button,
+.next-button {
 
-  .Gallery-button:hover {
-    opacity: 0.8;
-  }
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 25px; /* Adjust font size */
+}  
+
+
+/* Add your CSS rules for the dots */
+.image-navigation-dots {
+  position: absolute;
+  top: 360px; /* Adjust the top position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the dots */
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.image-navigation-dots .active {
+  background-color: #717171;
+}
+
   
-  .links a:hover {
-    border-color: grey; 
-    transform: scale(1.05); 
-   
-  
-  }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   /************************footer*************************************/
 
 
 
+ .footer {
+  background: grey ;
+  height: 90px;
+  margin-top: 300px;
+  padding-top: 24px;
+}
+.footer {
+  color: white;
+  font-size: 11.4px;
+}
+.tahoma {
+  font-family: "Tahoma",Arial,Helvetica, sans-serif;
+}
+.footer_wrap {
+margin-left: 16%;
+margin-right: 16%;
+overflow: hidden;
+}
+.float_left {
+  float: left;
+}
+.bottom_nav {
+  width: 489px;
+  
+}
+.float_right {
+  float: right;
+  
+  
+}
+.copy {
+  text-align:right;
+}
+.copy a {
+  color: white; 
+  
+}
+.navigation-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+}
+.navigation-list li {
+  margin-right: 10px;
+}
+.divider {
+  margin: 0 5px;
+  color: #999;
+}
 
+.navigation-list a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
 
-
+.navigation-list a:hover {
+  color: white;
+}
+.section-title {
+font-size: 24px;
+margin-bottom: 20px;
+}
+  
+  
+  
+  
+  
+  
+  
