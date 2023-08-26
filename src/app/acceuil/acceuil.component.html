@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <div class="icons">
+            <a href="https://twitter.com/cotech" target="_blank"><i id="twitter"class="bi bi-twitter"></i></a>      
+            <a href="https://facebook.com/cotech" target="_blank"><i id="facebook"class="bi bi-facebook"></i></a>
+            <a href="https://gmail.com/cotech" target="_blank"><i id="gmail"class="bi bi-google"></i> </a>
+            </div>
+    </head>
+    <body > 
+        <div class="top-bar">
+            <div class="contact-info">
+              <p><span class="red-text">Téléphone</span> +216 71 501 080</p>
+              
+            </div>
+            <div class="social-links">
+              <p><span class="red-text">Email:</span> cotech@planet.tn</p>
+              <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
+              <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
+            </div>
+          </div>
+        <div class="navbar">    
+            <div class="container-fluid">
+                <div class="name"><h1>Cotech</h1></div>
+                <div class="links">
+                    <a id="home"class="nav-link active" href="/acceuil">Acceuil</a>
+                    <a class="nav-link" href="fpresentation">Présentation</a>
+                    <a class="nav-link" href="#">sérvices</a>
+                    <a class="nav-link" href="/realisation">Réalisation</a>
+                    <a class="nav-link" href="#">Cértificates</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </div>  
+        <div class="page-content">
+            <div class="presentation">
+                <h1>Renforcer les Industries grâce à l'Automatisation de Précision et à l'Expertise Consei</h1>
+                 <div><button [routerLink]="['/fgallery']" class="gallery"> photos</button>  </div>
+                    
+            </div>
+            <div class="image-slideshow">
+                <div class="image-slide-container" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex}">
+                    
+                    <div class="photo"><img [src]="image" alt="Slideshow Image">
+                        <div class="image-navigation-dots">
+                            <span 
+                              class="dot" 
+                              *ngFor="let image of images; let i = index" 
+                              [ngClass]="{ 'active': i === currentImageIndex }"
+                              (click)="changeImage(i)"
+                            ></span>
+                          </div>
+    
+                    </div>
+                    <button id="prev"class="prev-button" (click)="prevImage()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                    <button class="next-button" (click)="nextImage()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                </div>
+            </div>
+        </div>
+            
+            <footer> 
+              <div class="language-buttons">
+                <button [routerLink]="['/acceuil']" >Français</button>
+                <button [routerLink]="['/home']">English</button>
+             </div>
+             
+                <div class="footer clear tahoma">
+                    <div class="footer_wrap">
+                        <div class="float_left bottom_nav">
+                                <ul class="navigation-list">
+                                 <li><a href="/acceuil">acceuil</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="/presentation">Présentation</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="/services">Sérvices</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="">Références</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="">Activités</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href=""> Catalogue</a></li>                     
+                                 <li><a href="">Equipement</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="" >Cértificats</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="">Clients</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="/gallery">Photos</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="">Vidéo</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="/news">Actualités</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="" >Newsletter</a></li>
+                                 <li class="divider">|</li>
+                                 <li><a href="/contactus">Contact</a></li>
+                                </ul>
+                        </div>
+                        <div class="float_right ">
+                          <div class="copy">
+                            Copyright © 2013  www.cotechplanet.net 
+                            <span>Powered by <a href="" target="_blank">CRESUS</a></span>
+                          </div>
+                        </div>
+                      
+                    </div>
+                </div>
+              </footer>
+        
+    
+    </body>
+    </html>

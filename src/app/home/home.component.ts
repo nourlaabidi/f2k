@@ -1,5 +1,4 @@
 import { Component} from '@angular/core';
-import { trigger, state,transition, animate, style } from '@angular/animations';
 
 @Component({
   selector: 'app-home',

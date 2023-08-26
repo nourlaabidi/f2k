@@ -41,11 +41,11 @@
     <div class="page-content">
         <div class="presentation">
             <h1>Empowering Industries Through Precision Automation and Expert Consultacy</h1>
-             <div><button class="gallery" [routerLink]="['/gallery']">Photo Gallery</button>  </div>
+             <div><button [routerLink]="['/gallery']" class="gallery">Photo Gallery</button>  </div>
                 
         </div>
         <div class="image-slideshow">
-            <div class="image-slide-container" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex}"[@imageFade]="currentImageIndex">
+            <div class="image-slide-container" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex}">
                 
                 <div class="photo"><img [src]="image" alt="Slideshow Image">
                     <div class="image-navigation-dots">
@@ -71,7 +71,7 @@
                             <ul class="navigation-list">
                              <li><a href="/home">Home</a></li>
                              <li class="divider">|</li>
-                             <li><a href="">Presentation</a></li>
+                             <li><a href="/presentation">Presentation</a></li>
                              <li class="divider">|</li>
                              <li><a href="/services">Services</a></li>
                              <li class="divider">|</li>
@@ -93,7 +93,7 @@
                              <li><a href="/news">News</a></li>
                              <li class="divider">|</li>
                              <li><a href="" >Newsletter</a></li>
-                             <li><a href="">Contact</a></li>
+                             <li><a href="/contactus">Contact</a></li>
                             </ul>
                     </div>
                     <div class="float_right ">

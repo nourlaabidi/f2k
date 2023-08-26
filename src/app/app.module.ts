@@ -12,6 +12,13 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { ContactusComponent } from './contactus/contactus.component';
+import { RealisationComponent } from './realisation/realisation.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+import { FpresentationComponent } from './fpresentation/fpresentation.component';
+import { FserviceComponent } from './fservice/fservice.component';
+import { FcontactComponent } from './fcontact/fcontact.component';
+import { FgalleryComponent } from './fgallery/fgallery.component';
+import { ErealisationComponent } from './erealisation/erealisation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,14 @@ import { ContactusComponent } from './contactus/contactus.component';
     NewsComponent,
     PresentationComponent,
     GalleryComponent,
-    ContactusComponent
+    ContactusComponent,
+    RealisationComponent,
+    AcceuilComponent,
+    FpresentationComponent,
+    FserviceComponent,
+    FcontactComponent,
+    FgalleryComponent,
+    ErealisationComponent
   ],
   imports: [
     BrowserModule,

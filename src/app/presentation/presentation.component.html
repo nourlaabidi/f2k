@@ -11,18 +11,20 @@
         </div>
 </head>
 <body > 
-    <div class="top-bar">
-        <div class="contact-info">
-          <p><span class="red-text">Phone:</span> +216 71 501 080</p>
-          
-        </div>
-        <div class="social-links">
-          <p><span class="red-text">Email:</span> cotech@planet.tn</p>
-          <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
-          <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
-        </div>
+  <div class="top-bar">
+    <div class="sous-top-bar">
+      <div class="contact-info">
+        <p><span class="red-text">Phone:</span> +216 71 501 080</p>
+        
       </div>
+      <div class="social-links">
+        <p><span class="red-text">Email:</span> cotech@planet.tn</p>
+        <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
+        <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
+      </div>
+    </div>
+  </div>
     <div class="navbar">    
         <div class="container-fluid">
             <div class="name"><h1>Cotech</h1></div>
@@ -32,15 +34,14 @@
                 <a class="nav-link" href="/services">services</a>
                 <a class="nav-link" href="/realisation">Realisation</a>
                 <a class="nav-link" href="#">Certificates</a>
-                <a class="nav-link" href="/contactus">Contact</a>
+                <a class="nav-link" href="/contact">Contact</a>
             </div>
         </div>
     </div>  
 
   
     <div class="clear banner">
-      <img src="assets/images/back.jpg" alt="Cover Image" class="cover-image">
-      <div class="image-overlay">
+      
         <div class="overlay-content">
           <p>
             <span class="cotech">C</span>otech is a Tunisian/Belgian company specialized in the study, development and realization of industrial automation projects;
@@ -48,55 +49,54 @@
             in automation of industrial production processes.
           </p>
         </div>
-      </div>
+      
     </div>
   
   <div class="about">
-  <p><strong>about us</strong></p>
+  <p><strong>About us</strong></p>
     <hr class="trait">
     </div>
   <div class="icon-section">
     
-    <div class="icon-container">
-      <img src="assets/images/assistancee.png" alt="efficient" class="icon">
+    <div class="icon-container1"  (click)="toggleshowbarre1()">
+      <img src="assets/images/assistance.png" alt="efficient" class="icon">
       <div >
       <p class="icon-text">Advanced Automation</p>
       <p class="icon-description">We can give you assistance with weighing, dosing and automation so that you can maintain your competitive position</p>
       </div>
-      <div *ngIf="showbutton"><button class="seemore-button" (click)="toggleshowbarre1()">Learn More</button></div>
+      <div *ngIf="showbutton"><h6>Learn More</h6></div>
       <div *ngIf="showbarre1">
       <p class="icon-description">Cotech and her specialized partners (weighing and automation) offer solutions of top technology and high precision.</p>  
        
-      <div ><button class="seemore-button" (click)="toggleshowbarre1()">see less</button></div>
       </div>
     </div>
     
-    <div class="icon-container">
-      <img src="assets/images/effichent.jpg" alt="efficient" class="icon">
+    <div class="icon-container2" (click)="toggleshowbarre2()">
+      <img src="assets/images/adv-auto.png" alt="efficient" class="icon">
       <div >
       <p class="icon-text">Advanced Automation</p>
       <p class="icon-description">We use the data 'weight' (basic information) to control your material stream and process.</p>
       </div>
-      <br>
-      <div *ngIf="showbutton2"><button class="seemore-button" (click)="toggleshowbarre2()">Learn More</button></div>
+      <div *ngIf="showbutton2"><h6>Learn More</h6></div>
+      
       <div *ngIf="showbarre2">
       <p class="icon-description"> Automation can give you faster, safer production processes which are more efficient, flexible, reliable, sustainable and cost-effective. Working with Cotech also means you can be sure of the project content, cost, delivery dates and end result.</p>  
        
-      <div ><button class="seemore-button" (click)="toggleshowbarre2()">see less</button></div>
+      
       </div>
     </div>
     
-    <div class="icon-container">
-      <img src="assets/images/global.png" alt="efficient" class="icon">
+    <div class="icon-container3" (click)="toggleshowbarre3()">
+      <img src="assets/images/global-impact.png" alt="efficient" class="icon">
       <div >
       <p class="icon-text">Global impact</p>
       <p class="icon-description">The realizations of Cotech are adopted in Africa, Europe, America and the Middle East.</p>
       </div>
-      <div *ngIf="showbutton3"><button class="seemore-button" (click)="toggleshowbarre3()">Learn More</button></div>
+      <div *ngIf="showbutton3"><h6>Learn More</h6></div>
       <div *ngIf="showbarre3">
       <p class="icon-description"> We offer new solutions as well as renewal of existing installations.</p>  
        
-      <div ><button class="seemore-button" (click)="toggleshowbarre3()">see less</button></div>
+     
       </div>
     </div>
     
@@ -167,4 +167,3 @@
   </footer>
 </body>
 </html> 
-

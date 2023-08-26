@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <div class="icons">
+        <a href="https://twitter.com/cotech" target="_blank"><i id="twitter"class="bi bi-twitter"></i></a>      
+        <a href="https://facebook.com/cotech" target="_blank"><i id="facebook"class="bi bi-facebook"></i></a>
+        <a href="https://gmail.com/cotech" target="_blank"><i id="gmail"class="bi bi-google"></i> </a>
+        </div>
+</head>
+<body > 
+  <div class="top-bar">
+    <div class="sous-top-bar">
+      <div class="contact-info">
+        <p><span class="red-text">Téléphone:</span> +216 71 501 080</p>
+        
+      </div>
+      <div class="social-links">
+        <p><span class="red-text">Email:</span> cotech@planet.tn</p>
+        <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
+        <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
+      </div>
+    </div>
+  </div>
+    <div class="navbar">    
+        <div class="container-fluid">
+            <div class="name"><h1>Cotech</h1></div>
+            <div class="links">
+                <a class="nav-link" href="/acceuil">Acceuil</a>
+                <a id="presentation"class="nav-link active" href="/fpresentation">Présentation</a>
+                <a class="nav-link" href="fservice">sérvices</a>
+                <a class="nav-link" href="/realisation">Réalisation</a>
+                <a class="nav-link" href="#">Cértificates</a>
+                <a class="nav-link" href="fcontact">Contact</a>
+            </div>
+        </div>
+    </div>  
+
+  
+    <div class="clear banner">
+      
+        <div class="overlay-content">
+          <p>
+            <span class="cotech">C</span>otech est une entreprise tunisienne/belge spécialisée dans l'étude, le développement et la réalisation de projets d'automatisation industrielle ; nous concevons également des systèmes de régulation pour des chaînes de production sur la base de PLC. Nous offrons des conseils pratiques basés sur 30 ans d'expérience dans l'automatisation des processus de production industrielle.
+          </p>
+        </div>
+      
+    </div>
+  
+  <div class="about">
+  <p><strong>A propos</strong></p>
+    <hr class="trait">
+    </div>
+  <div class="icon-section">
+    
+    <div class="icon-container1"  (click)="toggleshowbarre1()">
+      <img src="assets/images/assistance.png" alt="efficient" class="icon">
+      <div >
+        <p class="icon-text">Automatisation Avancée</p>
+        <p class="icon-description">Nous pouvons vous fournir de l'assistance en matière de pesage, de dosage et d'automatisation afin que vous puissiez maintenir votre position concurrentielle.</p>
+        </div>
+        <div *ngIf="showbutton"><h6>En savoir plus</h6></div>
+        <div *ngIf="showbarre1">
+        <p class="icon-description">Cotech et ses partenaires spécialisés (pesage et automatisation) offrent des solutions de haute technologie et de haute précision.</p>
+        </div>
+        
+    </div>
+    
+    <div class="icon-container2" (click)="toggleshowbarre2()">
+      <img src="assets/images/adv-auto.png" alt="efficient" class="icon">
+      <div >
+        <p class="icon-text">Automatisation Avancée</p>
+        <p class="icon-description">Nous utilisons les données de 'poids' (informations de base) pour contrôler le flux de votre matériau et votre processus.</p>
+        </div>
+        <div *ngIf="showbutton2"><h6>En savoir plus</h6></div>
+        <div *ngIf="showbarre2">
+        <p class="icon-description">L'automatisation peut vous offrir des processus de production plus rapides, plus sûrs, plus efficaces, flexibles, fiables, durables et rentables. Travailler avec Cotech signifie également que vous pouvez être sûr du contenu du projet, du coût, des dates de livraison et du résultat final.</p>
+        </div>
+    </div>        
+    
+    <div class="icon-container3" (click)="toggleshowbarre3()">
+      <img src="assets/images/global-impact.png" alt="efficient" class="icon">
+      <div >
+        <p class="icon-text">Impact Mondial</p>
+        <p class="icon-description">Les réalisations de Cotech sont adoptées en Afrique, en Europe, en Amérique et au Moyen-Orient.</p>
+        </div>
+        <div *ngIf="showbutton3"><h6>En savoir plus</h6></div>
+        <div *ngIf="showbarre3">
+        <p class="icon-description">Nous proposons de nouvelles solutions ainsi que le renouvellement des installations existantes.</p>
+        
+     
+      </div>
+    </div>
+    
+  </div>
+  <br>
+  <br>
+  <br>
+  <p class="middle"><strong>Présentation de l'entreprise</strong></p>
+  <hr class="trait">
+  <div class="info-container">
+    <div class="info-text">
+      <ul >
+        <li><strong>Dénomination: </strong> COTECH</li>
+        <li><strong>Forme Juridique :</strong> S.A.R.L</li>
+        <li><strong>Date de création:</strong> August 1995</li>
+        <li><strong> Siège socia:</strong> 1 Rue 61675 Cité El Hadika 2, 2042 Tunis TUNISIA</li>
+        <li><strong>Number of employees:</strong> 10 Persons</li>
+        <li><strong>Nombre des employés:</strong> 100,000 DT</li>
+        <li><strong>Chiffre d’affaires à l’export :</strong> 30%</li>
+      </ul>
+    </div>
+    <div class="info-image">
+      <img src="assets/images/chart.jpg" alt="Global Image" class="global-image">
+    </div>
+  </div>
+  
+  <footer> 
+    <div class="footer clear tahoma">
+        <div class="footer_wrap">
+            <div class="float_left bottom_nav">
+                    <ul class="navigation-list">
+                     <li><a href="/acceuil">Acceuil</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/fpresentation">Présentation</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/services">Sérvices</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/realisation">Réferences</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Activités</a></li>
+                     <li class="divider">|</li>
+                     <li><a href=""> Catalogue</a></li>                     
+                     <li><a href="">Equipement</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="" >Cértificats</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Clients</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/gallery">Photos</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="">Vidéo</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/news">Actualités</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="" >Newsletter</a></li>
+                     <li class="divider">|</li>
+                     <li><a href="/contactus">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="float_right ">
+              <div class="copy">
+                Copyright © 2013  www.cotechplanet.net 
+                <span>Powered by <a href="" target="_blank">CRESUS</a></span>
+              </div>
+            </div>
+          
+        </div>
+    </div>
+  </footer>
+</body>
+</html> 
