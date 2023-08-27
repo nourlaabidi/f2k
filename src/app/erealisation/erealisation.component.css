@@ -9,7 +9,6 @@ body{
     display: flex;
     gap: 20px;
     
-    
   }
   .top-bar{
     background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);

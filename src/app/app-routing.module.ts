@@ -15,6 +15,8 @@ import { FgalleryComponent } from './fgallery/fgallery.component';
 import { ErealisationComponent } from './erealisation/erealisation.component';
 import { FnewsComponent } from './fnews/fnews.component';
 import { CertificatesComponent } from './certificates/certificates.component';
+import { ClientsComponent } from './clients/clients.component';
+import { EclientsComponent } from './eclients/eclients.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
@@ -31,6 +33,9 @@ const routes: Routes = [
   { path: 'erealisation', component: ErealisationComponent },
   { path: 'fnews', component: FnewsComponent },
   { path: 'certificates', component: CertificatesComponent },
+  { path: 'clients', component: ClientsComponent },
+  { path: 'eclients', component: EclientsComponent },
+  
 ];
 
 @NgModule({

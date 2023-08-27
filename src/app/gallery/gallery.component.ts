@@ -8,17 +8,17 @@ import { Component } from '@angular/core';
 })
 export class GalleryComponent {
   showimage1 = true;
-  showbutton1 = true;
+
   showimage2 = false;
-  showbutton2 = true;
+
   showimage3 = false;
-  showbutton3 = true;
+
   showimage4 = false;
-  showbutton4 = true;
+
   showimage5 = false;
-  showbutton5 = true;
+
   showimage6= false;
-  showbutton6 = true;
+
   
   
   toggleshowimages1() {
@@ -64,4 +64,14 @@ export class GalleryComponent {
   }
   
   
+
+  activeButton: string | null = 'button1';
+
+setActiveButton(button: string) {
+  if (this.activeButton !== button) {
+    this.activeButton = button;
+  } else {
+    this.activeButton = null; // Toggle off if the same button is clicked again
+  }
+}
 }

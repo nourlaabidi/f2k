@@ -21,6 +21,8 @@ import { FgalleryComponent } from './fgallery/fgallery.component';
 import { ErealisationComponent } from './erealisation/erealisation.component';
 import { FnewsComponent } from './fnews/fnews.component';
 import { CertificatesComponent } from './certificates/certificates.component';
+import { ClientsComponent } from './clients/clients.component';
+import { EclientsComponent } from './eclients/eclients.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { CertificatesComponent } from './certificates/certificates.component';
     FgalleryComponent,
     ErealisationComponent,
     FnewsComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    ClientsComponent,
+    EclientsComponent
   ],
   imports: [
     BrowserModule,

@@ -13,8 +13,9 @@
 </head>
 <body > 
   <div class="top-bar">
+    <div class="sous-top-bar">
       <div class="contact-info">
-        <p><span class="red-text">Phone:</span> +216 71 501 080</p>
+        <p><span class="red-text">Téléphone:</span> +216 71 501 080</p>
         <div class="lang">
           <button class="fr" routerLink="/acceuil" routerLinkActive="active" >FR</button>
           <button routerLink="/home" routerLinkActive="active" class="ag" href="/home">AN</button>
@@ -27,31 +28,32 @@
         <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
       </div>
     </div>
-  <div class="navbar"> 
-      <div class="container-fluid">
-          <div class="name"><h1>Cotech</h1></div>
-          <div class="links">
-              <a class="nav-link"  href="/home">Home</a>
-              <a class="nav-link" href="/presentation">Presentation</a>
-              <a class="nav-link" href="/services">services</a>
-              <a class="nav-link" href="/erealisation">Realisation</a>
-              <a class="nav-link" href="#">Certificates</a>
-              <a class="nav-link" href="/contactus">Contact</a>
-          </div>
-      </div>
-  </div>    
+  </div>
+    <div class="navbar">    
+        <div class="container-fluid">
+            <div class="name"><h1>Cotech</h1></div>
+            <div class="links">
+                <a class="nav-link" href="/acceuil">Acceuil</a>
+                <a id="presentation"class="nav-link active" href="/fpresentation">Présentation</a>
+                <a class="nav-link" href="/fservices">sérvices</a>
+                <a class="nav-link" href="/realisation">Réalisation</a>
+                <a class="nav-link" href="#">Cértificats</a>
+                <a class="nav-link" href="/fcontact">Contact</a>
+            </div>
+        </div>
+    </div>   
     <div class="my-component">
       <div class="page-header">
         <h1>Photo Gallery</h1>
       </div>
       
       <div class="bar">
-       <div class="category-button" *ngIf="showbutton1"><a class="cat-button nav-link active" (click)="toggleshowimages1()">Water treatment</a></div>
-       <div class="category-button" *ngIf="showbutton2"><a class="cat-button nav-link active" (click)="toggleshowimages2()">Food Industry</a></div> 
-       <div class="category-button" *ngIf="showbutton3"><a class="cat-button nav-link active" (click)="toggleshowimages3()">Concrete</a></div>
-       <div class="category-button" *ngIf="showbutton4"><a class="cat-button nav-link active" (click)="toggleshowimages4()">Foundry</a></div>
-       <div class="category-button" *ngIf="showbutton5"><a class="cat-button nav-link active" (click)="toggleshowimages5()">Chemistry</a></div>
-       <div class="category-button" *ngIf="showbutton6"><a class="cat-button nav-link active" (click)="toggleshowimages6()">Various</a></div>
+       <div class="category-button" (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'" (click)="toggleshowimages1()"> Water treatment</div>
+       <div class="category-button" (click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'" (click)="toggleshowimages2()">Food Industry</div> 
+       <div class="category-button" (click)="setActiveButton('button3')" [class.active]="activeButton === 'button3'" (click)="toggleshowimages3()">Concrete</div>
+       <div class="category-button" (click)="setActiveButton('button4')" [class.active]="activeButton === 'button4'" (click)="toggleshowimages4()">Foundry</div>
+       <div class="category-button" (click)="setActiveButton('button5')" [class.active]="activeButton === 'button5'" (click)="toggleshowimages5()">Chemistry</div>
+       <div class="category-button" (click)="setActiveButton('button6')" [class.active]="activeButton === 'button6'" (click)="toggleshowimages6()">Various</div>
       </div>
     <div *ngIf="showimage1">
      <div class="image-container">
@@ -152,7 +154,7 @@
         <div *ngIf="showimage5"> 
           <div class="image-container">
             <br>
-          <div class="image5">
+          <div class="image-carousel-container">
             <div class="image-carousel">
           <img src="assets/chemistry/n.jpg">
           <img src="assets/chemistry/o.jpg">
@@ -166,7 +168,7 @@
         <div *ngIf="showimage6"> 
           <div class="image-container">
             <br>
-           <div class="image5">
+          <div class="image-carousel-container">
             <div class="image-carousel">
               <img src="assets/various/aa.jpg">
               <img src="assets/various/bb.jpg">
@@ -223,5 +225,3 @@
     </div>
 </body>
   
-
-

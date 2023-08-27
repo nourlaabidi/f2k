@@ -6,7 +6,10 @@
   
   
 }
-.top-bar {
+.top-bar{
+  background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
+}
+.sous-top-bar {
   background-color: rgba(51, 51, 51, 0.548);
   color: white;
   display: flex;
@@ -23,9 +26,7 @@
 .red-text {
   color: red;
 }
-
-
-.contact-information{
+.top-bar .contact-info{
 
   width: 800px;
   align-items: center;
@@ -33,7 +34,7 @@
   flex-direction: row;
   gap: 50px;
 }
-.contact-information .lang{
+.top-bar .contact-info .lang{
   width: 150px;
   height: 60px;
   display: flex;
@@ -44,7 +45,7 @@
   
   
 }
-.contact-information .lang .fr{
+.top-bar .contact-info .lang .fr{
   background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(160, 160, 160) 90%);
   border-radius: 5px;
   border: none;
@@ -53,7 +54,7 @@
   height: 27px;
   font-weight: bold;
 }
-.contact-information .lang .ag{
+.top-bar .contact-info .lang .ag{
   background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
   color: white;
   border: none;
@@ -65,15 +66,16 @@
   }
 
 
-  .contact-information .lang button:hover{
+  .top-bar .contact-info .lang button:hover{
     transform:scale(1.05)
   }
 
 
-.contact-information p {
+  .top-bar .contact-info p {
   margin: 0;
 }
-.contact-information p {
+
+.top-bar .contact-info p {
   margin: 0;
 }
 
@@ -238,7 +240,7 @@ margin-bottom: 20px;
 body {
     
     background-color: #fff;
-    line-height: 1.4;
+    line-height: 1.9;
     color: #8c8c8c;
     position: relative; }
     body:before {
@@ -256,7 +258,7 @@ body {
     color: #000; }
   
   .content {
-    padding: 3rem 0; }
+    padding: 7rem 0; }
   
   .heading {
     font-size: 2.5rem;
@@ -307,7 +309,7 @@ body {
       box-shadow: none; }
   
   .contact-wrap {
-    margin-top: 60px;
+    
     font-family: "Roboto", sans-serif;
     -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2); 
@@ -333,7 +335,8 @@ body {
 
     }
       .contact-wrap .form h3 {
-        color: #35477d;
+        color: rgb(197, 49, 49) 
+        ;
         font-size: 20px;
         margin-bottom: 30px; }
     .contact-wrap .contact-info {
