@@ -304,7 +304,7 @@
     text-align: center;
     border-radius: 5px;
     transition: transform 0.3s;
-   
+    cursor: pointer;
   }
   .icon-container2 {
     width: 300px;
@@ -315,7 +315,7 @@
     border: 1px solid #ccc;
     text-align: center;
     transition: transform 0.3s;
-   
+    cursor: pointer;
   }
   .icon-container3{
     padding: 10px;
@@ -326,7 +326,7 @@
     border: 1px solid #ccc;
     text-align: center;
     transition: transform 0.3s;
-   
+    cursor: pointer;
   }
   .icon-container p{
     width: 300px;

@@ -282,7 +282,10 @@
     margin: 0 5px;
     color: #999;
   }
-  
+  .language-buttons{
+    text-align: right;
+    margin-right: 10px;
+  }
   .navigation-list a {
     text-decoration: none;
     color: #333;
