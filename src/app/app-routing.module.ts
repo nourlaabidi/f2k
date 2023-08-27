@@ -13,6 +13,8 @@ import { FserviceComponent } from './fservice/fservice.component';
 import { FcontactComponent } from './fcontact/fcontact.component';
 import { FgalleryComponent } from './fgallery/fgallery.component';
 import { ErealisationComponent } from './erealisation/erealisation.component';
+import { FnewsComponent } from './fnews/fnews.component';
+import { CertificatesComponent } from './certificates/certificates.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
@@ -27,6 +29,8 @@ const routes: Routes = [
   { path: 'fcontact', component: FcontactComponent },
   { path: 'fgallery', component: FgalleryComponent },
   { path: 'erealisation', component: ErealisationComponent },
+  { path: 'fnews', component: FnewsComponent },
+  { path: 'certificates', component: CertificatesComponent },
 ];
 
 @NgModule({

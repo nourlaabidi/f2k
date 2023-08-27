@@ -19,6 +19,8 @@ import { FserviceComponent } from './fservice/fservice.component';
 import { FcontactComponent } from './fcontact/fcontact.component';
 import { FgalleryComponent } from './fgallery/fgallery.component';
 import { ErealisationComponent } from './erealisation/erealisation.component';
+import { FnewsComponent } from './fnews/fnews.component';
+import { CertificatesComponent } from './certificates/certificates.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ErealisationComponent } from './erealisation/erealisation.component';
     FserviceComponent,
     FcontactComponent,
     FgalleryComponent,
-    ErealisationComponent
+    ErealisationComponent,
+    FnewsComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,10 @@
         <div class="top-bar">
             <div class="contact-info">
               <p><span class="red-text">Téléphone</span> +216 71 501 080</p>
-              
+                <div class="lang">
+                  <button class="fr" routerLink="/acceuil" routerLinkActive="active" >FR</button>
+                  <button routerLink="/home" routerLinkActive="active" class="ag" href="/home">AN</button>
+                </div>
             </div>
             <div class="social-links">
               <p><span class="red-text">Email:</span> cotech@planet.tn</p>
@@ -28,19 +31,19 @@
             <div class="container-fluid">
                 <div class="name"><h1>Cotech</h1></div>
                 <div class="links">
-                    <a id="home"class="nav-link active" href="/acceuil">Acceuil</a>
+                    <a id="home" class="nav-link active" href="/acceuil">Acceuil</a>
                     <a class="nav-link" href="fpresentation">Présentation</a>
-                    <a class="nav-link" href="#">sérvices</a>
+                    <a class="nav-link" href="/fservices">sérvices</a>
                     <a class="nav-link" href="/realisation">Réalisation</a>
                     <a class="nav-link" href="#">Cértificats</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/fcontact">Contact</a>
                 </div>
             </div>
         </div>  
         <div class="page-content">
             <div class="presentation">
-                <h1>Renforcer les Industries grâce à l'Automatisation de Précision et à l'Expertise Consei</h1>
-                 <div><button [routerLink]="['/fgallery']" class="gallery"> photos</button>  </div>
+                <h1>Renforcer les industries grâce à l'automatisation de précision et à l'expertise-conseil de pointe</h1>
+                 <div><button [routerLink]="['/fgallery']" class="gallery"> Photos</button>  </div>
                     
             </div>
             <div class="image-slideshow">
@@ -64,50 +67,48 @@
         </div>
             
             <footer> 
-              
-             
-                <div class="footer clear tahoma">
-                    <div class="footer_wrap">
-                        <div class="float_left bottom_nav">
-                                <ul class="navigation-list">
-                                 <li><a href="/acceuil">acceuil</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="/presentation">Présentation</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="/services">Sérvices</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="">Références</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="">Activités</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href=""> Catalogue</a></li>                     
-                                 <li><a href="">Equipement</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="" >Cértificats</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="">Clients</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="/gallery">Photos</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="">Vidéo</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="/news">Actualités</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="" >Newsletter</a></li>
-                                 <li class="divider">|</li>
-                                 <li><a href="/contactus">Contact</a></li>
-                                </ul>
-                        </div>
-                        <div class="float_right ">
-                          <div class="copy">
-                            Copyright © 2013  www.cotechplanet.net 
-                            <span>Powered by <a href="" target="_blank">CRESUS</a></span>
-                          </div>
-                        </div>
-                      
-                    </div>
+        <div class="footer clear tahoma">
+            <div class="footer_wrap">
+                <div class="float_left bottom_nav">
+                        <ul class="navigation-list">
+                         <li><a href="/acceuil">Acceuil</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="/fpresebtation">Présentation</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="/fservices">Sérvices</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="">Réferences</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="">Activités</a></li>
+                         <li class="divider">|</li>
+                         <li><a href=""> Catalogue</a></li>                     
+                         <li><a href="">Equipement</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="" >Cértificats</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="">Clients</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="/gallery">Photos</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="">Video</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="/news">Actualités</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="" >Newsletter</a></li>
+                         <li class="divider">|</li>
+                         <li><a href="/fcontact">Contact</a></li>
+                        </ul>
                 </div>
-              </footer>
+                <div class="float_right ">
+                  <div class="copy">
+                    Copyright © 2013  www.cotechplanet.net 
+                    <span>Powered by <a href="" target="_blank">CRESUS</a></span>
+                  </div>
+                </div>
+              
+            </div>
+        </div>
+      </footer>
         
     
     </body>
