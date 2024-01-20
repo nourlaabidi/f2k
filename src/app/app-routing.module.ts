@@ -17,6 +17,10 @@ import { FnewsComponent } from './fnews/fnews.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { ClientsComponent } from './clients/clients.component';
 import { EclientsComponent } from './eclients/eclients.component';
+import { FactiviteComponent } from './factivite/factivite.component';
+import { NavComponent } from './nav/nav.component';
+import { FcertificatsComponent } from './fcertificats/fcertificats.component';
+import { ActivitiesComponent } from './activities/activities.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
@@ -35,7 +39,10 @@ const routes: Routes = [
   { path: 'certificates', component: CertificatesComponent },
   { path: 'clients', component: ClientsComponent },
   { path: 'eclients', component: EclientsComponent },
-  
+  { path: 'factivite', component: FactiviteComponent },
+  { path: 'nav', component: NavComponent },
+  { path: 'fcertificats', component: FcertificatsComponent },
+  { path: 'activities', component: ActivitiesComponent },
 ];
 
 @NgModule({

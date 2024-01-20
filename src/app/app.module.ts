@@ -23,6 +23,10 @@ import { FnewsComponent } from './fnews/fnews.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { ClientsComponent } from './clients/clients.component';
 import { EclientsComponent } from './eclients/eclients.component';
+import { FactiviteComponent } from './factivite/factivite.component';
+import { NavComponent } from './nav/nav.component';
+import { FcertificatsComponent } from './fcertificats/fcertificats.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { EclientsComponent } from './eclients/eclients.component';
     FnewsComponent,
     CertificatesComponent,
     ClientsComponent,
-    EclientsComponent
+    EclientsComponent,
+    FactiviteComponent,
+    NavComponent,
+    FcertificatsComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,

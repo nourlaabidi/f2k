@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <div class="icons">
-        <a href="https://twitter.com/cotech" target="_blank"><i id="twitter"class="bi bi-twitter"></i></a>      
-        <a href="https://facebook.com/cotech" target="_blank"><i id="facebook"class="bi bi-facebook"></i></a>
-        <a href="https://gmail.com/cotech" target="_blank"><i id="gmail"class="bi bi-google"></i> </a>
-        </div>
+    <title>Home</title> 
 </head>
 <body > 
     <div class="top-bar">
@@ -16,7 +11,7 @@
           <p><span class="red-text">Phone:</span> +216 71 501 080</p>
           <div class="lang">
             <button class="fr" routerLink="/acceuil" routerLinkActive="active" >FR</button>
-            <button routerLink="/home" routerLinkActive="active" class="ag" href="/home">AN</button>
+            <button routerLink="/home" routerLinkActive="active" class="ag">AN</button>
           </div>
         </div>
         <div class="social-links">
@@ -30,7 +25,10 @@
         
            
         <div class="container-fluid">
+          <div class="logo">
+              <img  src="assets/images/logo3.png">
             <div class="name"><h1>Cotech</h1></div>
+          </div>
             <div class="links">
                 <a id="home"class="nav-link active" href="/home">Home</a>
                 <a class="nav-link" href="/presentation">Presentation</a>
@@ -44,7 +42,7 @@
     <div class="page-content">
         <div class="presentation">
             <h1>Empowering Industries Through Precision Automation and Expert Consultacy</h1>
-             <div><button [routerLink]="['/gallery']" class="gallery">Photo Gallery</button>  </div>
+             <div><button routerLink="/gallery" routerLinkActive="active" class="gallery">Photo Gallery</button>  </div>
                 
         </div>
         <div class="image-slideshow">
@@ -80,12 +78,12 @@
                              <li class="divider">|</li>
                              <li><a href="">References</a></li>
                              <li class="divider">|</li>
-                             <li><a href="">Activities</a></li>
+                             <li><a href="/activities">Activities</a></li>
                              <li class="divider">|</li>
                              <li><a href=""> Catalog</a></li>                     
                              <li><a href="">Equipement</a></li>
                              <li class="divider">|</li>
-                             <li><a href="" >Certificats</a></li>
+                             <li><a href="/certificates" >Certificats</a></li>
                              <li class="divider">|</li>
                              <li><a href="/eclients">Clients</a></li>
                              <li class="divider">|</li>
