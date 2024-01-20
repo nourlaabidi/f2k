@@ -97,7 +97,7 @@
   height: 95px;
   padding-bottom: 60px;
   border-bottom: 1px solid white;
-  background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
+  background-color: aliceblue;
 }
 
   .topbarre img{
@@ -124,8 +124,8 @@
 
 }
 .container-fluid img {
-  width:80px;
-  height: 80px;
+  width:90px;
+ 
 }
 
   .container-fluid{
