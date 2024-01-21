@@ -27,6 +27,7 @@ import { FactiviteComponent } from './factivite/factivite.component';
 import { NavComponent } from './nav/nav.component';
 import { FcertificatsComponent } from './fcertificats/fcertificats.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ActivitiesComponent } from './activities/activities.component';
     FactiviteComponent,
     NavComponent,
     FcertificatsComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Lugx Gaming Shop HTML5 Template</title>
+
+  
+
+
+<!--
+
+TemplateMo 589 lugx gaming
+
+https://templatemo.com/tm-589-lugx-gaming
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/lolobg.png" alt="" >
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="shop.html">Presentation</a></li>
+                      <li><a href="product-details.html">Our services</a></li>
+                      <li><a href="contact.html">Achivements</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="caption header-text">
+            <h6>Welcome to F2K</h6>
+            <h2>Renforcer les industries</h2>
+            <p>Renforcer les industries grâce à l'automatisation de précision et à l'expertise-conseil de pointe.</p>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-4 offset-lg-2">
+          <div class="right-image">
+            <div class="image-slideshow">
+                <div class="image-slide-container" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex}">
+                    
+                    <div class="photo"><img [src]="image" alt="Slideshow Image">
+                        <div class="image-navigation-dots">
+                            <span 
+                              class="dot" 
+                              *ngFor="let image of images; let i = index" 
+                              [ngClass]="{ 'active': i === currentImageIndex }"
+                              (click)="changeImage(i)"
+                            ></span>
+                          </div>
+    
+                    </div>
+                    <button id="prev"class="prev-button" (click)="prevImage()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                    <button class="next-button" (click)="nextImage()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                
+                <img src="assets/images/auto.png" alt="" style="max-width: 44px; margin-top: 20px;">
+              </div>
+              <h4>Study of Industrial Automation Projects</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/cable.png" alt="" style="max-width: 44px; margin-top: 20px;">
+              </div>
+              <h4>Design <br>and Assembling</h4>
+              
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/idea.png" alt="" style="max-width: 44px;margin-top: 20px;">
+              </div>
+              <h4>On-Site <br>Implementation</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/solution.png" alt="" style="max-width: 44px;margin-top: 20px;">
+              </div>
+              <h4>Top Technology Solutions</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Presentation</h2>
+            <h6>About Us</h6>
+            <p>F2k is a Tunisian/Belgian company specialized in the study, development and realization of industrial automation projects; also we fulfill regulation systems for production chains on PLC basis. We offer practical consultancy based on 30 years of experience in automation of industrial production processes.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">View All</a>
+          </div>
+        </div>
+       
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/adv-auto.png" alt="" style="max-width:100px; margin-left: 35%; margin-top: 2%;"></a>
+              
+            </div>
+            <div class="down-content">
+              <span class="category">Advanced Automation</span>
+              <h4>We use the data 'weight' (basic information) to control your material stream and process.
+
+                Automation can give you faster, safer production processes which are more efficient, flexible,
+                 reliable, sustainable and cost-effective. Working with
+                 Cotech also means you can be sure of the project content, cost, delivery dates and end result.</h4>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <div class="thumb">
+                <a href="product-details.html"><img src="assets/images/assistance.png" alt="" style="max-width:100px; margin-left: 35%; margin-top: 2%;"></a>
+              </div>
+              <div class="down-content">
+                <span class="category">Advanced Automation</span>
+                <h4>
+                  We can give you assistance with weighing, dosing and automation so that you can maintain your competitive position
+  
+                  Learn More We can give you assistance with weighing, dosing and automation so that you can maintain your competitive position
+                  
+                </h4>
+                
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/global-impact.png" alt="" style="max-width:100px; margin-left: 35%;margin-top: 2%;"></a>
+              
+            </div>
+            <div class="down-content">
+              <span class="category">Global impact</span>
+              <h4>The realizations of Cotech are adopted in Africa, Europe, America and the Middle East.
+
+                We offer new solutions as well as renewal of existing installations.</h4>
+              
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="section most-played">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6>TOP GAMES</h6>
+            <h2>Most Played</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">View All</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/top-game-01.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/top-game-02.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/top-game-03.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/top-game-04.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/top-game-05.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/top-game-06.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Categories</h6>
+            <h2>Top Categories</h2>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/categories-01.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/categories-03.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/categories-04.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/template/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="shop">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Our Shop</h6>
+                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                </div>
+                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                <div class="main-button">
+                  <a href="shop.html">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2 align-self-end">
+          <div class="subscribe">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>NEWSLETTER</h6>
+                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                </div>
+                <div class="search-input">
+                  <form id="subscribe" action="#">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
+                    <button type="submit">Subscribe Now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+
+
+  </body>
+</html>
