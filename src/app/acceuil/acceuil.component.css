@@ -7,7 +7,7 @@
 .top-bar {
   background-color: rgba(51, 51, 51, 0.548);
   background-color: #0f3a6e;
-  background-image: linear-gradient(160deg, #0f3a6e 0%,#4e84c9 100%);
+  background-image: linear-gradient(160deg, #133054 0%,#0A1F39 100%);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@
   
 }
 .red-text {
-  color:#0A1F39;
+  color:wheat;
 }
 
 .contact-info{
@@ -84,7 +84,7 @@
   font-size: 300px;
 }
 .social-links  i{
-  color: red;
+  color: wheat;
 }
 /*********/
 .logo{
@@ -93,13 +93,14 @@
   align-items: flex-start;
 
 }
+
 .navbar{
   width: 100%;
   padding: 10px 0;
   height: 95px;
   padding-bottom: 60px;
-  border-bottom: 1px solid white;
-  background-color: aliceblue;
+  border-bottom: 1px solid #45658c;
+  background-color: white;
 }
 
   .topbarre img{
@@ -112,6 +113,7 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   }
+  
   .name h1 {
     margin-top: 10px;
     font-weight: bold;
@@ -149,16 +151,17 @@
       text-decoration: none;
       font-size: 17px;
       font-weight: 600;
-      color: lightgrey;
+      color: #133054 ;
   }
 #home{
 
-    color:#0F3A6E;
+    color:#4C6586;
     cursor: pointer;
 }
 body{
     height: 130vh;
-      background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
+    /*background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);*/
+    background-image: linear-gradient(160deg, #133054 0%,#0A1F39 100%);
     
 }
 
@@ -185,7 +188,7 @@ body{
   border-radius: 5px;
   height: 50px;
   width: 120px;
-  color: rgb(170, 22, 22);
+  color: #0A1F39;
   font-size: 16px;
   font-weight: 500;
 }
@@ -351,6 +354,7 @@ overflow: hidden;
 font-size: 24px;
 margin-bottom: 20px;
 }
+
   
   
   
