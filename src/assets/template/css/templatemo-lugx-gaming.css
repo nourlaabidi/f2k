@@ -285,7 +285,8 @@ Header Style
 */
 
 .background-header {
-  background-color: #0071f8 !important;
+  /*background-color: #0071f8 !important;*/
+  background-color: #a6ab9f !important;
   border-radius: 0px 0px 25px 25px;
   height: 80px!important;
   position: fixed!important;
@@ -300,7 +301,9 @@ Header Style
 }
 
 .background-header .logo img {
-  max-width: 110px;
+  max-width: 100%;
+  max-height: 80%;
+
 }
 
 .header-area {
@@ -340,9 +343,10 @@ Header Style
 }
 
 .background-header .main-nav .logo{
-height: 200px;
-
-}
+  height: 90px;
+  width: 130px;
+  
+  }
 
 .header-area .main-nav ul.nav {
   border-radius: 0px 0px 25px 25px;
@@ -388,14 +392,14 @@ height: 200px;
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: rgb(234, 236, 239);
+  background-color: #12325a;
   text-transform: uppercase;
   font-weight: 500;
-  color: #0071f8;
+  color: #ffff;
 }
 
 .header-area .main-nav .nav li:last-child:hover a {
-  background-color: white;
+  background-color: #2d5b93;
 }
 
 .header-area .main-nav .nav li:hover a {
@@ -526,6 +530,10 @@ height: 200px;
 .visible{
   display:inline !important;
 }
+.main-nav .logo img{
+  height: 100%;
+  width: 50%;
+}
 
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
@@ -573,6 +581,8 @@ height: 200px;
     position: absolute;
     left: 30px;
     top: 0px;
+    
+
   }
   .background-header .main-nav .logo {
     top: 0px;
@@ -611,6 +621,7 @@ height: 200px;
   .header-area .logo {
     margin-left: 0px;
     margin-top: 30px;
+    
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -653,7 +664,9 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+ /* background-image: url(../images/banner-bg.jpg);*/
+ background-image: url(src\assets\images\background.jpg);
+ 
   border-radius: 0px 0px 150px 150px;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -680,7 +693,7 @@ Banner Style
 
 .main-banner .caption h2:after {
   position: absolute;
-  background-image: url(../images/caption-dec.png);
+ 
   width: 202px;
   height: 12px;
   content: '';
@@ -803,13 +816,14 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 90px;
-  background-color: #0071f8;
+  background-color: #102F54 ;
+  
   border-radius: 50%;
   transition: all .3s;
 }
 
 .features .item:hover .image {
-  background-color: #ee626b;
+  background-color: #1f4d86 ;
 }
 
 
@@ -825,6 +839,9 @@ Trending Style
   text-align: right;
 }
 
+.trending .main-button a{
+  background-color: #102F54 ;
+  }
 .trending .item  {
   background-color: #eeeeee;
   position: relative;
@@ -838,7 +855,6 @@ Trending Style
   border-radius: 25px;
   overflow: hidden;
 }
-
 .trending .item span.price em {
   font-style: normal;
   font-weight: 400;
@@ -865,12 +881,7 @@ Trending Style
   padding: 25px;
 }
 
-.trending .item .down-content span.category {
-  font-size: 14px;
-  color: #7a7a7a;
-  margin-bottom: 5px;
-  display: inline-block;
-}
+
 
 .trending .item .down-content h4 {
   font-size: 17px;
@@ -889,7 +900,7 @@ Trending Style
   color: #fff;
   border-radius: 50%;
   right: 25px;
-  bottom: 25px;
+  bottom: 2px;
   transition: all .3s;
 }
 
@@ -917,6 +928,10 @@ Most Played Style
 .most-played .main-button {
   margin-top: 32px;
   text-align: right;
+
+}
+.most-played .main-button a{
+background-color: #102F54 ;
 }
 
 .most-played .item  {
@@ -957,7 +972,7 @@ Most Played Style
   line-height: 40px;
   height: 40px;
   padding: 0px 15px;
-  background-color: #ee626b;
+  background-color: #102F54 ;
   color: #fff;
   border-radius: 20px;
   font-size: 15px;
@@ -1115,10 +1130,10 @@ Footer Style
 
 footer {
   margin-top: 150px;
-  background-color: #0071f8;
+  background-color: #a6ab9f;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/footer-bg.jpg);
+ /* background-image: url(src\assets\images\background.jpg);*/
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
 }
@@ -1601,7 +1616,8 @@ body {
 
 @media (max-width: 992px) {
   .header-area .main-nav .logo img {
-    max-width: 110px;
+
+    width: 500px;
   }
   .header-area .main-nav .nav li a {
     padding-left: 10px;

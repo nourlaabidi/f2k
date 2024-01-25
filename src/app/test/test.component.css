@@ -33,9 +33,7 @@
   
   .image-slideshow{
     position: relative;
-  
     margin-top: 40px;
-
     height: 450px;
     display: flex;
     align-items: center;
@@ -45,7 +43,7 @@
   }
   .image-slide-container {
     display: none;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.13);
+  
     transition: background-color 0.3s ease;
     position: absolute;
     overflow: hidden;
@@ -118,5 +116,45 @@
   }
   
     
-    
-    
+    /*********************************************contactus********************/
+ 
+  
+    #dropdown {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+    }
+  
+  
+    #selected-option {
+      font-weight: bold;
+      color: #333;
+    }
+  
+  
+    #dropdown option[disabled] {
+      color: #999}
+
+
+      .main-button2 a {
+        display: inline-block;
+        background-color: #0A1F39;
+        text-transform: uppercase;
+        color: #fff;
+
+        font-size: 14px;
+        font-weight: 600;
+        height: 60px;
+        line-height: 50px;
+        padding: 5px 50px;
+        border-radius: 25px;
+        transition: all .3s;
+        margin-left: 35%;
+      
+      }
+      
+      .main-button2 a:hover {
+        background-color: #345986;
+        color: #fff;
+      }
