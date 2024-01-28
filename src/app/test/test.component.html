@@ -39,11 +39,11 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="shop.html">Presentation</a></li>
-                      <li><a href="product-details.html">Our services</a></li>
-                      <li><a href="contact.html">Achivements</a></li>
-                      <li><a href="#">Contact Us</a></li>
+                      <li><a class="active" (click)="navigateToSection('home')">Home</a></li>
+                      <li><a (click)="navigateToSection('presentation')">Presentation</a></li>
+                      <li><a (click)="navigateToSection('services')">Our services</a></li>
+                      <li><a (click)="navigateToSection('Achivements')">Achivements</a></li>
+                      <li><a (click)="navigateToSection('contactus')">Contact Us</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -56,7 +56,7 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner">
+  <div class="main-banner" id="home">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center">
@@ -95,7 +95,7 @@
     </div>
   </div>
 
-  <div class="features">
+  <div class="features" id="services">
     <div class="container">
 
       <div class="row">
@@ -146,7 +146,7 @@
     </div>
   </div>
 
-  <div class="section trending">
+  <div class="section trending" id="presentation">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -218,7 +218,7 @@
     </div>
   </div>
 
-  <div class="section most-played">
+  <div class="section most-played" id="Achivements">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -230,7 +230,7 @@
         </div>
         <div class="col-lg-6">
           <div class="main-button">
-            <a href="shop.html">View All</a>
+            <a  href="/erealisation" >View All</a>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
@@ -241,7 +241,7 @@
             <div class="down-content">
                 
                 <h4>Water treatment</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="/erealisation">Explore</a>
             </div>
           </div>
         </div>
@@ -253,7 +253,7 @@
             <div class="down-content">
                 
                 <h4>Food Industry</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="/erealisation">Explore</a>
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@
             <div class="down-content">
                 
                 <h4>Foundry</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="/erealisation">Explore</a>
             </div>
           </div>
         </div>
@@ -277,7 +277,7 @@
             <div class="down-content">
                 
                 <h4>Various</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="/erealisation">Explore</a>
             </div>
           </div>
         </div>
@@ -289,7 +289,7 @@
             <div class="down-content">
                 
                 <h4>Concrete</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="/erealisation">Explore</a>
             </div>
           </div>
         </div>
@@ -301,7 +301,7 @@
             <div class="down-content">
                 
                 <h4>Chemistry</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="/erealisation">Explore</a>
             </div>
           </div>
         </div>
@@ -313,7 +313,7 @@
   
 
 
-<div class="section cta">
+<div class="section cta" id="contactus">
 
   <div class="container">
 

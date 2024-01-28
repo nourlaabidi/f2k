@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-test',
@@ -26,6 +27,26 @@ export class TestComponent {
   
 changeImage(index: number) {
   this.currentImageIndex = index;
+}
+constructor(private router: Router) { }
+
+scrollToElement(elementId: string): void {
+  const element = document.getElementById(elementId);
+  if (element) {
+    const rect = element.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const targetY = rect.top + scrollTop - 120; // Adjust -50 for your desired offset
+    window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
+    });
+  }
+}
+
+
+navigateToSection(sectionId: string): void {
+  this.router.navigate([], { fragment: sectionId });
+  this.scrollToElement(sectionId);
 }
 
 }

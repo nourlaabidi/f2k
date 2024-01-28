@@ -7,62 +7,120 @@
     
 </head>
 <body>
-    <div class="top-bar">
-        <div class="sous-top-bar">
-          <div class="contact-info">
-            <p><span class="red-text">Phone:</span> +216 71 501 080</p>
-            <div class="lang">
-                <button class="fr" routerLink="/acceuil" routerLinkActive="active" >FR</button>
-                <button routerLink="/home" routerLinkActive="active" class="ag" href="/home">AN</button>
-              </div>
-          </div>
-          <div class="social-links">
-            <p><span class="red-text">Email:</span> cotech@planet.tn</p>
-            <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
-            <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
-          </div>
-        </div>
-      </div>
+   
       <div class="navbar">   
-             
-          <div class="container-fluid">
-            <div class="logo">
-                <img src="assets/images/logo3.png">
-              <div class="name"><h1>Cotech</h1></div>
+        <header class="header-area header-sticky">
+            <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo2">
+                        <img src="assets/images/logo4.png" alt="" >
+                    </a>
+                    <ul class="nav">
+                      <li><a href="index.html" >Home</a></li>
+                      <li><a href="shop.html">Presentation</a></li>
+                      <li><a href="product-details.html">Our services</a></li>
+                      <li><a href="contact.html" class="active">Achivements</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
             </div>
-              <div class="links">
-                  <a class="nav-link" href="/home">Home</a>
-                  <a class="nav-link" href="/presentation">Presentation</a>
-                  <a class="nav-link" href="/services">services</a>
-                  <a id="realisation" class="nav-link active" href="/erealisation">Realisation</a>
-                  <a class="nav-link" href="/certificates">Certificates</a>
-                  <a class="nav-link " href="/contactus">Contact</a>
-              </div>
-          </div>
+        </div>
+        </div>
+        </header>
       </div> 
 
 
     <div class="pagecontent">
-        <div class="realisation">
-            <h1>Our Achievements</h1>
-
-        </div>
-        <div class="left">
-
+        <div class="section most-played">
             <div class="container">
-                <div><button class="b"  (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">Water treatment</button></div>
-                <div><button class="b"  (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Food Industry</button></div>
-                <div><button class="b"  (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Foundry</button></div>
-                <div><button class="b"  (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Various</button></div>
-                <div><button class="b"  (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Concrete</button></div>
-                <div><button class="b"  (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Chemistry</button></div>
-                <div><button class="b"  >Methanation</button></div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="section-heading">
+                    <h2>Achivements</h2>
+                    <h6>Fields</h6>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">Water treatment</h4>
+                        <a  (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+  
+                    <div class="down-content">
+                        
+                        <h4 class="bb"  (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Food Industry</h4>
+                        <a    (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Foundry</h4>
+                        <a (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+        
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Various</h4>
+                        <a (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+         
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Concrete</h4>
+                        <a (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+               
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Chemistry</h4>
+                        <a (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+
         <div class="container2">
             <div class="tittle" *ngIf="showbarre1">
-                <h4>Water treatment</h4>
+                
                 <div class="test" >
                     <div><button class="b1" (click)="toggle1()" (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'">2 Meetings Spalding</button></div>
                     <div><button class="b1" (click)="toggle2()"(click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'">Purification station airport Enfidha</button></div>
@@ -332,9 +390,6 @@
             
                 <div class="newtittle" *ngIf="showbarre2">
                     
-                    <div class="test2">
-                        <div><button class="newbtn" >Cold storage </button></div>
-                     </div>
                     <div class="newp1" *ngIf="showsecond">
                             <div class="klem">
                                 <h4>Cold storage : ENNASSIM (Libya) </h4>
@@ -360,9 +415,6 @@
                 </div>
             
             <div class="tittle" *ngIf="showbarre3">
-                <div class="test2">
-                    <div><button  class="newbtn" >Sopal injection molding cabinet</button></div>
-                </div>
                 <div class="newp1" *ngIf="showthird">
                     <div class="klem">
                         <h4> Sopal injection molding cabinet (Tunisia) </h4>
@@ -431,7 +483,7 @@
             </div>
             <div class="tittle" *ngIf="showbarre5">
                 <div class="test2">
-                    <div><button class="newbtn" >Control system for concrete batching plant</button></div>
+                    
                 </div>
                 <div class="newp1" *ngIf="showfive">
                 <div class="klem">
@@ -466,7 +518,7 @@
             </div>
             <div class="tittle" *ngIf="showbarre6">
                 <div class="test2">
-                    <div><button class="newbtn" > Manufacturing unit for liquid detergents</button></div>
+                  
                 </div>
                 <div class="newp1" *ngIf="shows">
                 <div class="klem">
@@ -506,48 +558,14 @@
             </div> 
     </div>
 
-    <footer> 
-        <div class="footer clear tahoma">
-            <div class="footer_wrap">
-                <div class="float_left bottom_nav">
-                    <ul class="navigation-list">
-                        <li><a href="/home">Home</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="/presentation">Presentation</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="/services">Services</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="">References</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="/activities">Activities</a></li>
-                        <li class="divider">|</li>
-                        <li><a href=""> Catalog</a></li>                     
-                        <li><a href="">Equipement</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="/certificates" >Certificates</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="/eclients">Clients</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="/gallery">Photos</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="">Video</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="/news">News</a></li>
-                        <li class="divider">|</li>
-                        <li><a href="" >Newsletter</a></li>
-                        <li><a href="/contactus">Contact</a></li>
-                       </ul>
-                </div>
-                <div class="float_right ">
-                  <div class="copy">
-                    Copyright © 2013  www.cotechplanet.net 
-                    <span>Powered by <a href="" target="_blank">CRESUS</a></span>
-                  </div>
-                </div>
-              
-            </div>
+    <footer>
+        <div class="container">
+          <div class="col-lg-12">
+            <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+          </div>
         </div>
       </footer>
 
 </body>
 
+  </html>
