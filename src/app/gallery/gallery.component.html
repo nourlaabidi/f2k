@@ -1,59 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  
-</head>
-<body > 
-  <div class="top-bar">
-    <div class="sous-top-bar">
-      <div class="contact-info">
-        <p><span class="red-text">Téléphone:</span> +216 71 501 080</p>
-        <div class="lang">
-          <button class="fr" routerLink="/acceuil" routerLinkActive="active" >FR</button>
-          <button routerLink="/home" routerLinkActive="active" class="ag" href="/home">AN</button>
-        </div>
-      </div>
-      <div class="social-links">
-        <p><span class="red-text">Email:</span> cotech@planet.tn</p>
-        <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
-        <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Gallery</title>
+
+  </head>
+
+<body>
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </div>
-    <div class="navbar">    
-        <div class="container-fluid">
-          <div class="logo">
-            <img src="assets/images/logo3.png">
-          <div class="name"><h1>Cotech</h1></div>
+  <div class="navbar">   
+    <header class="header-area header-sticky">
+        <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="main-nav">
+                <a href="index.html" class="logo2">
+                    <img src="assets/images/logo4.png" alt="" >
+                </a>
+                <ul class="nav">
+                  <li><a href="/test">Home</a></li>
+                  <li><a href="/test">Presentation</a></li>
+                  <li><a href="/test">Our services</a></li>
+                  <li><a href="/test">Achivements</a></li>
+                  <li><a href="/test">Contact Us</a></li>
+              </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+            </nav>
         </div>
-            <div class="links">
-                <a class="nav-link" href="home">Home</a>
-                <a id="presentation"class="nav-link active" href="/presentation">Presentation</a>
-                <a class="nav-link" href="/eservices">services</a>
-                <a class="nav-link" href="/erealisation">Realisation</a>
-                <a class="nav-link" href="/certificates">Certificats</a>
-                <a class="nav-link" href="/contactus">Contact</a>
+    </div>
+    </div>
+    </header>
+  </div> 
+
+    
+  <div class="pagecontent">
+    <div class="section most-played">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-heading">
+                <h2>Gallery</h2>
+                <h6>Fields</h6>
+                
+              </div>
             </div>
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'" (click)="toggleshowimages1()">Water treatment</h4>
+                    <a  (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'" (click)="toggleshowimages1()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+
+                <div class="down-content">
+                    
+                    <h4 class="bb"  (click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'" (click)="toggleshowimages2()">Food Industry</h4>
+                    <a    (click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'" (click)="toggleshowimages2()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button3')" [class.active]="activeButton === 'button3'" (click)="toggleshowimages3()">Concrete</h4>
+                    <a (click)="setActiveButton('button3')" [class.active]="activeButton === 'button3'" (click)="toggleshowimages3()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="thumb">
+    
+                </div>
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button4')" [class.active]="activeButton === 'button4'" (click)="toggleshowimages4()">Foundry</h4>
+                    <a (click)="setActiveButton('button4')" [class.active]="activeButton === 'button4'" (click)="toggleshowimages4()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="thumb">
+     
+                </div>
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button5')" [class.active]="activeButton === 'button5'" (click)="toggleshowimages5()">Chemistry</h4>
+                    <a (click)="setActiveButton('button5')" [class.active]="activeButton === 'button5'" (click)="toggleshowimages5()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="thumb">
+           
+                </div>
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button6')" [class.active]="activeButton === 'button6'" (click)="toggleshowimages6()">Various</h4>
+                    <a (click)="setActiveButton('button6')" [class.active]="activeButton === 'button6'" (click)="toggleshowimages6()">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>   
+      </div>
+  
     <div class="my-component">
-      <div class="page-header">
-        <h1>Photo Gallery</h1>
-      </div>
-      
-      <div class="bar">
-       <div class="category-button" (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'" (click)="toggleshowimages1()"> Water treatment</div>
-       <div class="category-button" (click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'" (click)="toggleshowimages2()">Food Industry</div> 
-       <div class="category-button" (click)="setActiveButton('button3')" [class.active]="activeButton === 'button3'" (click)="toggleshowimages3()">Concrete</div>
-       <div class="category-button" (click)="setActiveButton('button4')" [class.active]="activeButton === 'button4'" (click)="toggleshowimages4()">Foundry</div>
-       <div class="category-button" (click)="setActiveButton('button5')" [class.active]="activeButton === 'button5'" (click)="toggleshowimages5()">Chemistry</div>
-       <div class="category-button" (click)="setActiveButton('button6')" [class.active]="activeButton === 'button6'" (click)="toggleshowimages6()">Various</div>
-      </div>
+
     <div *ngIf="showimage1">
      <div class="image-container">
       <br>
@@ -105,13 +185,14 @@
         <img src="assets/water/ss.jpg">
         </div>
       </div>
+      
      </div>
      </div>
      <div *ngIf="showimage2">
        <div class="image-container">
        <br>
          <div class="image2">
-           <div class="image-carousel">
+           <div class="image-carousel2">
               <img src="assets/industry/tt.jpg" >
               <img src="assets/industry/uu.jpg">
               <img src="assets/industry/vv.jpg">
@@ -142,7 +223,7 @@
           <div class="image-container">
             <br>
            <div class="image2">
-            <div class="image-carousel"> 
+            <div class="image-carousel2"> 
               <img src="assets/foundry/k.jpg">
               <img src="assets/foundry/l.jpg">
               <img src="assets/foundry/m.jpg">
@@ -167,8 +248,8 @@
         <div *ngIf="showimage6"> 
           <div class="image-container">
             <br>
-          <div class="image-carousel-container">
-            <div class="image-carousel">
+          <div class="image2">
+            <div class="image-carousel2">
               <img src="assets/various/aa.jpg">
               <img src="assets/various/bb.jpg">
               <img src="assets/various/cc.jpg">
@@ -179,48 +260,19 @@
           </div>
         </div>
     
-    <footer> 
-      <div class="footer clear tahoma">
-          <div class="footer_wrap">
-              <div class="float_left bottom_nav">
-                <ul class="navigation-list">
-                  <li><a href="/home">Home</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="/presentation">Presentation</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="/services">Services</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="">References</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="/activities">Activities</a></li>
-                  <li class="divider">|</li>
-                  <li><a href=""> Catalog</a></li>                     
-                  <li><a href="">Equipement</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="/certificates" >Certificates</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="/eclients">Clients</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="/gallery">Photos</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="">Video</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="/news">News</a></li>
-                  <li class="divider">|</li>
-                  <li><a href="" >Newsletter</a></li>
-                  <li><a href="/contactus">Contact</a></li>
-                 </ul>
-              </div>
-              <div class="float_right ">
-                <div class="copy">
-                  Copyright © 2013  www.cotechplanet.net 
-                  <span>Powered by <a href="" target="_blank">CRESUS</a></span>
-                </div>
-              </div>
-            
-          </div>
-      </div>
-    </footer>
+   
+
+
     </div>
-</body>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+  </body>
+  
+
   

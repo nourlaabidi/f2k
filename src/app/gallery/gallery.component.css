@@ -1,331 +1,172 @@
-/*title*/
-.page-header {
-  text-align: center;
-  padding: 20px 0;
-  
+
+.main-nav ul{
+  top: 30;
+}
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: none;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, #91a4a8 10%, #a6ab9f 90%);
+}
+
+.navbar {
+  position: relative; /* Update this line */
+  background-color: transparent;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: none;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, #91a4a8 10%, #a6ab9f 90%);
+}
+
+
+  .logo2 img {
+    width:90px;
+    height: 90px;
+  }
+/************************/
+.most-played {
+  background-color: #f7f7f7;
+  border-radius: 0;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  height: 300px;
+
+
+}
+
+.section {
   margin-top: 0px;
+
+ 
+}
+.most-played .section-heading {
+  text-align:start;
 }
 
-.page-header h1 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
+.section-heading {
+  margin-bottom: 0px;
+
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 0px;
+  line-height: 44px;
+}
+
+.section-heading h2 em {
+  font-style: normal;
+  color: #0071f8;
+}
+
+.section-heading h6 {
+  color: #0071f8;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.down-content{
+  cursor: pointer;
+}
+
+.pagecontent{
+
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 
+.bb.active{
+  color: #0071f8;
+
+}
 /*main*/
 
-.my-component img{
-  width: 25%;
-  height: 200px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc; /* Ajoute une bordure de 2px solide de couleur grise */
-  padding: 5px;
-  
-}
-.category-button {
-  color: rgb(161, 155, 155);
-  cursor: pointer;
-  font-weight: bold;
-  
-}
-.category-button.active{
-  color: rgb(255, 255, 255);
-}
-.bar {
-  height: 80px;
-  display: flex;
-  align-items: center;
- justify-content: center;
- gap: 40px;
-  
-}
-.cat-button {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer; 
-  
-}
 
 .image-container {
+  margin-top: 20px;
   width: 100%;
+  height: 100%;
+
+
+}
+.image-container img {
+  width: 25%; 
+  max-width: 250px; 
   height: 250px;
-  background-color:rgba(211, 201, 201, 0.504);
-}
-.image-container img{
+  max-height: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc;
+  padding: 5px;
   transition: transform 0.3s;
-  
 }
-.image-container img:hover{
+
+.image-container img:hover {
   transform: scale(1.2);
 }
+
 .image2 {
-  margin-left: 20%;
+ display: flex;
+  width: 100%;
 }
-.image2 img{
-  width: 25%;
+.image-carousel2 {
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+  width: 100%;
+  align-self: center;
+
+}
+.image-carousel2 img{
+  height: 300px;
+  width: 250px;
 }
 
 .image-carousel-container {
-  width: 75%; /* Ajustez selon vos besoins */
+  width: 75%;
   overflow-x: scroll;
   margin-left: 13%; 
-}
-/* Style de la scrollbar pour les navigateurs WebKit (Chrome, Safari) */
-.image-carousel-container::-webkit-scrollbar {
-  width: 5px; /* Largeur de la scrollbar */
-}
-.image-carousel-container::-webkit-scrollbar-thumb {
-  background-color:#fff; /* Couleur de la poignée de la scrollbar */
-  border-radius: 5px; /* Bordure arrondie de la poignée */
-}
+  scrollbar-width: thin;
 
-/* Style de la scrollbar pour le navigateur Firefox */
-.image-carousel-container {
-  scrollbar-width: thin; /* Largeur de la scrollbar pour Firefox */
 }
-
 .image-carousel {
   display: flex;
   flex-direction: row;
   white-space: nowrap; 
+  width: 1000%;
+}
+
+.image-carousel-container::-webkit-scrollbar {
+  width: 5px; 
+}
+.image-carousel-container::-webkit-scrollbar-thumb {
+  background-color:#fff; 
+  border-radius: 5px; 
 }
 
 
-body{
-  height: 110vh;
-  background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
-  
-}
-  /*top bar*/
-.social-links {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  
-  
-}
-.top-bar{
-  background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
-}
-.sous-top-bar {
-  background-color: rgba(51, 51, 51, 0.548);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  width: 100%;
-  height: 60px;
-  top: 0;
-  left: 0;
-  z-index: 1000; 
-  
-}
-.red-text {
-  color: red;
-}
-.top-bar .contact-info{
-
-  width: 800px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.top-bar .contact-info .lang{
-  width: 150px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  transition: transform 0.3s;
-  
-  
-}
-.top-bar .contact-info .lang .fr{
-  background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(160, 160, 160) 90%);
-  border-radius: 5px;
-  border: none;
-  color: rgb(117, 42, 42);
-  width: 50px;
-  height: 27px;
-  font-weight: bold;
-}
-.top-bar .contact-info .lang .ag{
-  background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
-  color: white;
-  border: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  width: 50px;
-  height: 27px;
-  font-weight: bold;
-  }
 
 
-  .top-bar .contact-info .lang button:hover{
-    transform:scale(1.05)
-  }
-
-
-  .top-bar .contact-info p {
-  margin: 0;
+footer{
+  margin-top: 300px;
 }
-
-.top-bar .contact-info p {
-  margin: 0;
-}
-
-.social-icon {
-  color: white;
-  text-decoration: none;
-  margin-left: 10px;
-}
-.social-links  .a{
-  margin-left: 200px;
-  margin-top: 204px;
-  font-size: 300px;
-}
-.social-links  i{
-  color: red;
-}
-/*********/
-.logo{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-
-}
-.navbar{
-  width: 100%;
-  padding: 10px 0;
-  height: 95px;
-  padding-bottom: 60px;
-  border-bottom: 1px solid white;
-  background: linear-gradient(90deg, rgb(95, 51, 51) 10%, rgb(197, 49, 49) 90%);
-}
-.topbarre img{
-      height: 70px;
-  }
-
-  .name{
-    margin-left: 10px;
-    color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-  }
-  .name h1 {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-
-  .icons{
-    margin-left:160px;
-    display: flex;
-    gap: 10px;
-    font-size: 20px;  
-
-}
-  .container-fluid{
-    justify-content: flex-start;
-      display: flex;
-      align-items:center;
-  }
-  .container-fluid img {
-    width:80px;
-    height: 80px;
-  }
-  .links{
-    margin-left: 270px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 60px;
-      transition: transform 0.3s;
-  
-  }
-  .links a{
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: 600;
-      color: lightgrey;
-  }
-#home{
-
-    color:white;
-    cursor: pointer;
-}
-
-   /************************footer*************************************/
-
-
-
-   .footer {
-    background: grey ;
-    height: 90px;
-    margin-top: 200px;
-    padding-top: 24px;
-  }
-  .footer {
-    color: white;
-    font-size: 11.4px;
-  }
-  .tahoma {
-    font-family: "Tahoma",Arial,Helvetica, sans-serif;
-  }
-  .footer_wrap {
-  margin-left: 16%;
-  margin-right: 16%;
-  overflow: hidden;
-  }
-  .float_left {
-    float: left;
-  }
-  .bottom_nav {
-    width: 489px;
-    
-  }
-  .float_right {
-    float: right;
-    
-    
-  }
-  .copy {
-    text-align:right;
-  }
-  .copy a {
-    color: white; 
-    
-  }
-  .navigation-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0;
-  }
-  .navigation-list li {
-    margin-right: 10px;
-  }
-  .divider {
-    margin: 0 5px;
-    color: #999;
-  }
-  
-  .navigation-list a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.2s ease-in-out;
-  }
-  
-  .navigation-list a:hover {
-    color: white;
-  }
-  .section-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  }
