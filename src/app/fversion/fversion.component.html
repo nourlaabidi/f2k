@@ -44,6 +44,10 @@
                       <li><a (click)="navigateToSection('services')">nos sérvices</a></li>
                       <li><a (click)="navigateToSection('Achivements')">Réalisations</a></li>
                       <li><a (click)="navigateToSection('contactus')">Contact</a></li>
+                      <div class="lang">
+                        <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
+                        <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
+                      </div>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -64,10 +68,7 @@
             <h6>Bienvenue chez F2K</h6>
             <h2>Renforcer les industries </h2>
             <p>Renforcer les industries grâce à l'automatisation de précision et à l'expertise-conseil de pointe</p>
-            <div class="lang">
-              <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
-              <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
-            </div>
+            <div><button [routerLink]="['/fgallery']" class="gallery"> Galerie</button>  </div>
           </div>
         </div>
 

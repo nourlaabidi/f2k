@@ -44,6 +44,10 @@
                       <li><a (click)="navigateToSection('services')">Our services</a></li>
                       <li><a (click)="navigateToSection('Achivements')">Achivements</a></li>
                       <li><a (click)="navigateToSection('contactus')">Contact Us</a></li>
+                      <div class="lang">
+                        <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
+                        <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
+                      </div>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -64,10 +68,7 @@
             <h6>Welcome to F2K</h6>
             <h2>Empowering Industries</h2>
             <p>Empowering Industries Through Precision Automation and Expert Consultacy</p>
-            <div class="lang">
-              <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
-              <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
-            </div>
+            <div><button [routerLink]="['/gallery']" class="gallery"> Gallery</button>  </div>
             
           </div>
         </div>
