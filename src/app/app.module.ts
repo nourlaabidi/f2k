@@ -28,6 +28,8 @@ import { NavComponent } from './nav/nav.component';
 import { FcertificatsComponent } from './fcertificats/fcertificats.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { TestComponent } from './test/test.component';
+import { FversionComponent } from './fversion/fversion.component';
+import { FrealisationComponent } from './frealisation/frealisation.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,10 @@ import { TestComponent } from './test/test.component';
     NavComponent,
     FcertificatsComponent,
     ActivitiesComponent,
-    TestComponent
+    TestComponent,
+    FversionComponent,
+    FrealisationComponent,
+  
   ],
   imports: [
     BrowserModule,

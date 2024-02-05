@@ -1,5 +1,38 @@
+.lang{
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  transition: transform 0.3s;
 
   
+  
+}
+.lang .fr{
+  background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(160, 160, 160) 90%);
+  border-radius: 5px;
+  border: none;
+  color:#0A1F39;
+  width: 50px;
+  height: 27px;
+}
+  
+ .lang .ag{
+    background: #0A1F39;
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 50px;
+    height: 27px;
+    font-weight: bold;
+    }
+    .lang button:hover{
+      transform:scale(1.05)
+    }
+
   .page-content{
     width: 100%;
     display: flex;

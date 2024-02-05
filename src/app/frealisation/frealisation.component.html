@@ -3,65 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réalisation</title>
+    <title>Réalisations</title>
     
 </head>
 <body>
-    <div class="top-bar">
-        <div class="sous-top-bar">
-          <div class="contact-info">
-            <p><span class="red-text">Téléphone:</span> +216 71 501 080</p>
-            <div class="lang">
-                <button class="fr" routerLink="/acceuil" routerLinkActive="active" >FR</button>
-                <button routerLink="/home" routerLinkActive="active" class="ag" href="/home">AN</button>
-              </div>
-          </div>
-          <div class="social-links">
-            <p><span class="red-text">Email:</span> cotechplanet.tn</p>
-            <a href="https://twitter.com/cotech" target="_blank"><i class="bi bi-twitter"></i></a>      
-            <a href="https://facebook.com/cotech" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://gmail.com/cotech" target="_blank"><i class="bi bi-envelope"></i> </a>
-          </div>
-        </div>
-      </div>
+   
       <div class="navbar">   
-             
-          <div class="container-fluid">
-            <div class="logo">
-                <img src="assets/images/logo3.png">
-              <div class="name"><h1>Cotech</h1></div>
+        <header class="header-area header-sticky">
+            <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo2">
+                        <img src="assets/images/logo4.png" alt="" >
+                    </a>
+                    <ul class="nav">
+                      <li><a href="/test">Acceuil</a></li>
+                      <li><a href="shop.html">Présentation</a></li>
+                      <li><a href="product-details.html">Nos sérvices</a></li>
+                      <li><a href="contact.html" class="active">Réalisations</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
             </div>
-              <div class="links">
-                  <a class="nav-link" href="/acceuil">Acceuil</a>
-                  <a class="nav-link" href="/fpresentation">Présentation</a>
-                  <a class="nav-link" href="/fservice">services</a>
-                  <a id="realisation" class="nav-link active" href="/realisation">Réalisation</a>
-                  <a class="nav-link" href="/fcertificats">Certificats</a>
-                  <a class="nav-link " href="/fcontact">Contact</a>
-              </div>
-          </div>
+        </div>
+        </div>
+        </header>
       </div> 
 
 
     <div class="pagecontent">
-        <div class="realisation">
-            <h1>Nos Réalisations</h1>
-        </div>
-        <div class="left">
-
+        <div class="section most-played">
             <div class="container">
-                <div><button class="b"  (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">Traitement des eaux</button></div>
-                <div><button class="b"  (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Agro Alimentaire</button></div>
-                <div><button class="b"  (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Fonderie</button></div>
-                <div><button class="b"  (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Divers</button></div>
-                <div><button class="b"  (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Béton</button></div>
-                <div><button class="b"  (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Chimie</button></div>
-                <div><button class="b"  >Méthanation</button></div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="section-heading">
+                    <h2>Réalisation</h2>
+                    <h6>Domaines</h6>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">Traitement des eaux</h4>
+                        <a  (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+  
+                    <div class="down-content">
+                        
+                        <h4 class="bb"  (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Agro alimentaire</h4>
+                        <a    (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Fonderie</h4>
+                        <a (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+        
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Divers</h4>
+                        <a (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+         
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Béton</h4>
+                        <a (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+               
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Chimie</h4>
+                        <a (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+
         <div class="container2">
             <div class="tittle" *ngIf="showbarre1">
-                <h4>Traitement des eaux</h4>
+                
                 <div class="test" >
                     <div><button class="b1" (click)="toggle1()" (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'">2 Meetings Spalding</button></div>
                     <div><button class="b1" (click)="toggle2()"(click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'">Station Epuration aéroport Enfidha</button></div>
@@ -329,35 +388,31 @@
             
                 <div class="newtittle" *ngIf="showbarre2">
                     
-                    
-                    <div class="newp1" *ngIf="showsecond">
-                            <div class="klem">
-                                <h4>Dépôt frigorifique : ENNASSIM (Libye) </h4>
-                                <p>Lieu : Usine de produits laitier</p>
-                                <p>Descriptif : Armoire de commande et de supervision pour dépôt frigorifique</p>
-                                <p>Automate employé : 2 x S7 200 en réseau.</p>
-                                <p>Superviseur : WinCC Flexible Runtime + KTP1000.</p>
-                            </div> 
-                            <div class="image-slider">
-                                    <button (click)="prevImage()" id="arrow"><i class="bi bi-arrow-left-square-fill"></i></button>
-                                    <div class="main-images">
-                                        <div *ngFor="let image of displayedImages; let i = index" class="main-image">
-                                            <img [src]="image" alt="Main Image {{i}}">
-                                        </div>
+                     <div class="newp1" *ngIf="showsecond">
+                        <div class="klem">
+                            <h4>Dépôt frigorifique : ENNASSIM (Libye) </h4>
+                            <p>Lieu : Usine de produits laitier</p>
+                            <p>Descriptif : Armoire de commande et de supervision pour dépôt frigorifique</p>
+                            <p>Automate employé : 2 x S7 200 en réseau.</p>
+                            <p>Superviseur : WinCC Flexible Runtime + KTP1000.</p>
+                        </div> 
+                        <div class="image-slider">
+                                <button (click)="prevImage()" id="arrow"><i class="bi bi-arrow-left-square-fill"></i></button>
+                                <div class="main-images">
+                                    <div *ngFor="let image of displayedImages; let i = index" class="main-image">
+                                        <img [src]="image" alt="Main Image {{i}}">
                                     </div>
-                                      <button (click)="nextImage()" id="arrow"><i class="bi bi-arrow-right-square-fill"></i></button>
-                                    
-                            </div>
-                                                                     
-                    </div>      
-                    
-                          
-                </div>
+                                </div>
+                                  <button (click)="nextImage()" id="arrow"><i class="bi bi-arrow-right-square-fill"></i></button>
+                                
+                        </div>
+                                                                 
+                </div>      
+                
+                      
+            </div>
             
             <div class="tittle" *ngIf="showbarre3">
-                <div class="test2">
-                    <div><button  class="newbtn" >Armoire presse injection Sopal</button></div>
-                </div>
                 <div class="newp1" *ngIf="showthird">
                     <div class="klem">
                         <h4> Armoire presse injection Sopal (Tunisie) </h4>
@@ -391,14 +446,14 @@
                     <div><button id="b3" class="b2" (click)="togglefour2()" (click)="setActiveButton2('button2')" [class.active]="activeButton2 === 'button2'">Four de traitement Eurocast (U.S.A.)</button></div>
                 </div>
                 <div class="newp1" *ngIf="showfour1">
-                <div class="klem">
-                    <h4>Unité Broyage STICC (Tunisie) </h4>
-                    <p>Lieu : Usine de broyage de CaCO3 (Fériana)</p>
-                    <p>Descriptif : Armoire de commande et de supervision<br>
-                    pour une unité de broyage de carbonate de calcium</p>
-                    <p>Automate employé : S7 300.</p>
-                    <p>Superviseur : Touch Panel MP377.</p>
-                </div>
+                    <div class="klem">
+                        <h4>Unité Broyage STICC (Tunisie) </h4>
+                        <p>Lieu : Usine de broyage de CaCO3 (Fériana)</p>
+                        <p>Descriptif : Armoire de commande et de supervision<br>
+                        pour une unité de broyage de carbonate de calcium</p>
+                        <p>Automate employé : S7 300.</p>
+                        <p>Superviseur : Touch Panel MP377.</p>
+                    </div>
                 <div class="image-slider">
                                     
                     <div class="main-images">
@@ -410,13 +465,13 @@
                 
                 </div>
                 <div class="newp1" *ngIf="showfour2">
-                <div class="klem">
-                    <h4>Four de traitement Eurocast (U.S.A.) </h4>
-                    <p>Lieu : Fonderie pièce pour réacteur d’avion (Tunisie)</p>
-                    <p>Descriptif : Armoire de commande et de supervision pour four de traitement thermique</p>
-                    <p>Automate employé : S7 200.</p>
-                    <p>Superviseur : WinCC Flexible Runtime.</p>
-                </div>
+                    <div class="klem">
+                        <h4>Four de traitement Eurocast (U.S.A.) </h4>
+                        <p>Lieu : Fonderie pièce pour réacteur d’avion (Tunisie)</p>
+                        <p>Descriptif : Armoire de commande et de supervision pour four de traitement thermique</p>
+                        <p>Automate employé : S7 200.</p>
+                        <p>Superviseur : WinCC Flexible Runtime.</p>
+                    </div>
 
                             <div class="image-slider">
                                     
@@ -429,25 +484,25 @@
             </div>
             <div class="tittle" *ngIf="showbarre5">
                 <div class="test2">
-                    <div><button class="newbtn" >Système de commande pour centrale à béton</button></div>
+                    
                 </div>
                 <div class="newp1" *ngIf="showfive">
                 <div class="klem">
                     <div class="division">
                         <div>
-                    <h4>Système de commande pour centrale à béton </h4>
-                    <p>Projet : Système de commande pour centrale à béton.</p>
-                    <p>Lieu : Jebel Oust (Tunisie)</p>
-                    <p>Client : SOROUBAT</p>
-                    <p>Capacité malaxeur : 3m3 de béton.</p>
-                    <p>Année de réalisation : 2013</p>
+                            <h4>Système de commande pour centrale à béton </h4>
+                            <p>Projet : Système de commande pour centrale à béton.</p>
+                            <p>Lieu : Jebel Oust (Tunisie)</p>
+                            <p>Client : SOROUBAT</p>
+                            <p>Capacité malaxeur : 3m3 de béton.</p>
+                            <p>Année de réalisation : 2013</p>
                         </div>
                         <div class="partieleft">
                             <br><br><br>
-                    <p>Prestations : Étude, conception et fourniture du système de pesage </p>
-                    <p>capteurs de poids,du système de dosage d'adjuvant et du coffret</p>  
-                    <p>électrique à base d'automate programmable SIEMENS S7, ainsi qu'un</p> 
-                    <p>système de supervision sur PC sous WinCC Flexible.</p>
+                            <p>Prestations : Étude, conception et fourniture du système de pesage </p>
+                            <p>capteurs de poids,du système de dosage d'adjuvant et du coffret</p>  
+                            <p>électrique à base d'automate programmable SIEMENS S7, ainsi qu'un</p> 
+                            <p>système de supervision sur PC sous WinCC Flexible.</p>
                         </div>
                     </div>
                 </div>
@@ -465,28 +520,28 @@
             </div>
             <div class="tittle" *ngIf="showbarre6">
                 <div class="test2">
-                    <div><button class="newbtn" >Unité de fabrication détergents liquides</button></div>
+                  
                 </div>
                 <div class="newp1" *ngIf="shows">
                 <div class="klem">
                     <div class="division">
                         <div>
-                    <h4> Unité de fabrication détergents liquides </h4>
-                    <p>Projet : Unité de fabrication détergents liquides.</p>
-                    <p>Lieu : Sfax (Tunisie)</p>
-                    <p>Client : SODET</p>
-                    <p>Capacité réacteur : 3m3</p>
-                    <p>Année de réalisation : 2010</p>
-                    </div><div>
-                        <br>
-                        <br>
-                        <p>Prestations : Étude, conception et fourniture d'une unité de <br><br>fabrication 
-                            de détergent liquide complète
-                        , y compris réacteur <br><br>de préparation,
-                         cuves de stockage, pompes et circuit hydraulique,<br><br>
-                        coffret électrique de commande à base d'automate programmable<br><br>
-                         SIEMENS S7 et module SIWAREX,ainsi qu'un système de supervision<br><br>
-                          sur PC sous WinCC Flexible.</p>
+                            <h4> Unité de fabrication détergents liquides </h4>
+                            <p>Projet : Unité de fabrication détergents liquides.</p>
+                            <p>Lieu : Sfax (Tunisie)</p>
+                            <p>Client : SODET</p>
+                            <p>Capacité réacteur : 3m3</p>
+                            <p>Année de réalisation : 2010</p>
+                            </div><div>
+                                <br>
+                                <br>
+                                <p>Prestations : Étude, conception et fourniture d'une unité de <br><br>fabrication 
+                                    de détergent liquide complète
+                                , y compris réacteur <br><br>de préparation,
+                                 cuves de stockage, pompes et circuit hydraulique,<br><br>
+                                coffret électrique de commande à base d'automate programmable<br><br>
+                                 SIEMENS S7 et module SIWAREX,ainsi qu'un système de supervision<br><br>
+                                  sur PC sous WinCC Flexible.</p>
                     </div>
                     </div>
                     
@@ -509,48 +564,14 @@
             </div> 
     </div>
 
-    <footer> 
-        <div class="footer clear tahoma">
-            <div class="footer_wrap">
-                <div class="float_left bottom_nav">
-                        <ul class="navigation-list">
-                         <li><a href="/acceuil">Acceuil</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="fpresentation">Présentation</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/fservices">Services</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/realisation">Réferences</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/factivite">Activités</a></li>
-                         <li class="divider">|</li>
-                         <li><a href=""> Catalogue</a></li>                     
-                         <li><a href="">Equipement</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/fcertificats" >Certificats</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/clients">Clients</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/fgallery">Photos</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="">Video</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/fnews">Actualités</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="" >Newsletter</a></li>
-                         <li class="divider">|</li>
-                         <li><a href="/fcontact">Contact</a></li>
-                        </ul>
-                </div>
-                <div class="float_right ">
-                  <div class="copy">
-                    Copyright © 2013  www.cotechplanet.net 
-                    <span>Powered by <a href="" target="_blank">CRESUS</a></span>
-                  </div>
-                </div>
-              
-            </div>
+    <footer>
+        <div class="container">
+          <div class="col-lg-12">
+            <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+          </div>
         </div>
       </footer>
 
 </body>
+
+  </html>
