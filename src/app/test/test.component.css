@@ -76,12 +76,11 @@
   }
   .image-slide-container {
     display: none;
-  
     transition: background-color 0.3s ease;
     position: absolute;
     overflow: hidden;
     border-radius: 5px;
-      transition: transform 5s ease;
+    transition: transform 5s ease;
   }
   
     .image-slide-container.active {
@@ -191,3 +190,4 @@
         background-color: #345986;
         color: #fff;
       }
+      
