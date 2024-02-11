@@ -146,6 +146,9 @@
   .image-navigation-dots .active {
     background-color: #717171;
   }
+  .category{
+    color:#0d6156;
+  }
   
     
     /*********************************************contactus********************/
@@ -190,4 +193,37 @@
         background-color: #345986;
         color: #fff;
       }
+      .icon-style {
+        font-size: 5rem; 
+        color: #0A1F39;
+      }
+      
+      .contact-info {
+        position: relative;
+      }
+      
+      .contact-info::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #000; /* Couleur de la ligne */
+        left: -30%; /* Position de la ligne par rapport à l'élément */
+      }
+      .bold{
+        font-size: larger;
+        font-weight: 700;
+      }
+      .footer-links.list-inline li {
+        margin-right: 5%; 
+        color: whitesmoke;
+        font-weight: 400;
+        cursor: pointer;
+      }
+      .nav a{
+        cursor: pointer;
+      }
+      
+      
       

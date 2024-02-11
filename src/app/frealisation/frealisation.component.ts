@@ -15,6 +15,7 @@ export class FrealisationComponent implements OnInit {
   showbarre4 = false;
   showbarre5 = false;
   showbarre6 = false;
+  router: any;
   /**/
  
   /*****/
@@ -337,5 +338,12 @@ nextImage(): void {
     this.updateDisplayedImages3();
   }
 }
+navigateToSection(sectionId: string): void {
+  this.router.navigate([], { fragment: sectionId });
+  this.scrollToElement(sectionId);
+}
+  scrollToElement(sectionId: string) {
+    throw new Error('Method not implemented.');
+  }
 
 }

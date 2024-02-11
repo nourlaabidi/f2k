@@ -330,3 +330,9 @@ body{
   .down-content{
     cursor: pointer;
   }
+  .footer-links.list-inline li {
+    margin-right: 5%; 
+    color: whitesmoke;
+    font-weight: 400;
+    cursor: pointer;
+  }

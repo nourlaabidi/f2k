@@ -163,7 +163,12 @@ justify-content: center;
   background-color:#fff; 
   border-radius: 5px; 
 }
-
+.footer-links.list-inline li {
+  margin-right: 5%; 
+  color: whitesmoke;
+  font-weight: 400;
+  cursor: pointer;
+}
 
 
 

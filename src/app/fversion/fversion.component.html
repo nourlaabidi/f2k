@@ -39,11 +39,12 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a class="active" (click)="navigateToSection('home')">Acceuil</a></li>
-                      <li><a (click)="navigateToSection('presentation')">Présentation</a></li>
-                      <li><a (click)="navigateToSection('services')">nos sérvices</a></li>
-                      <li><a (click)="navigateToSection('Achivements')">Réalisations</a></li>
-                      <li><a (click)="navigateToSection('contactus')">Contact</a></li>
+                      
+                      <li><a class="active" (click)="navigateToSection('acceuil')">Acceuil</a></li>
+                      <li><a (click)="navigateToSection('fpresentation')">Presentation</a></li>
+                      <li><a (click)="navigateToSection('fservices')">Our services</a></li>
+                      <li><a (click)="navigateToSection('realisation')">Achivements</a></li>
+                      <li><a (click)="navigateToSection('contact')">Contact Us</a></li>
                       <div class="lang">
                         <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
                         <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
@@ -60,7 +61,7 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner" id="home">
+  <div class="main-banner" id="acceuil">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center">
@@ -99,7 +100,7 @@
     </div>
   </div>
 
-  <div class="features" id="services">
+  <div class="features" id="fservices">
     <div class="container">
 
       <div class="row">
@@ -151,7 +152,7 @@
     </div>
   </div>
 
-  <div class="section trending" id="presentation">
+  <div class="section trending" id="fpresentation">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -163,9 +164,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="main-button">
-            <a href="shop.html">afficher plus</a>
-          </div>
+          
         </div>
        
         <div class="col-lg-4 col-md-6">
@@ -175,7 +174,7 @@
               
             </div>
             <div class="down-content">
-              <span class="category">Automatisation Avancée</span>
+              <h5 class="category">Assistance d'experts</h5>
               <h4>Nous pouvons vous fournir de l'assistance en matière de pesage, de dosage et d'automatisation afin que vous puissiez maintenir votre position concurrentielle.
 
                 F2K et ses partenaires spécialisés (pesage et automatisation) offrent des solutions de haute technologie et de haute précision.</h4>
@@ -189,7 +188,7 @@
                 <a href="product-details.html"><img src="assets/images/assistance.png" alt="" style="max-width:100px; margin-left: 35%; margin-top: 2%;"></a>
               </div>
               <div class="down-content">
-                <span class="category">Advanced Automation</span>
+                <h5 class="category">Automatisation Avancée</h5>
                 <h4>
                   Nous utilisons les données de 'poids' pour optimiser le flux de votre matériau et processus. L'automatisation offre des processus de production rapides, sûrs, efficaces, flexibles, fiables, durables et rentables avec F2K. Garantie de contenu, coût, dates de livraison et résultat final.
                 
@@ -207,7 +206,7 @@
               
             </div>
             <div class="down-content">
-              <span class="category">Impact Mondial</span>
+              <h5 class="category">Impact Mondial</h5>
               <h4>Les réalisations de F2K sont adoptées en Afrique, en Europe, en Amérique et au Moyen-Orient.
 
                 Nous proposons de nouvelles solutions ainsi que le renouvellement des installations existantes.</h4>
@@ -223,7 +222,7 @@
     </div>
   </div>
 
-  <div class="section most-played" id="Achivements">
+  <div class="section most-played" id="realisation">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -318,109 +317,86 @@
   
 
 
-<div class="section cta" id="contactus">
+  <div class="section cta" id="contact">
 
-  <div class="container">
-
-    <div class="row">
-      <div class="section-heading">
-        <h2>Contactez nous</h2>
-        <h6>Envoyez-nous un message</h6>
-      </div>
-
-      <!-- Left Box: Contact Form -->
-      <div class="col-lg-6">
-
-        <div class="shop">
-          <div class="row">
-            <div class="col-lg-12">
-
-              <form>
-                <!-- Your contact form HTML goes here -->
-                <div class="form-group mb-5">
-                  <label for="" class="col-form-label">Destinataire *</label><br>
-                  <select id="dropdown">
-                    <option value="" disabled selected> destinataire..</option>
-                    <option value="option1">Général</option>
-                    <option value="option2">Exportation</option>
-                  </select>
-                </div>
+    <div class="container">
+  
+      <div class="row">
+        <div class="section-heading">
+          <h2>Contact </h2>
+          <h6>CONTACTEZ-NOUS ET TRAVAILLONS ENSEMBLE</h6>
+        </div>
+  
+        <!-- contact Box:  -->
+        <div class="col-lg-12  ">
+          
+          <div class="shop ">
+            <div class="row">
+              
+              <div class="col-lg-12">
                 <div class="row">
-                  <div class="col-md-6 form-group mb-5">
-                    <label for="" class="col-form-label">prénom *</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Votre prénom">
+                  
+                  <div class="col-md-4">
+                    
+                      <i class="fa fa-phone icon-style" aria-hidden="true"></i> 
+                      <br>
+                      <span>apellez-nous </span>
+                      <br>
+                      <span class="bold">+336 8038 5496 </span>
+                    
                   </div>
-                  <div class="col-md-6 form-group mb-5">
-                    <label for="" class="col-form-label">nom de famille *</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="votre nom">
-                  </div>
-                  <div class="col-md-6 form-group mb-5">
-                    <label for="" class="col-form-label">Addresse*</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="votre adresse">
-                  </div>
-                  <div class="col-md-6 form-group mb-5">
-                    <label for="" class="col-form-label">Email *</label>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="votre email">
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group mb-5">
-                      <label for="" class="col-form-label">Téléphone</label>
-                      <input type="text" class="form-control" name="phone" id="phone" placeholder="Téléphone #">
+                  <div class="col-md-4">
+                    <div class="contact-info">
+                      <i class="fa fa-envelope icon-style"></i> <!-- Icône email Bootstrap -->
+                      <br>
+                      <span>Envoyez-nous un email</span>
+                      <br>
+                      <span class="bold">F2k&#64;gmail.com</span>
                     </div>
-                    <div class="col-md-6 form-group mb-5">
-                      <label for="" class="col-form-label">Fax</label>
-                      <input type="text" class="form-control" name="fax" id="fax" placeholder="Fax">
+                  </div>
+                  <div class="col-md-4">
+                    <div class="contact-info">
+                      <i class="bi bi-geo-alt-fill icon-style"></i> 
+                      <br>
+                      <span>Notre localisation</span>
+                      <br>
+                      <span class="bold">13 avenue DURANTE 06000 Nice France </span>
                     </div>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6">
         
-        <div class="shop">
-          <div class="row">
-            <div class="col-lg-12">
-              <form>
-               
-                
-                <div class="row">
-                  <div class="col-md-12 form-group mb-5">
-                    <label for="message" class="col-form-label">Sujet *</label>
-                    <input type="text" class="form-control" name="sujet" id="sujet" placeholder="Sujet">
-                  </div>
-                  <div class="col-md-12 form-group mb-5">
-                    <label for="message" class="col-form-label">Message *</label>
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="9" placeholder="Ecrivez votre message"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <div class="main-button2">
-                      <a href="#">Envoyer</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div> 
+        
+        
+      </div>
     </div>
   </div>
-</div>
 
 
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="/gallery" target="_blank">Gallery</a></p>
+<footer class="footer">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+      <div class="row">
+        
+          <div class="col-lg-12 text-center">
+            
+              <ul class="footer-links list-inline justify-content-center">
+                  <li class="list-inline-item"><a (click)="navigateToSection('acceuil')">Acceuil</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('fpresentation')">Présentation</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('fservices')">Sérvices</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('realisation')">Réalisation</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('contact')">Contact</a></li>
+              </ul>
+          </div>
       </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
