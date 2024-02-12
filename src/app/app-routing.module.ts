@@ -23,6 +23,7 @@ import { FcertificatsComponent } from './fcertificats/fcertificats.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { TestComponent } from './test/test.component';
 const routes: Routes = [
+  { path: '', component: TestComponent },
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'news', component: NewsComponent },
