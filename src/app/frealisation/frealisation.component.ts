@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-frealisation',
   templateUrl: './frealisation.component.html',
@@ -338,12 +339,8 @@ nextImage(): void {
     this.updateDisplayedImages3();
   }
 }
-navigateToSection(sectionId: string): void {
-  this.router.navigate([], { fragment: sectionId });
-  this.scrollToElement(sectionId);
-}
-  scrollToElement(sectionId: string) {
-    throw new Error('Method not implemented.');
-  }
+
+
+
 
 }

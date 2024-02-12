@@ -1133,10 +1133,10 @@ footer {
   background-color: #a6ab9f;
   background-repeat: no-repeat;
   background-size: cover;
- /* background-image: url(src\assets\images\background.jpg);*/
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
 }
+
 
 footer p {
   text-align: center;
@@ -1156,6 +1156,20 @@ footer p a {
 footer p a:hover {
   opacity: 0.75;
 }
+footer .list-inline{
+  margin-top: 35px;
+  cursor: pointer;
+  padding: 0;
+  list-style: none;
+  color: #ffff;
+  text-align: center;}
+
+
+footer button {
+  margin-top: 10px;
+  padding: 8px 15px;
+}
+
 
 
 /* 

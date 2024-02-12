@@ -13,7 +13,7 @@
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
+  <!-- ***** Preloader Start ***** 
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -23,7 +23,7 @@
         <span></span>
       </div>
     </div>
-  </div>
+  </div>-->
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
@@ -379,26 +379,39 @@
 
 
 
-<footer class="footer">
+<footer>
   <div class="container">
-    <br>
-    <br>
-    <br>
-      <div class="row">
-        
-          <div class="col-lg-12 text-center">
-            
-              <ul class="footer-links list-inline justify-content-center">
-                  <li class="list-inline-item"><a (click)="navigateToSection('home')">Home</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('presentation')">Presentation</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('services')">Services</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('Achivements')">Achivements</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('contactus')">Contact</a></li>
-              </ul>
-          </div>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('home')">Home</a></li>
+          <li><a (click)="navigateToSection('presentation')">Presentation</a></li>
+        </ul>
       </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('services')">Services</a></li>
+          <li><a (click)="navigateToSection('Achivements')">Achievements</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('contactus')">Contact</a></li>
+          <li><a class="gl" href="/gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <button class="btn btn-secondary btn-sm" (click)="navigateToSection('home')">Back to Top</button>
+      </div>
+      <div class="col-12 text-md-right">
+        <p><a>&copy; 2024 Your F2K</a></p>
+      </div>
+    </div>
   </div>
 </footer>
+
 
 
 

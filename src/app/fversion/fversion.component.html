@@ -13,7 +13,7 @@
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
+  <!-- ***** Preloader Start ***** 
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -23,7 +23,7 @@
         <span></span>
       </div>
     </div>
-  </div>
+  </div>-->
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
@@ -42,9 +42,9 @@
                       
                       <li><a class="active" (click)="navigateToSection('acceuil')">Acceuil</a></li>
                       <li><a (click)="navigateToSection('fpresentation')">Presentation</a></li>
-                      <li><a (click)="navigateToSection('fservices')">Our services</a></li>
-                      <li><a (click)="navigateToSection('realisation')">Achivements</a></li>
-                      <li><a (click)="navigateToSection('contact')">Contact Us</a></li>
+                      <li><a (click)="navigateToSection('fservices')">Nos sérvices</a></li>
+                      <li><a (click)="navigateToSection('realisation')">Réalisations</a></li>
+                      <li><a (click)="navigateToSection('contact')">Contact</a></li>
                       <div class="lang">
                         <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
                         <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
@@ -377,24 +377,36 @@
 
 
 
-<footer class="footer">
+<footer>
   <div class="container">
-    <br>
-    <br>
-    <br>
-      <div class="row">
-        
-          <div class="col-lg-12 text-center">
-            
-              <ul class="footer-links list-inline justify-content-center">
-                  <li class="list-inline-item"><a (click)="navigateToSection('acceuil')">Acceuil</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('fpresentation')">Présentation</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('fservices')">Sérvices</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('realisation')">Réalisation</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('contact')">Contact</a></li>
-              </ul>
-          </div>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('acceuil')">Acceuil</a></li>
+          <li><a (click)="navigateToSection('fpresentation')">Presentation</a></li>
+        </ul>
       </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('fservices')">Services</a></li>
+          <li><a (click)="navigateToSection('realisation')">Realisation</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('contact')">Contact</a></li>
+          <li><a class="gl" href="/gallerie">Gallerie</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <button class="btn btn-secondary btn-sm" (click)="navigateToSection('acceuil')">Back to Top</button>
+      </div>
+      <div class="col-12 text-md-right">
+        <p><a>&copy; 2024 Your F2K</a></p>
+      </div>
+    </div>
   </div>
 </footer>
 

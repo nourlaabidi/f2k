@@ -8,7 +8,7 @@
 </head>
 <body>
    
-      <div class="navbar">   
+      <div class="navbar" >   
         <header class="header-area header-sticky">
             <div class="container">
         <div class="row">
@@ -19,10 +19,10 @@
                     </a>
                     <ul class="nav">
                       <li><a href="/test">Acceuil</a></li>
-                      <li><a href="shop.html">Présentation</a></li>
-                      <li><a href="product-details.html">Nos sérvices</a></li>
-                      <li><a href="contact.html" class="active">Réalisations</a></li>
-                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="/test">Présentation</a></li>
+                      <li><a href="/test">Nos sérvices</a></li>
+                      <li><a href="/test" class="active">Réalisations</a></li>
+                      <li><a href="/test">Contact</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -35,7 +35,7 @@
       </div> 
 
 
-    <div class="pagecontent">
+    <div class="pagecontent" id="top">
         <div class="section most-played">
             <div class="container">
               <div class="row">
@@ -564,24 +564,34 @@
             </div> 
     </div>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-          <br>
-          <br>
-          <br>
-            <div class="row">
-              
-                <div class="col-lg-12 text-center">
-                  
-                    <ul class="footer-links list-inline justify-content-center">
-                        <li class="list-inline-item"><a (click)="navigateToSection('acceuil')">Acceuil</a></li>
-                        <li class="list-inline-item"><a (click)="navigateToSection('fpresentation')">Présentation</a></li>
-                        <li class="list-inline-item"><a (click)="navigateToSection('fservices')">Sérvices</a></li>
-                        <li class="list-inline-item"><a (click)="navigateToSection('realisation')">Réalisation</a></li>
-                        <li class="list-inline-item"><a (click)="navigateToSection('contact')">Contact</a></li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-inline">
+                <li><a class="gl" href="/fversion">Acceuil</a></li>
+                <li><a class="gl" href="/fversion">Presentation</a></li>
+              </ul>
             </div>
+            <div class="col-md-4">
+              <ul class="list-inline">
+                <li><a class="gl" href="/fversion">Services</a></li>
+                <li><a class="gl" href="/fversion">Realisation</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline">
+                <li><a class="gl" href="/fversion">Contact</a></li>
+                <li><a class="gl" href="/gallerie">Gallerie</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+           
+            <div class="col-12 text-md-right">
+              <p><a>&copy; 2024 Your F2K</a></p>
+            </div>
+          </div>
         </div>
       </footer>
 
