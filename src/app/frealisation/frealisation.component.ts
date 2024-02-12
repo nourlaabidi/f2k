@@ -1,11 +1,11 @@
-import { Component , OnInit} from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+
 @Component({
-  selector: 'app-erealisation',
-  templateUrl: './erealisation.component.html',
-  styleUrls: ['./erealisation.component.css']
+  selector: 'app-frealisation',
+  templateUrl: './frealisation.component.html',
+  styleUrls: ['./frealisation.component.css']
 })
-export class ErealisationComponent implements OnInit {
+export class FrealisationComponent implements OnInit {
   
 
 
@@ -345,6 +345,5 @@ navigateToSection(sectionId: string): void {
   scrollToElement(sectionId: string) {
     throw new Error('Method not implemented.');
   }
-
 
 }

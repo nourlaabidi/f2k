@@ -33,19 +33,18 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo4.png" alt="f2k" >
+                        <img src="assets/images/logo4.png" alt="" >
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       
-                      <li><a class="active" (click)="navigateToSection('home')">Home</a></li>
-                      <li><a (click)="navigateToSection('presentation')">Presentation</a></li>
-                      <li><a (click)="navigateToSection('services')">Our services</a></li>
-                      <li><a (click)="navigateToSection('Achivements')">Achivements</a></li>
-                      <li><a (click)="navigateToSection('contactus')">Contact Us</a></li>
+                      <li><a class="active" (click)="navigateToSection('acceuil')">Acceuil</a></li>
+                      <li><a (click)="navigateToSection('fpresentation')">Presentation</a></li>
+                      <li><a (click)="navigateToSection('fservices')">Our services</a></li>
+                      <li><a (click)="navigateToSection('realisation')">Achivements</a></li>
+                      <li><a (click)="navigateToSection('contact')">Contact Us</a></li>
                       <div class="lang">
                         <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
                         <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
@@ -62,16 +61,15 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner" id="home">
+  <div class="main-banner" id="acceuil">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 align-self-center">
           <div class="caption header-text">
-            <h6>Welcome to F2K</h6>
-            <h2>Empowering Industries</h2>
-            <p>Empowering Industries Through Precision Automation and Expert Consultacy</p>
-            <div><button [routerLink]="['/gallery']" class="gallery"> Gallery</button>  </div>
-            
+            <h6>Bienvenue chez F2K</h6>
+            <h2>Renforcer les industries </h2>
+            <p>Renforcer les industries grâce à l'automatisation de précision et à l'expertise-conseil de pointe</p>
+            <div><button [routerLink]="['/fgallery']" class="gallery"> Galerie</button>  </div>
           </div>
         </div>
 
@@ -102,7 +100,7 @@
     </div>
   </div>
 
-  <div class="features" id="services">
+  <div class="features" id="fservices">
     <div class="container">
 
       <div class="row">
@@ -114,7 +112,7 @@
                 
                 <img src="assets/images/auto.png" alt="" style="max-width: 44px; margin-top: 20px;">
               </div>
-              <h4>Study of Industrial Automation Projects </h4>
+              <h4>Étude de Projets d'Automatisation Industrielle </h4>
             </div>
           </a>
         </div>
@@ -124,7 +122,7 @@
               <div class="image">
                 <img src="assets/images/cable.png" alt="" style="max-width: 44px; margin-top: 20px;">
               </div>
-              <h4>Design and<br>Assembling</h4>
+              <h4>Conception et<br> Assemblage<br><br></h4>
           
             
             </div>
@@ -136,7 +134,7 @@
               <div class="image">
                 <img src="assets/images/idea.png" alt="" style="max-width: 44px;margin-top: 20px;">
               </div>
-              <h4>On-Site   <br>Implementation</h4>
+              <h4>Mise en Œuvre<br> sur Site<br><br></h4>
             </div>
           </a>
         </div>
@@ -146,7 +144,7 @@
               <div class="image">
                 <img src="assets/images/solution.png" alt="" style="max-width: 44px;margin-top: 20px;">
               </div>
-              <h4>Top Technology Solutions </h4>
+              <h4>Solutions de Haute Technologie<br><br></h4>
             </div>
           </a>
         </div>
@@ -154,15 +152,15 @@
     </div>
   </div>
 
-  <div class="section trending" id="presentation">
+  <div class="section trending" id="fpresentation">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
             
-            <h2>Presentation</h2>
-            <h6>About Us</h6>
-            <p>F2k is a Tunisian/Belgian company specialized in the study, development and realization of industrial automation projects; also we fulfill regulation systems for production chains on PLC basis. We offer practical consultancy based on 30 years of experience in automation of industrial production processes.</p>
+            <h2>Présentation</h2>
+            <h6>A propos</h6>
+            <p>F2K est une entreprise tunisienne spécialisée dans l'étude, le développement et la réalisation de projets d'automatisation industrielle ; nous concevons également des systèmes de régulation pour des chaînes de production sur la base de PLC. Nous offrons des conseils pratiques basés sur 30 ans d'expérience dans l'automatisation des processus de production industrielle.</p>
           </div>
         </div>
         <div class="col-lg-6">
@@ -176,12 +174,10 @@
               
             </div>
             <div class="down-content">
-              <h5 class="category">Advanced Automation</h5>
-              <p>We use the data 'weight' (basic information) to control your material stream and process.
+              <h5 class="category">Assistance d'experts</h5>
+              <p>Nous pouvons vous fournir de l'assistance en matière de pesage, de dosage et d'automatisation afin que vous puissiez maintenir votre position concurrentielle.
 
-                Automation can give you faster, safer production processes which are more efficient, flexible,
-                 reliable, sustainable and cost-effective. Working with
-                 Cotech also means you can be sure of the project content, cost, delivery dates and end result.</p>
+                F2K et ses partenaires spécialisés (pesage et automatisation) offrent des solutions de haute technologie et de haute précision.</p>
               
             </div>
           </div>
@@ -192,16 +188,16 @@
                 <a href="product-details.html"><img src="assets/images/assistance.png" alt="" style="max-width:100px; margin-left: 35%; margin-top: 2%;"></a>
               </div>
               <div class="down-content">
-                <h5 class="category">Expert Assistance</h5>
+                <h5 class="category">Automatisation Avancée</h5>
                 <p>
-                  We can give you assistance with weighing, dosing and automation so that you can maintain your competitive position
-  
-                  Learn More We can give you assistance with weighing, dosing and automation so that you can maintain your competitive position
-                  <br><br>
+                  Nous utilisons les données de 'poids' pour optimiser le flux de votre matériau et processus. L'automatisation offre des processus de production rapides, sûrs, efficaces, flexibles, fiables, durables et rentables avec F2K. Garantie de contenu, coût, dates de livraison et résultat final.
+                
                 </p>
                 
               </div>
             </div>
+           
+
           </div>
         <div class="col-lg-4 col-md-6">
           <div class="item">
@@ -210,11 +206,13 @@
               
             </div>
             <div class="down-content">
-              <h5 class="category">Global impact</h5>
-              <p>The realizations of F2K are adopted in Africa, Europe, America and the Middle East.
+              <h5 class="category">Impact Mondial</h5>
+              <p>Les réalisations de F2K sont adoptées en Afrique, en Europe, en Amérique et au Moyen-Orient.
 
-                We offer new solutions as well as renewal of existing installations.</p>
-                <br><br><br>
+                Nous proposons de nouvelles solutions ainsi que le renouvellement des installations existantes.</p>
+                <br>
+                
+                
             </div>
           </div>
         </div>
@@ -224,19 +222,19 @@
     </div>
   </div>
 
-  <div class="section most-played" id="Achivements">
+  <div class="section most-played" id="realisation">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h2>Achivements</h2>
-            <h6>Fields</h6>
+            <h2>Réalisations</h2>
+            <h6>domaines</h6>
             
           </div>
         </div>
         <div class="col-lg-6">
           <div class="main-button">
-            <a  href="/erealisation" >View All</a>
+            <a  href="/frealisation" >afficher plus</a>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
@@ -246,8 +244,8 @@
             </div>
             <div class="down-content">
                 
-                <h4>Water treatment</h4>
-                <a href="/erealisation">Explore</a>
+                <h4>Traitement des eaux</h4>
+                <a href="/erealisation">Voir</a>
             </div>
           </div>
         </div>
@@ -258,8 +256,8 @@
             </div>
             <div class="down-content">
                 
-                <h4>Food Industry</h4>
-                <a href="/erealisation">Explore</a>
+                <h4>Agro alimentaire</h4>
+                <a href="/erealisation">Voir</a>
             </div>
           </div>
         </div>
@@ -270,8 +268,8 @@
             </div>
             <div class="down-content">
                 
-                <h4>Foundry</h4>
-                <a href="/erealisation">Explore</a>
+                <h4>Fonderie</h4>
+                <a href="/erealisation">Voir</a>
             </div>
           </div>
         </div>
@@ -282,8 +280,8 @@
             </div>
             <div class="down-content">
                 
-                <h4>Various</h4>
-                <a href="/erealisation">Explore</a>
+                <h4>Divers</h4>
+                <a href="/erealisation">voir</a>
             </div>
           </div>
         </div>
@@ -294,8 +292,8 @@
             </div>
             <div class="down-content">
                 
-                <h4>Concrete</h4>
-                <a href="/erealisation">Explore</a>
+                <h4>Béton</h4>
+                <a href="/erealisation">Voir</a>
             </div>
           </div>
         </div>
@@ -306,8 +304,8 @@
             </div>
             <div class="down-content">
                 
-                <h4>Chemistry</h4>
-                <a href="/erealisation">Explore</a>
+                <h4>Chimie</h4>
+                <a href="/erealisation">voir</a>
             </div>
           </div>
         </div>
@@ -319,63 +317,63 @@
   
 
 
-<div class="section cta" id="contactus">
+  <div class="section cta" id="contact">
 
-  <div class="container">
-
-    <div class="row">
-      <div class="section-heading">
-        <h2>Contact </h2>
-        <h6>Contact us and let's work together</h6>
-      </div>
-
-      <!-- contact Box:  -->
-      <div class="col-lg-12  ">
-        
-        <div class="shop ">
-          <div class="row">
-            
-            <div class="col-lg-12">
-              <div class="row">
-                
-                <div class="col-md-4">
+    <div class="container">
+  
+      <div class="row">
+        <div class="section-heading">
+          <h2>Contact </h2>
+          <h6>CONTACTEZ-NOUS ET TRAVAILLONS ENSEMBLE</h6>
+        </div>
+  
+        <!-- contact Box:  -->
+        <div class="col-lg-12  ">
+          
+          <div class="shop ">
+            <div class="row">
+              
+              <div class="col-lg-12">
+                <div class="row">
                   
-                    <i class="fa fa-phone icon-style" aria-hidden="true"></i> 
-                    <br>
-                    <span>Call us on </span>
-                    <br>
-                    <span class="bold">+336 8038 5496 </span>
-                  
-                </div>
-                <div class="col-md-4">
-                  <div class="contact-info">
-                    <i class="fa fa-envelope icon-style"></i> <!-- Icône email Bootstrap -->
-                    <br>
-                    <span>Send us an email</span>
-                    <br>
-                    <span class="bold">F2k&#64;gmail.com</span>
+                  <div class="col-md-4">
+                    
+                      <i class="fa fa-phone icon-style" aria-hidden="true"></i> 
+                      <br>
+                      <span>apellez-nous </span>
+                      <br>
+                      <span class="bold">+336 8038 5496 </span>
+                    
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="contact-info">
-                    <i class="bi bi-geo-alt-fill icon-style"></i> 
-                    <br>
-                    <span>Our location address</span>
-                    <br>
-                    <span class="bold">13 avenue DURANTE 06000 Nice France </span>
+                  <div class="col-md-4">
+                    <div class="contact-info">
+                      <i class="fa fa-envelope icon-style"></i> <!-- Icône email Bootstrap -->
+                      <br>
+                      <span>Envoyez-nous un email</span>
+                      <br>
+                      <span class="bold">F2k&#64;gmail.com</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="contact-info">
+                      <i class="bi bi-geo-alt-fill icon-style"></i> 
+                      <br>
+                      <span>Notre localisation</span>
+                      <br>
+                      <span class="bold">13 avenue DURANTE 06000 Nice France </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
+        
+        
       </div>
-      
-      
-      
     </div>
   </div>
-</div>
 
 
 
@@ -389,18 +387,16 @@
           <div class="col-lg-12 text-center">
             
               <ul class="footer-links list-inline justify-content-center">
-                  <li class="list-inline-item"><a (click)="navigateToSection('home')">Home</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('presentation')">Presentation</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('services')">Services</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('Achivements')">Achivements</a></li>
-                  <li class="list-inline-item"><a (click)="navigateToSection('contactus')">Contact</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('acceuil')">Acceuil</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('fpresentation')">Présentation</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('fservices')">Sérvices</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('realisation')">Réalisation</a></li>
+                  <li class="list-inline-item"><a (click)="navigateToSection('contact')">Contact</a></li>
               </ul>
           </div>
       </div>
   </div>
 </footer>
-
-
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->

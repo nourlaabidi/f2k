@@ -22,6 +22,8 @@ import { NavComponent } from './nav/nav.component';
 import { FcertificatsComponent } from './fcertificats/fcertificats.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { TestComponent } from './test/test.component';
+import { FversionComponent } from './fversion/fversion.component';
+import { FrealisationComponent } from './frealisation/frealisation.component';
 const routes: Routes = [
   { path: '', component: TestComponent },
   { path: 'home', component: HomeComponent },
@@ -46,6 +48,9 @@ const routes: Routes = [
   { path: 'fcertificats', component: FcertificatsComponent },
   { path: 'activities', component: ActivitiesComponent },
   { path: 'test', component: TestComponent },
+  { path: 'fversion', component: FversionComponent },
+  { path: 'frealisation', component: FrealisationComponent },
+  
 ];
 
 @NgModule({

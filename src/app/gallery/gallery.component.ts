@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -18,6 +18,7 @@ export class GalleryComponent {
   showimage5 = false;
 
   showimage6= false;
+  router: any;
 
   
   
@@ -74,4 +75,11 @@ setActiveButton(button: string) {
     this.activeButton = null; // Toggle off if the same button is clicked again
   }
 }
+navigateToSection(sectionId: string): void {
+  this.router.navigate([], { fragment: sectionId });
+  this.scrollToElement(sectionId);
+}
+  scrollToElement(sectionId: string) {
+    throw new Error('Method not implemented.');
+  }
 }

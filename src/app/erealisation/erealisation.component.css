@@ -62,7 +62,7 @@ body{
   color:#0071f8;
 }
 .container2{
-    margin-top: 10px;
+    margin-top: 1%;
 
     display: flex;
     align-items: center;
@@ -70,9 +70,9 @@ body{
     width:100%;
 }
 .test{
-    margin-top: 40px;
-    width: 1000px;
-    height:110px;
+    margin-top: 4%;
+    width: 70%;
+    height:40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,5 +328,11 @@ body{
   font-weight: 700;
 }
 .down-content{
+  cursor: pointer;
+}
+.footer-links.list-inline li {
+  margin-right: 5%; 
+  color: whitesmoke;
+  font-weight: 400;
   cursor: pointer;
 }
