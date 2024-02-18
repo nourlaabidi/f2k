@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Gallery</title>
+
+  </head>
+
+<body>
+  <div class="navbar">   
+    <header class="header-area header-sticky">
+        <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="main-nav">
+                <a href="index.html" class="logo2">
+                    <img src="assets/images/logo4.png" alt="" >
+                </a>
+                <ul class="nav">
+                  <li><a href="/test">Home</a></li>
+                  <li><a href="/test">Presentation</a></li>
+                  <li><a href="/test">Our services</a></li>
+                  <li><a href="/test">Achivements</a></li>
+                  <li><a href="/test">Contact Us</a></li>
+              </ul>   
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+    </div>
+    </header>
+  </div> 
+
+    
+  <div class="pagecontent">
+    <div class="section most-played">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-heading">
+                <h2>Gallery</h2>
+                <h6>Fields</h6>
+                
+              </div>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'" (click)="toggleshowimages1()">Water treatment</h4>
+                    <a  (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'" (click)="toggleshowimages1()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+
+                <div class="down-content">
+                    
+                    <h4 class="bb"  (click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'" (click)="toggleshowimages2()">Food Industry</h4>
+                    <a    (click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'" (click)="toggleshowimages2()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button3')" [class.active]="activeButton === 'button3'" (click)="toggleshowimages3()">Concrete</h4>
+                    <a (click)="setActiveButton('button3')" [class.active]="activeButton === 'button3'" (click)="toggleshowimages3()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="thumb">
+    
+                </div>
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button4')" [class.active]="activeButton === 'button4'" (click)="toggleshowimages4()">Foundry</h4>
+                    <a (click)="setActiveButton('button4')" [class.active]="activeButton === 'button4'" (click)="toggleshowimages4()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="thumb">
+     
+                </div>
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button5')" [class.active]="activeButton === 'button5'" (click)="toggleshowimages5()">Chemistry</h4>
+                    <a (click)="setActiveButton('button5')" [class.active]="activeButton === 'button5'" (click)="toggleshowimages5()">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="item">
+                <div class="thumb">
+           
+                </div>
+                <div class="down-content">
+                    
+                    <h4 class="bb" (click)="setActiveButton('button6')" [class.active]="activeButton === 'button6'" (click)="toggleshowimages6()">Various</h4>
+                    <a (click)="setActiveButton('button6')" [class.active]="activeButton === 'button6'" (click)="toggleshowimages6()">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <div class="my-component">
+
+    <div *ngIf="showimage1">
+     <div class="image-container">
+      <br>
+      <div class="image-carousel-container">
+       <div class="image-carousel">
+        <img src="assets/water/a.jpg">
+        <img src="assets/water/b.jpg">
+        <img src="assets/water/c.jpg">
+        <img src="assets/water/d.jpg">
+        <img src="assets/water/e.jpg">
+        <img src="assets/water/f.jpg">
+        <img src="assets/water/g.jpg">
+        <img src="assets/water/h.jpg">
+        <img src="assets/water/i.jpg">
+        <img src="assets/water/j.jpg">
+        <img src="assets/water/k.jpg">
+        <img src="assets/water/l.jpg">
+        <img src="assets/water/m.jpg">
+        <img src="assets/water/n.jpg">
+        <img src="assets/water/o.jpg">
+        <img src="assets/water/p.jpg">
+        <img src="assets/water/q.jpg">
+        <img src="assets/water/r.jpg">
+        <img src="assets/water/s.jpg">
+        <img src="assets/water/t.jpg">
+        <img src="assets/water/u.jpg">
+        <img src="assets/water/v.jpg">
+        <img src="assets/water/w.jpg">
+        <img src="assets/water/x.jpg">
+        <img src="assets/water/y.jpg">
+        <img src="assets/water/z.jpg">
+        <img src="assets/water/aa.jpg">
+        <img src="assets/water/bb.jpg">
+        <img src="assets/water/cc.jpg">
+        <img src="assets/water/dd.jpg">
+        <img src="assets/water/ee.jpg">
+        <img src="assets/water/ff.jpg">
+        <img src="assets/water/gg.jpg">
+        <img src="assets/water/hh.jpg">
+        <img src="assets/water/ii.jpg">
+        <img src="assets/water/jj.jpg">
+        <img src="assets/water/kk.jpg">
+        <img src="assets/water/ll.jpg">
+        <img src="assets/water/mm.jpg">
+        <img src="assets/water/oo.jpg">
+        <img src="assets/water/pp.jpg">
+        <img src="assets/water/qq.jpg">
+        <img src="assets/water/rr.jpg">
+        <img src="assets/water/ss.jpg">
+        </div>
+      </div>
+      
+     </div>
+     </div>
+     <div *ngIf="showimage2">
+       <div class="image-container">
+       <br>
+         <div class="image2">
+           <div class="image-carousel2">
+              <img src="assets/industry/tt.jpg" >
+              <img src="assets/industry/uu.jpg">
+              <img src="assets/industry/vv.jpg">
+           </div>
+          </div>
+          </div>
+        </div>
+        <div *ngIf="showimage3"> 
+          <div class="image-container">
+            <br>
+          <div class="image-carousel-container">
+            <div class="image-carousel">
+             <img src="assets/concrete/a.jpg">
+             <img src="assets/concrete/b.jpg">
+             <img src="assets/concrete/c.jpg">
+             <img src="assets/concrete/d.jpg">
+             <img src="assets/concrete/e.jpg">
+             <img src="assets/concrete/f.jpg">
+             <img src="assets/concrete/h.jpg">
+             <img src="assets/concrete/i.jpg">
+             <img src="assets/concrete/j.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div *ngIf="showimage4">
+          <div class="image-container">
+            <br>
+           <div class="image2">
+            <div class="image-carousel2"> 
+              <img src="assets/foundry/k.jpg">
+              <img src="assets/foundry/l.jpg">
+              <img src="assets/foundry/m.jpg">
+             </div>
+           </div>
+          </div>
+        </div>
+        <div *ngIf="showimage5"> 
+          <div class="image-container">
+            <br>
+          <div class="image-carousel-container">
+            <div class="image-carousel">
+          <img src="assets/chemistry/n.jpg">
+          <img src="assets/chemistry/o.jpg">
+          <img src="assets/chemistry/p.jpg">
+          <img src="assets/chemistry/q.jpg">
+          <img src="assets/chemistry/r.jpg">
+        </div>
+        </div>
+        </div>
+        </div>
+        <div *ngIf="showimage6"> 
+          <div class="image-container">
+            <br>
+          <div class="image2">
+            <div class="image-carousel2">
+              <img src="assets/various/aa.jpg">
+              <img src="assets/various/bb.jpg">
+              <img src="assets/various/cc.jpg">
+              <img src="assets/various/dd.jpg">
+              <img src="assets/various/ee.jpg">
+            </div>
+           </div>
+          </div>
+        </div>
+    
+   
+
+
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a (click)="navigateToSection('home')">Home</a></li>
+            <li><a (click)="navigateToSection('presentation')">Presentation</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a (click)="navigateToSection('services')">Services</a></li>
+            <li><a (click)="navigateToSection('Achivements')">Achievements</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a (click)="navigateToSection('contactus')">Contact</a></li>
+            <li><a class="gl" href="/gallery">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn btn-secondary btn-sm" (click)="navigateToSection('home')">Back to Top</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+  
+
+  

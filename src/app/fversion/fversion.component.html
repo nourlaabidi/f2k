@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Home</title>
+
+  </head>
+
+<body>
+
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo4.png" alt="" >
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      
+                      <li><a class="active" (click)="navigateToSection('acceuil')">Acceuil</a></li>
+                      <li><a (click)="navigateToSection('fpresentation')">Presentation</a></li>
+                      <li><a (click)="navigateToSection('fservices')">Nos sérvices</a></li>
+                      <li><a (click)="navigateToSection('realisation')">Réalisations</a></li>
+                      <li><a (click)="navigateToSection('contact')">Contact</a></li>
+                      <div class="lang">
+                        <button class="fr" routerLink="/fversion" routerLinkActive="active" >FR</button>
+                        <button routerLink="/test" routerLinkActive="active" class="ag" href="/test">AN</button>
+                      </div>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="acceuil">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 align-self-center">
+          <div class="caption header-text">
+            <h6>Bienvenue chez F2K</h6>
+            <h2>Renforcer les industries </h2>
+            <p>Renforcer les industries grâce à l'automatisation de précision et à l'expertise-conseil de pointe</p>
+            <div><button [routerLink]="['/fgallery']" class="gallery"> Galerie</button>  </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 offset-lg-2">
+          <div class="right-image">
+            <div class="image-slideshow">
+                <div class="image-slide-container" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentImageIndex}">
+                    
+                    <div class="photo"><img [src]="image" alt="Slideshow Image">
+                        <div class="image-navigation-dots">
+                            <span 
+                              class="dot" 
+                              *ngFor="let image of images; let i = index" 
+                              [ngClass]="{ 'active': i === currentImageIndex }"
+                              (click)="changeImage(i)"
+                            ></span>
+                          </div>
+    
+                    </div>
+                    <button id="prev"class="prev-button" (click)="prevImage()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                    <button class="next-button" (click)="nextImage()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="features" id="fservices">
+    <div class="container">
+
+      <div class="row">
+       
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                
+                <img src="assets/images/auto.png" alt="" style="max-width: 44px; margin-top: 20px;">
+              </div>
+              <h4>Étude de Projets d'Automatisation Industrielle </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/cable.png" alt="" style="max-width: 44px; margin-top: 20px;">
+              </div>
+              <h4>Conception et<br> Assemblage<br><br></h4>
+          
+            
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/idea.png" alt="" style="max-width: 44px;margin-top: 20px;">
+              </div>
+              <h4>Mise en Œuvre<br> sur Site<br><br></h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/solution.png" alt="" style="max-width: 44px;margin-top: 20px;">
+              </div>
+              <h4>Solutions de Haute Technologie<br><br></h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section trending" id="fpresentation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Présentation</h2>
+            <h6>A propos</h6>
+            <p>F2K est une entreprise Française spécialisée dans l'étude, le développement et la réalisation de projets d'automatisation industrielle ; nous concevons également des systèmes de régulation pour des chaînes de production sur la base de PLC. Nous offrons des conseils pratiques basés sur notre expérience dans l'automatisation des processus de production industrielle.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          
+        </div>
+       
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/adv-auto.png" alt="" style="max-width:100px; margin-left: 35%; margin-top: 2%;"></a>
+              
+            </div>
+            <div class="down-content">
+              <h5 class="category">Assistance d'experts</h5>
+              <p>Nous pouvons vous fournir de l'assistance en matière de pesage, de dosage et d'automatisation afin que vous puissiez maintenir votre position concurrentielle.
+
+                F2K et ses partenaires spécialisés (pesage et automatisation) offrent des solutions de haute technologie et de haute précision.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <div class="thumb">
+                <a href="product-details.html"><img src="assets/images/assistance.png" alt="" style="max-width:100px; margin-left: 35%; margin-top: 2%;"></a>
+              </div>
+              <div class="down-content">
+                <h5 class="category">Automatisation Avancée</h5>
+                <p>
+                  Nous utilisons les données de 'poids' pour optimiser le flux de votre matériau et processus. L'automatisation offre des processus de production rapides, sûrs, efficaces, flexibles, fiables, durables et rentables avec F2K. Garantie de contenu, coût, dates de livraison et résultat final.
+                
+                </p>
+                
+              </div>
+            </div>
+           
+
+          </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/global-impact.png" alt="" style="max-width:100px; margin-left: 35%;margin-top: 2%;"></a>
+              
+            </div>
+            <div class="down-content">
+              <h5 class="category">Impact Mondial</h5>
+              <p>Les réalisations de F2K sont adoptées en Afrique, en Europe, en Amérique et au Moyen-Orient.
+
+                Nous proposons de nouvelles solutions ainsi que le renouvellement des installations existantes.</p>
+                <br>
+                
+                
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="section most-played" id="realisation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Réalisations</h2>
+            <h6>domaines</h6>
+            
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a  href="/frealisation" >afficher plus</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+   
+            </div>
+            <div class="down-content">
+                
+                <h4>Traitement des eaux</h4>
+                <a href="/erealisation">Voir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+             
+            </div>
+            <div class="down-content">
+                
+                <h4>Agro alimentaire</h4>
+                <a href="/erealisation">Voir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+
+            </div>
+            <div class="down-content">
+                
+                <h4>Fonderie</h4>
+                <a href="/erealisation">Voir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+
+            </div>
+            <div class="down-content">
+                
+                <h4>Divers</h4>
+                <a href="/erealisation">voir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+ 
+            </div>
+            <div class="down-content">
+                
+                <h4>Béton</h4>
+                <a href="/erealisation">Voir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+       
+            </div>
+            <div class="down-content">
+                
+                <h4>Chimie</h4>
+                <a href="/erealisation">voir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+
+  <div class="section cta" id="contact">
+
+    <div class="container">
+  
+      <div class="row">
+        <div class="section-heading">
+          <h2>Contact </h2>
+          <h6>CONTACTEZ-NOUS ET TRAVAILLONS ENSEMBLE</h6>
+        </div>
+  
+        <!-- contact Box:  -->
+        <div class="col-lg-12  ">
+          
+          <div class="shop ">
+            <div class="row">
+              
+              <div class="col-lg-12">
+                <div class="row">
+                  
+                  <div class="col-md-4">
+                    
+                      <i class="fa fa-phone icon-style" aria-hidden="true"></i> 
+                      <br>
+                      <span>apellez-nous </span>
+                      <br>
+                      <span class="bold">+336 8038 5496 </span>
+                    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="contact-info">
+                      <i class="fa fa-envelope icon-style"></i> <!-- Icône email Bootstrap -->
+                      <br>
+                      <span>Envoyez-nous un email</span>
+                      <br>
+                      <span class="bold">info&#64;f2k-france.fr</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="contact-info">
+                      <i class="bi bi-geo-alt-fill icon-style"></i> 
+                      <br>
+                      <span>Notre localisation</span>
+                      <br>
+                      <span class="bold">13 avenue DURANTE 06000 Nice France </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('acceuil')">Acceuil</a></li>
+          <li><a (click)="navigateToSection('fpresentation')">Presentation</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('fservices')">Services</a></li>
+          <li><a (click)="navigateToSection('realisation')">Realisation</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li><a (click)="navigateToSection('contact')">Contact</a></li>
+          <li><a class="gl" href="/gallerie">Gallerie</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <button class="btn btn-secondary btn-sm" (click)="navigateToSection('acceuil')">Back to Top</button>
+      </div>
+     
+    </div>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+
+
+  </body>
+</html>

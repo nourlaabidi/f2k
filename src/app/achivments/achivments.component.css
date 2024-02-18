@@ -1,0 +1,65 @@
+.header-area {
+  padding-bottom: 20px;
+  top: 0;
+  height: 100px;
+  background-image: url(src\assets\images\background.jpg);
+}
+.header-area .main-nav ul.nav {
+  border-radius: 0px 0px 25px 25px;
+  flex-basis: 100%;
+  margin-top: 40px;
+  justify-content: right;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+}
+.header-area .main-nav .logo {
+  width: 200px;
+  height: 90px;
+}
+.most-played {
+  background-color: #f7f7f7;
+  padding: 0px 0px;
+  border-radius: 150px;
+}
+
+#presentation {
+  margin-top: 10;
+}
+.gl {
+  text-decoration: none;
+  color: #ffff;
+}
+/*dropdown*/
+/* Dropdown Button */
+.dropdown .btn {
+  color: #fff; /* Set your desired text color */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #c3d0d9; /* Set your desired background color */
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  color: rgb(46, 42, 42);
+}
+
+/* Hover State for Dropdown Items */
+.dropdown-item:hover {
+  background-color: #2980b9; /* Set your desired hover background color */
+  color: #fff; /* Set your desired hover text color */
+}
+.dropdown {
+  margin-top: 40px;
+}
+.dropdown a:hover {
+  color: #fff;
+}
+footer {
+  margin-top: 570px;
+  bottom: 0;
+}

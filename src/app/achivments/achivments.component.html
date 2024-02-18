@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+                <a class="logo">
+                    <img src="assets/images/logo4.png" alt="f2k" />
+                  </a>
+              <ul class="nav">
+                <li>
+                  <a class="active" (click)="navigateToSection('home')">Home</a>
+                </li>
+                <li>
+                  <a (click)="navigateToSection('presentation')"
+                    >Presentation</a
+                  >
+                </li>
+                <li>
+                  <a (click)="navigateToSection('services')">Our services</a>
+                </li>
+                <li>
+                  <a (click)="navigateToSection('Achivements')">Achivements</a>
+                </li>
+                <li>
+                  <a (click)="navigateToSection('contactus')">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section most-played" id="Achivements">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h2>Achivements</h2>
+              <h6>Fields</h6>
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="down-content">
+                <h4>Water treatment</h4>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><button (click)="toggle1()" class="dropdown-item" type="button">2 Meetings Spalding</button></li>
+                      <li><button (click)="toggle2()" class="dropdown-item" type="button">Purification station airport Enfidha</button></li>
+                      <li><button (click)="toggle3()" class="dropdown-item" type="button">Purification station Hotel Hasdrubal</button></li>
+                      <li><button (click)="toggle4()" class="dropdown-item" type="button">Station MANANTALY</button></li>
+                      <li><button (click)="toggle5()" class="dropdown-item" type="button">Purification station Hotel Laïco Brazaville</button></li>
+                      <li><button (click)="toggle6()" class="dropdown-item" type="button">Purification station mineral water TREIGNAC France</button></li>
+                      <li><button (click)="toggle7()" class="dropdown-item" type="button">Purification station Hospital KIBAGABAGA</button></li>
+                      <li><button (click)="toggle8()" class="dropdown-item" type="button">Dosingstation Biocare Brazaville</button></li>
+                      
+                      
+                    </ul>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="down-content">
+                <h4>Food Industry</h4>
+                <div class="dropdown">
+                    <a (click)="toggle9()" >Explore</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="down-content">
+                <h4>Foundry</h4>
+                <div class="dropdown">
+                    <a (click)="toggle10()">Explore</a></div>
+                  
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="down-content">
+                <h4>Various</h4>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><button (click)="toggle11()" class="dropdown-item" type="button">Grinding Unit STIIC (Tunisia)</button></li>
+                      <li><button (click)="toggle12()"class="dropdown-item" type="button">Eurocast Traitement Furnace</button></li>
+                      
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="down-content">
+                <h4>Concrete</h4>
+                <div class="dropdown">
+                    <a (click)="toggle13()">Explore</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb"></div>
+              <div class="down-content">
+                <h4>Chemistry</h4>
+                <div class="dropdown">
+                    <a (click)="toggle14()">Explore</a></div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section trending" id="presentation" >
+        <div class="container" *ngIf="show1">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-heading">
+                
+                <h2>2 Meetings Spalding</h2>
+               
+                <p>Project : Rural water potabilization unit.
+                    <br>
+                    Location : Spalding (Jamaica)
+                    <br>
+                    Client : Hydranet (France). ...
+                    <br>
+                    Project manager: Gauff Ingenieure (Germany).
+                    <br>
+                    Year of realisation : 2006.
+                    <br>
+                    Services:
+                    
+                    Study, design of the switchboard.
+                    <br>
+                    Programming : PLC and operating panel.
+                    <br>
+                    Start up on site.</p>
+              </div>
+            </div>
+ 
+           
+            <div class="col-lg-6" style="margin-top: 20px;">
+                <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/b1/img1.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/b1/img2.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/b1/img3.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+                    <!-- S2 -->
+                    <div class="section trending" id="presentation" >
+                        <div class="container" *ngIf="show2">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="section-heading">
+                                
+                                <h2>Purification station airport Enfidha</h2>
+                               
+                                <p>Project : Purification station for waste water (compact in container)
+                                    <br>
+                                    Location:Airport zone Enfidha (Tunisia)
+                                    <br>
+                                    Capacity:70m3/h.
+                                    <br>
+                                    Client : Hydranet (France).
+                                    <br>
+                                    Project manager : Office National de l’Assainissement (Tunisia).
+                                    <br>
+                                    Year of realization : 2009.
+                                    <br>
+                                    Services :
+
+                                    Study, design of the switchboard.
+                                    
+                                    Programming : PLC and operationg panel.
+                                    
+                                    start up on site
+                                   </p>
+                              </div>
+                            </div>
+                 
+                           
+                            <div class="col-lg-6" style="margin-top: 20px;">
+                                <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="assets/b2/0.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/1.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/2.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/3.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/4.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/5.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/6.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/7.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/8.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/9.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/b2/11.png" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
+                              </div>
+                              
+                            
+                            
+                            
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section trending" id="presentation" >
+                        <div class="container" *ngIf="show3">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="section-heading">
+                                
+                                <h2>Hotel Hasdrubal water treatment plant</h2>
+                               
+                                <p>Project : Sewage treatment plant.
+                                    <br>
+                                    Location : Spalding (Jamaica)
+                                    <br>
+                                    Client : Hydranet (France). ...
+                                    <br>
+                                    Project manager: Gauff Ingenieure (Germany).
+                                    <br>
+                                    Year of realisation : 2006.
+                                    <br>
+                                    Services:
+                                    
+                                    Study, design of the switchboard.
+                                    <br>
+                                    Programming : PLC and operating panel.
+                                    <br>
+                                    Start up on site.</p>
+                              </div>
+                            </div>
+                 
+                           
+                            <div class="col-lg-6" style="margin-top: 20px;">
+                                <div id="carouselExample" class="carousel slide" style="height: 400px;width: 500px;">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="assets/b2/noimage.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
+                              </div>
+                              
+                            
+                            
+                            
+                            
+                          </div>
+                        </div>
+                      </div>
+                                    <!-- S2 -->
+                                    <div class="section trending" id="presentation" >
+                                        <div class="container" *ngIf="show4">
+                                          <div class="row">
+                                            <div class="col-lg-6">
+                                              <div class="section-heading">
+                                                
+                                                <h2>Station MANANTALY</h2>
+                                               
+                                                <p>Project : Potabilization unit of waste water.
+                                                  <br>
+                                                  Location : Dam Manantaly (Mali)/Capacity : 100m3/h.
+                                                  
+                                                  
+                                                  <br>
+                                                  Client : Hydranet (France).
+                                                  <br>
+                                                  Project manager : Hydranet (France).
+                                                  <br>
+                                                  Year of realization : 2010-2011.
+                                                  <br>
+                                                  Services :
+                                                  Study, design of the switchboard.
+                                                  <br>
+                                                  Programming : PLC and operating panel.
+                                                  <br>
+                                                  Start up on site.
+                                                   </p>
+                                              </div>
+                                            </div>
+                                 
+                                           
+                                            <div class="col-lg-6" style="margin-top: 20px;">
+                                                <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+                                                  <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                      <img src="assets/manantaly/1.jpg"class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="assets/manantaly/2.jpg"class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="assets/manantaly/3.jpg" class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="assets/manantaly/4.jpg" class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="assets/manantaly/5.jpg" class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="assets/manantaly/6.jpg" class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="assets/manantaly/7.jpg" class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="assets/manantaly/8.jpg" class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                                                  </div>
+                                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                  </button>
+                                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                  </button>
+                                                </div>
+                                              </div>
+                                              
+                                            
+                                            
+                                            
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                       <!-- S2 -->
+                                    <div class="section trending" id="presentation" >
+                                        <div class="container" *ngIf="show5">
+                                          <div class="row">
+                                            <div class="col-lg-6">
+                                              <div class="section-heading">
+                                                
+                                                <h2>Hotel Laïco Brazaville wastewater treatment plant</h2>
+                                               
+                                                <p>Project : Sewage treatment plant.
+<br>
+                                                  Location : Hotel Laïco Brazaville (Congo)
+                                                  
+                                                  /Capacity : 120m3/J.
+                                                  <br>
+                                                  Client : Hydranet (France)
+                                                  <br>
+                                                  Project manager : Hotel Laïco Brazaville (Congo).
+                                                  <br>
+                                                  Year of realization : 2011.
+                                                  <br>
+                                                  Services :
+                                                  
+                                                  Study, design and manufacture of the electrical cabinet.
+                                                  
+                                                  PLC programming.
+                                                  
+                                                  Wiring, installation and commissioning on site.
+                                                   </p>
+                                              </div>
+                                            </div>
+                                 
+                                           
+                                            <div class="col-lg-6" style="margin-top: 20px;">
+                                                <div id="carouselExample" class="carousel slide" style="height: 400px;width: 500px;">
+                                                  <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                      <img src="assets/b2/noimage.jpg" class="d-block w-100 h-100" alt="...">
+                                                    </div>
+                
+                                                  </div>
+                                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                  </button>
+                                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                  </button>
+                                                </div>
+                                              </div>
+                                              
+                                            
+                                            
+                                            
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                     <!-- S2 -->
+                     <div class="section trending" id="presentation" >
+                        <div class="container" *ngIf="show6">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="section-heading">
+                                
+                                <h2>Mineral water filtration station (TREIGNAC)</h2>
+                               
+                                <p>Project : Mineral water filtration station.
+<br>
+                                  Location : TREIGNAC (France) / Capacity : 12m3/h.
+                                  <br>
+                                  Client : eKope (France)
+                                  <br>
+                                  Project manager : Eau de Treignac (France)
+                                  <br>
+                                  Year of realization : 2011.
+                                  <br>
+                                  Services :
+                                  
+                                  Study, design and manufacture of the electrical cabinet.
+                                  
+                                  PLC and operator panel programming.
+                                  
+                                  Wiring, installation and commissioning on site.
+                                   </p>
+                              </div>
+                            </div>
+                 
+                           
+                            <div class="col-lg-6" style="margin-top: 20px;">
+                                <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="assets/TREIGNAC/1.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/2.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/3.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/4.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/5.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/6.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/7.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/8.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/9.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/10.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/11.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="assets/TREIGNAC/12.jpg" class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
+                              </div>
+                              
+                            
+                            
+                            
+                            
+                          </div>
+                        </div>
+                      </div>
+     <!-- S2 -->
+     <div class="section trending" id="presentation">
+        <div class="container"  *ngIf="show7">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-heading">
+                
+                <h2>Water Treatment Plant KIBAGABAGA Hospital</h2>
+               
+                <p>Project : Sewage treatment plant.
+<br>
+                  Location : KIBAGABAGA Hospital (Rwanda) /  Capacity : 120m3/J.
+                  <br>
+                  Client : Hydranet (France)
+                  <br>
+                  Project manager : KIBAGABAGA Hospital (Rwanda)
+                  <br>
+                  Year of realization : 2011.
+                  <br>
+                  Services :
+                  
+                  Study, design and manufacture of the electrical cabinet.
+                  
+                  PLC and operator panel programming.
+                   </p>
+              </div>
+            </div>
+ 
+           
+            <div class="col-lg-6" style="margin-top: 20px;">
+                <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/KIBAGABAGA/1.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/KIBAGABAGA/2.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/KIBAGABAGA/3.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/KIBAGABAGA/4.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/KIBAGABAGA/5.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+ <!-- S2 -->
+ <div class="section trending" id="presentation" >
+    <div class="container" *ngIf="show8">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Biocare Brazaville Dosing Station</h2>
+           
+            <p>Project : Dosing station for infusion solution for human use.
+<br>
+              Location : Brazaville (Congo) / Capacity : 20m3/J.
+              <br>
+              Client : eKope (France)
+              / Project manager : Biocare (Congo)
+              <br>
+              Year of realization : 2012.
+              <br>
+              Services :
+              
+              Study, design and manufacture of the electrical cabinet.
+              
+              PLC and operator panel programming..
+              
+              Synchronization of the operation between the EPPI unit, our dosing system and the filler.
+              
+              Management of CIP cycles (Cleaning) dosing unit and filler.
+              
+              Wiring, installation and commissioning on site
+               </p>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-6" style="margin-top: 20px;">
+            <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/Brazaville/1.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Brazaville/2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Brazaville/3.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Brazaville/4.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Brazaville/5.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="section trending" id="presentation" *ngIf="show9">
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Cold storage : ENNASSIM (Libya)</h2>
+           
+            <p>Location : Dairy products plant
+                <br>
+                Description : Control and supervision cabinet for cold storage
+                <br>
+                Used PLC : 2 x S7 200 networked.
+                <br>
+                Supervisor : WinCC Flexible Runtime + KTP1000.
+                </p>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-6" style="margin-top: 20px;">
+            <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/food/ennassim3.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/food/ennassim2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/food/ennassim1.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="section trending" id="presentation" >
+    <div class="container" *ngIf="show10">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Sopal injection molding cabinet (Tunisia)</h2>
+           
+            <p>Location : Sfax
+                <br>
+                Description : Control and supervision cabinet for a brass injection press.
+                <br>
+                Used PLC : S7 200.
+                <br>
+                Supervisor : Runtime WinCC Flex.
+
+               </p>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-6" style="margin-top: 20px;">
+            <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/Sopal/2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Sopal/1.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Sopal/3.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>        
+      </div>
+    </div>
+  </div>
+  <div class="section trending" id="presentation" >
+    <div class="container" *ngIf="show11">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Grinding unit STICC (Tunisia)</h2>
+           
+            <p>Location :CaCO3 grinding plant (Fériana)
+                <br>
+                Description : Control and monitoring cabinet for a calcium carbonate grinding unit
+                <br>
+                Used PLC : S7 300.
+                <br>
+                Supervisor : Touch Panel MP377.
+
+               </p>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-6" style="margin-top: 20px;">
+            <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/broyage/1.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/broyage/2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+               
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>        
+      </div>
+    </div>
+  </div>
+  <div class="section trending" id="presentation" >
+    <div class="container" *ngIf="show12">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Eurocast treatment furnace (U.S.A.)</h2>
+           
+            <p>Location : Foundry for aircraft engine parts (Tunisia)
+<br>
+              Description : Control and supervision cabinet for heat treatment furnace
+              <br>
+              Used PLC : S7 200.
+              <br>
+              Supervisor : WinCC Flexible Runtime.
+               </p>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-6" style="margin-top: 20px;">
+            <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/Eurocast/2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Eurocast/3.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>        
+      </div>
+    </div>
+  </div>
+  <div class="section trending" id="presentation" *ngIf="show13">
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Control system for concrete batching plant</h2>
+           
+            <p>Project : Control system for concrete batching plant.
+<br>
+              Location : Jebel Oust (Tunisia)
+              <br>
+              Client : SOROUBAT / Year of réalization : 2013
+              <br>
+              Mixer capacity : 3m3 of cement.
+
+              Services : Study, design and supply of the weighing system on weight sensors,
+              
+              of the additive dosing system and of the electrical cabinet based on SIEMENS S7 PLC
+              
+              as well as a supervision system on PC under WinCC Flexible.
+                </p>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-6" style="margin-top: 20px;">
+            <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/beton/1.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/3.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/4.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/5.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/6.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/7.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/8.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/beton/9.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="section trending" id="presentation" *ngIf="show14">
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h2>Manufacturing unit for liquid detergents</h2>
+           
+            <p>Project : Manufacturing unit for liquid detergents.
+              <br>
+              Lcation : Sfax (Tunisia) /Client : SODET / Year of realization : 2010
+              <br>
+              Reaktor capacity : 3m3
+              <br>
+              Services : Study, design and supply of a complete liquid detergent manufacturing unit,
+              
+              including preparation reactor, storage tanks, pumps and hydraulic circuit,
+              
+              electrical control panel based on SIEMENS S7 PLC and SIWAREX module,
+              
+              as well as a supervision system on PC under WinCC Flexible.
+                </p>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-6" style="margin-top: 20px;">
+            <div id="carouselExample" class="carousel slide" style="height: 300px;width: 500px;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/chimie/2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/chimie/3.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/chimie/4.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/chimie/5.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+               
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>  
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a (click)="navigateToSection('home')">Home</a></li>
+            <li><a (click)="navigateToSection('presentation')">Presentation</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a (click)="navigateToSection('services')">Services</a></li>
+            <li><a (click)="navigateToSection('Achivements')">Achievements</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a (click)="navigateToSection('contactus')">Contact</a></li>
+            <li><a class="gl" href="/gallery">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn btn-secondary btn-sm" (click)="navigateToSection('home')">Back to Top</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

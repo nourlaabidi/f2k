@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations</title>
+    
+</head>
+<body>
+   
+      <div class="navbar" >   
+        <header class="header-area header-sticky">
+            <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo2">
+                        <img src="assets/images/logo4.png" alt="" >
+                    </a>
+                    <ul class="nav">
+                      <li><a href="/fversion">Acceuil</a></li>
+                      <li><a href="/fversion">Présentation</a></li>
+                      <li><a href="/fversion">Nos sérvices</a></li>
+                      <li><a href="/fversion" class="active">Réalisations</a></li>
+                      <li><a href="/fversion">Contact</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        </div>
+        </header>
+      </div> 
+
+
+    <div class="pagecontent" id="top">
+        <div class="section most-played">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="section-heading">
+                    <h2>Réalisation</h2>
+                    <h6>Domaines</h6>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">Traitement des eaux</h4>
+                        <a  (click)="toggleshowbarre1()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'">afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+  
+                    <div class="down-content">
+                        
+                        <h4 class="bb"  (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Agro alimentaire</h4>
+                        <a    (click)="toggleshowbarre2()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Fonderie</h4>
+                        <a (click)="toggleshowbarre3()" (click)="setActiveButton1('button3')" [class.active]="activeButton1 === 'button3'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+        
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Divers</h4>
+                        <a (click)="toggleshowbarre4()" (click)="setActiveButton1('button4')" [class.active]="activeButton1 === 'button4'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+         
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Béton</h4>
+                        <a (click)="toggleshowbarre5()" (click)="setActiveButton1('button5')" [class.active]="activeButton1 === 'button5'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="item">
+                    <div class="thumb">
+               
+                    </div>
+                    <div class="down-content">
+                        
+                        <h4 class="bb" (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Chimie</h4>
+                        <a (click)="toggleshowbarre6()" (click)="setActiveButton1('button6')" [class.active]="activeButton1 === 'button6'">Afficher</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="container2">
+            <div class="tittle" *ngIf="showbarre1">
+                
+                <div class="test" >
+                    <div><button class="b1" (click)="toggle1()" (click)="setActiveButton('button1')" [class.active]="activeButton === 'button1'">2 Meetings Spalding</button></div>
+                    <div><button class="b1" (click)="toggle2()"(click)="setActiveButton('button2')" [class.active]="activeButton === 'button2'">Station Epuration aéroport Enfidha</button></div>
+                    <div><button class="b1" (click)="toggle3()"(click)="setActiveButton('button3')" [class.active]="activeButton === 'button3'">Station Epuration Hôtel Hasdrubal</button></div>
+                    <div><button class="b1"(click)="toggle4()"(click)="setActiveButton('button4')" [class.active]="activeButton === 'button4'">Station MANANTALY</button></div>
+                    <div><button class="b1" (click)="toggle5()"(click)="setActiveButton('button5')" [class.active]="activeButton === 'button5'">Station Epuration Hôtel Laïco Brazaville</button></div>
+                    <div><button class="b1" (click)="toggle6()"(click)="setActiveButton('button6')" [class.active]="activeButton === 'button6'">Station Filtration eau minérale TREIGNAC</button></div>
+                    <div><button class="b1" (click)="toggle7()"(click)="setActiveButton('button7')" [class.active]="activeButton === 'button7'">Station Epuration Hôpital KIBAGABAGA</button></div>
+                    <div><button class="b1" (click)="toggle8()"(click)="setActiveButton('button8')" [class.active]="activeButton === 'button8'">Station de dosage Biocare Brazaville</button></div>
+                </div>
+                <div class="newp1" *ngIf="show1">
+                    <div class="klem">
+                        <h4>2 Meetings Spalding</h4>
+                        <div class="division">
+                            <div>
+                        <p>Projet : Unité de potabilisation d'eau rurale.</p>
+                        <p>Lieu : Spalding (Jamaïque).</p>   
+                        <p>Client : Hydranet (France). ... </p>
+                        <p>Maître d'oeuvre : Gauff Ingenieure (Allemagne).
+                        <p>Année de réalisation : 2006.</p>
+                        </div>
+                        <div class="partieleft1">
+                        <p> Prestation fournies :</p>
+                        <p>Etude, conception et fabrication du coffret électrique.</p>   
+                        <p>Programmation automate et pupitre opérateur.</p>   
+                        <p>Câblage, installation et mise en service sur site.</p>   
+                        </div>
+                        </div>
+                    </div>   
+                                <div class="image-slider">
+                                    
+                                    <div class="main-images">
+                                        
+                                        <img src="assets/b1/img1.png">
+                                        <img src="assets/b1/img2.png">
+                                        <img src="assets/b1/img3.png">
+                                        
+                                    </div>
+                            </div>
+
+                </div>
+                <div class="newp1" *ngIf="show2">
+                    <div class="klem">
+                        <h4>Station Epuration aéroport Enfidha</h4>
+                        <div class="division">
+                            <div>
+                    <p>Projet : Station d’épuration des eaux usées compacte en conteneur.</p>
+                    <p>Lieu : Zone aéroportuaire Enfidha (Tunisie)</p>   
+                    <p>Client : Hydranet (France). ... </p>
+                    <p>Maître d’œuvre : Office National de l’Assainissement (Tunisie).</p>
+                    <p>Année de réalisation : 2009.</p>
+                            </div>
+                        <div class="partieleft2">
+                    <p>Prestations fournies :</p>
+                    <p>Etude, conception et fabrication du coffret électrique.</p>
+                    <p>Programmation automate et pupitre opérateur.</p>
+                    <p>Câblage, installation et mise en service sur site.</p>
+                            </div></div>
+                    
+                    
+                    </div>
+
+
+                    <div class="image-slider">
+                        <button (click)="prevImage()" id="arrow"><i class="bi bi-arrow-left-square-fill"></i></button>
+                        <div class="main-images">
+                            <div *ngFor="let image of displayedImages1; let i = index" class="main-image">
+                                <img [src]="image" alt="Main Image {{i}}">
+                            </div>
+                        </div>
+                          <button (click)="nextImage()" id="arrow"><i class="bi bi-arrow-right-square-fill"></i></button>
+                        
+                    </div>
+
+                    
+                </div>
+                <div class="newp1" *ngIf="show3">
+                    <div class="klem">
+                        <h4> Station Epuration Hôtel Hasdrubal </h4>
+                        <div class="division">
+                        <div>
+                        <p>Projet : Station d’épuration des eaux usées.</p>
+                        <p>Lieu : Hôtel Hasdrubal Hammamet (Tunisie)</p>
+                        <p>Capacité : 160m3/J.</p>
+                        <p>Client : Hydritec (Tunisie). </p>
+                        <p>Maitre d’œuvre : Hôtel Hasdrubal Hammamet (Tunisie)</p>
+                        
+                        </div>
+                        <div class="partieleft1">       
+                            <p>Année de réalisation : 2009.</p>                
+                        <p>Prestations fournies :</p>
+                        <p>Etude, conception et fabrication du coffret électrique.</p>
+                        <p>Programmation automate.</p>
+                        <p>Câblage, installation et mise en service sur site.</p>
+                        </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="newp1" *ngIf="show4">
+                    <div class="klem">
+                        <h4>Station MANANTALY</h4>
+                        <div class="division">
+                            <div>
+                                <p>Projet : Unité de potabilisation d'eau rurale.</p>
+                        <p>Lieu : Barrage Manantaly (Mali)</p>
+                        <p>Capacité : 100m3/h.</p>
+                        <p>Client : Hydranet (France).</p>
+                        <p>Maitre d'œuvre : Hydranet (France).</p>
+                        
+                            </div>
+                            <div class="partieleft1">
+                                <p>Année de réalisation : 2010-2011.</p>
+                        <p>Prestations fournies :</p>
+                        <p>Etude, conception et fabrication du coffret électrique.</p>
+                        <p>Programmation automate et pupitre opérateur.</p>
+                        <p>Câblage, installation et mise en service sur site.</p></div></div>
+
+                    </div>
+                    <div class="image-slider">
+                        <button (click)="prevImage()" id="arrow"><i class="bi bi-arrow-left-square-fill"></i></button>
+                        <div class="main-images">
+                            <div *ngFor="let image of displayedImages2; let i = index" class="main-image">
+                                <img [src]="image" alt="Main Image {{i}}">
+                            </div>
+                        </div>
+                          <button (click)="nextImage()" id="arrow"><i class="bi bi-arrow-right-square-fill"></i></button>
+                        
+                    </div>
+                </div>
+                <div class="newp1" *ngIf="show5">
+                    <div class="klem">
+                    <h4>Station Epuration Hôtel Laïco Brazaville </h4>
+                    <div class="division">
+                        <div>
+                    <p>Projet : Station d’épuration des eaux usées.</p>
+                    <p>Lieu : Hôtel Laïco Brazaville (Congo)</p>
+                    <p>Capacité : 120m3/J.</p>
+                    <p>Client : Hydranet (France)</p>
+                    <p>Maitre d’œuvre : Hôtel Laïco Brazaville (Congo).</p>
+                    
+                        </div>
+                    <div class="partieleft1">
+                    <p>Année de réalisation : 2011.</p>
+                    <p>Prestations fournies :</p>
+                    <p>Etude, conception et fabrication du coffret électrique.</p>
+                    <p>Programmation automate.</p>
+                    <p>Câblage, installation et mise en service sur site.</p>
+                    </div>
+                    </div>
+
+                    
+                    </div>
+                </div>
+                <div class="newp1" *ngIf="show6">
+                    <div class="klem">
+                        <h4>Station Filtration eau minérale TREIGNAC </h4>
+                        <div class="division">
+                                <div>
+                                
+                                <p>Projet : Station de filtration d’eau minérale.</p>
+                                <p>Lieu : TREIGNAC (France)</p>
+                                <p>Capacité : 12m3/h.</p>
+                                <p>Client : eKope (France)</p>
+                                <p>Maitre d’œuvre : Eau de Treignac (France)</p>
+                                </div>
+                                <div class="partieleft1">
+                                    <p>Année de réalisation : 2011.</p>
+                                <p>Prestations fournies :</p>
+                                <p>Etude, conception et fabrication du coffret électrique.</p>
+                                <p>Programmation automate et pupitre opérateur.</p>
+                                <p>Câblage, installation et mise en service sur site.</p>
+                        </div>
+                </div>
+
+                    </div>
+                    <div class="image-slider">
+                        <button (click)="prevImage()" id="arrow"><i class="bi bi-arrow-left-square-fill"></i></button>
+                        <div class="main-images">
+                            <div *ngFor="let image of displayedImages3; let i = index" class="main-image">
+                                <img [src]="image" alt="Main Image {{i}}">
+                            </div>
+                        </div>
+                          <button (click)="nextImage()" id="arrow"><i class="bi bi-arrow-right-square-fill"></i></button>
+                        
+                    </div>
+                </div>
+                <div class="newp1" *ngIf="show7">
+                    <div class="klem">
+                        <h4>Station Epuration Hôpital KIBAGABAGA</h4>
+                        <div class="division">
+                            <div>
+                                <p>Projet : Station d’épuration des eaux usées.</p>
+                                <p>Lieu : Hôpital KIBAGABAGA (Rwanda)</p>
+                                <p>Capacité : 120m3/J.</p>
+                                <p>Client : Hydranet (France)</p>
+                                <p>Maitre d’œuvre : Hôpital KIBAGABAGA (Rwanda)</p>
+                            </div>
+                            <div class="partieleft1">
+                                <p>Année de réalisation : 2011.</p>
+                                <p>Prestations fournies :</p>
+                                <p>Etude, conception et fabrication du coffret électrique.</p>
+                                <p>Programmation automate et pupitre opérateur.</p>
+                            </div>
+                        </div>
+                    
+                   
+                    
+                    </div>
+                               
+                                <div class="image-slider">
+                                    
+                                    <div class="main-images">
+                                        <div class="fourimages">
+                                <img src="assets/KIBAGABAGA/1.jpg">
+                                <img src="assets/KIBAGABAGA/2.jpg">
+                                <img src="assets/KIBAGABAGA/3.jpg">²²
+                                <img src="assets/KIBAGABAGA/5.jpg">
+                                        </div>
+                                        
+                                    </div>
+                                      
+                                    
+                            </div>
+                </div>
+                <div class="newp1" *ngIf="show8">
+                    <div class="klem">
+                    <h4>Station de dosage Biocare Brazaville </h4>
+                    <div class="division">
+                        <div>
+                    <p>Projet : Station de dosage de solution pour perfusion à usage humain.</p>
+                    <p>Lieu : Brazaville (Congo)</p>
+                    <p>Capacité : 20m3/J.</p>
+                    <p>Client : eKope (France)</p>
+                    <p>Maitre d’œuvre : Biocare (Congo)</p>
+                    <p>Année de réalisation : 2012.</p>
+                    </div>
+                    <div class="partieleft">
+                    <p>Prestations fournies :</p>
+                    <p>Etude, conception et fabrication du coffret électrique.</p>
+                    <p>Programmation automate et pupitre opérateur.</p>
+                    <p>Synchronisation du fonctionnement entre l’unité d EPPI, notre système <br> de dosage et la remplisseuse.</p>
+                    <p>Gestion des cycles de NEP (Nettoyage) unité de dosage et remplisseuse.</p>
+                    <p>Câblage, installation et mise en service sur site.</p></div></div>
+                    </div>
+                    <div class="image-slider">
+                                    
+                        <div class="main-images">
+                            <div class="fourimages">
+                                <img src="assets/Brazaville/1.jpg">
+                                <img src="assets/Brazaville/2.jpg">
+                                <img src="assets/Brazaville/4.jpg">
+                                <img src="assets/Brazaville/5.jpg">
+                            </div>
+                            
+                        </div>
+                          
+                        
+                </div>
+                   
+                </div>
+            </div>
+            
+                <div class="newtittle" *ngIf="showbarre2">
+                    
+                     <div class="newp1" *ngIf="showsecond">
+                        <div class="klem">
+                            <h4>Dépôt frigorifique : ENNASSIM (Libye) </h4>
+                            <p>Lieu : Usine de produits laitier</p>
+                            <p>Descriptif : Armoire de commande et de supervision pour dépôt frigorifique</p>
+                            <p>Automate employé : 2 x S7 200 en réseau.</p>
+                            <p>Superviseur : WinCC Flexible Runtime + KTP1000.</p>
+                        </div> 
+                        <div class="image-slider">
+                                <button (click)="prevImage()" id="arrow"><i class="bi bi-arrow-left-square-fill"></i></button>
+                                <div class="main-images">
+                                    <div *ngFor="let image of displayedImages; let i = index" class="main-image">
+                                        <img [src]="image" alt="Main Image {{i}}">
+                                    </div>
+                                </div>
+                                  <button (click)="nextImage()" id="arrow"><i class="bi bi-arrow-right-square-fill"></i></button>
+                                
+                        </div>
+                                                                 
+                </div>      
+                
+                      
+            </div>
+            
+            <div class="tittle" *ngIf="showbarre3">
+                <div class="newp1" *ngIf="showthird">
+                    <div class="klem">
+                        <h4> Armoire presse injection Sopal (Tunisie) </h4>
+                        <p>Lieu : Sfax</p>
+                        <p>Descriptif : Installation d'une armoire de commande et de supervision <br>
+                            destinée à contrôler une presse d'injection de laiton.</p>
+                        <p>Automate employé : Siemens S7-200.</p>
+                        <p>Superviseur : Utilisation du logiciel Runtime WinCC Flexible <br>
+                            pour la supervision du processus.</p>
+
+                    </div>
+                            <div class="image-slider">
+                                    
+                                    <div class="main-images">
+                                        
+                                            <img src="assets/Sopal/1.jpg">
+                                            <img src="assets/Sopal/2.jpg">
+                                            <img src="assets/Sopal/3.jpg">
+                                        
+                                    </div>
+                                      
+                                    
+                            </div>
+
+                </div>
+            </div>
+            <div class="tittle" *ngIf="showbarre4">
+                
+                <div class="test2">
+                    <div><button id="b3" class="b2" (click)="togglefour1()" (click)="setActiveButton2('button1')" [class.active]="activeButton2 === 'button1'">Unité Broyage STICC (Tunisie)</button></div>
+                    <div><button id="b3" class="b2" (click)="togglefour2()" (click)="setActiveButton2('button2')" [class.active]="activeButton2 === 'button2'">Four de traitement Eurocast (U.S.A.)</button></div>
+                </div>
+                <div class="newp1" *ngIf="showfour1">
+                    <div class="klem">
+                        <h4>Unité Broyage STICC (Tunisie) </h4>
+                        <p>Lieu : Usine de broyage de CaCO3 (Fériana)</p>
+                        <p>Descriptif : Armoire de commande et de supervision<br>
+                        pour une unité de broyage de carbonate de calcium</p>
+                        <p>Automate employé : S7 300.</p>
+                        <p>Superviseur : Touch Panel MP377.</p>
+                    </div>
+                <div class="image-slider">
+                                    
+                    <div class="main-images">
+                        <img src="assets/broyage/1.jpg">
+                        <img src="assets/broyage/2.jpg">
+                    </div> 
+            </div>
+
+                
+                </div>
+                <div class="newp1" *ngIf="showfour2">
+                    <div class="klem">
+                        <h4>Four de traitement Eurocast (U.S.A.) </h4>
+                        <p>Lieu : Fonderie pièce pour réacteur d’avion (Tunisie)</p>
+                        <p>Descriptif : Armoire de commande et de supervision pour four de traitement thermique</p>
+                        <p>Automate employé : S7 200.</p>
+                        <p>Superviseur : WinCC Flexible Runtime.</p>
+                    </div>
+
+                            <div class="image-slider">
+                                    
+                                <div class="main-images">
+                                    <img src="assets/Eurocast/2.jpg">
+                                    <img src="assets/Eurocast/3.jpg">
+                                </div> 
+                        </div>
+                </div>
+            </div>
+            <div class="tittle" *ngIf="showbarre5">
+                <div class="test2">
+                    
+                </div>
+                <div class="newp1" *ngIf="showfive">
+                <div class="klem">
+                    <div class="division">
+                        <div>
+                            <h4>Système de commande pour centrale à béton </h4>
+                            <p>Projet : Système de commande pour centrale à béton.</p>
+                            <p>Lieu : Jebel Oust (Tunisie)</p>
+                            <p>Client : SOROUBAT</p>
+                            <p>Capacité malaxeur : 3m3 de béton.</p>
+                            <p>Année de réalisation : 2013</p>
+                        </div>
+                        <div class="partieleft">
+                            <br><br><br>
+                            <p>Prestations : Étude, conception et fourniture du système de pesage </p>
+                            <p>capteurs de poids,du système de dosage d'adjuvant et du coffret</p>  
+                            <p>électrique à base d'automate programmable SIEMENS S7, ainsi qu'un</p> 
+                            <p>système de supervision sur PC sous WinCC Flexible.</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="image-slider">
+                                <button (click)="prevImage()" id="arrow"><i class="bi bi-arrow-left-square-fill"></i></button>
+                                <div class="main-images">
+                                    <div *ngFor="let image of displayedImages; let i = index" class="main-image">
+                                        <img [src]="image" alt="Main Image {{i}}">
+                                    </div>
+                                </div>
+                                  <button (click)="nextImage()" id="arrow"><i class="bi bi-arrow-right-square-fill"></i></button>
+                                
+                        </div>
+                </div>
+            </div>
+            <div class="tittle" *ngIf="showbarre6">
+                <div class="test2">
+                  
+                </div>
+                <div class="newp1" *ngIf="shows">
+                <div class="klem">
+                    <div class="division">
+                        <div>
+                            <h4> Unité de fabrication détergents liquides </h4>
+                            <p>Projet : Unité de fabrication détergents liquides.</p>
+                            <p>Lieu : Sfax (Tunisie)</p>
+                            <p>Client : SODET</p>
+                            <p>Capacité réacteur : 3m3</p>
+                            <p>Année de réalisation : 2010</p>
+                            </div><div>
+                                <br>
+                                <br>
+                                <p>Prestations : Étude, conception et fourniture d'une unité de <br><br>fabrication 
+                                    de détergent liquide complète
+                                , y compris réacteur <br><br>de préparation,
+                                 cuves de stockage, pompes et circuit hydraulique,<br><br>
+                                coffret électrique de commande à base d'automate programmable<br><br>
+                                 SIEMENS S7 et module SIWAREX,ainsi qu'un système de supervision<br><br>
+                                  sur PC sous WinCC Flexible.</p>
+                    </div>
+                    </div>
+                    
+
+                </div>          
+                            <div class="image-slider">
+                                    
+                                <div class="main-images">
+                                    <div class="fourimages">
+                                    <img src="assets/chimie/2.jpg">
+                                    <img src="assets/chimie/3.jpg">
+                                    <img src="assets/chimie/4.jpg">
+                                    <img src="assets/chimie/5.jpg">
+                                    </div>
+                                </div> 
+                        </div>
+                
+                </div>
+            </div>
+            </div> 
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-inline">
+                <li><a class="gl" href="/fversion">Acceuil</a></li>
+                <li><a class="gl" href="/fversion">Presentation</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline">
+                <li><a class="gl" href="/fversion">Services</a></li>
+                <li><a class="gl" href="/fversion">Realisation</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline">
+                <li><a class="gl" href="/fversion">Contact</a></li>
+                <li><a class="gl" href="/fgallery">Gallerie</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+           
+            <div class="col-12 text-md-right">
+              <p><a>&copy; 2024 Your F2K</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+  </html>
